@@ -18,7 +18,7 @@ go get github.com/psyb0t/go-zulip
 
 ## Usage
 
-Every endpoint in the spec has a typed method on `ClientWithResponses`. Responses decode into `JSON200` and the other status fields.
+Every endpoint in the spec has a typed method on `ClientWithResponses`. Responses decode into `JSON200` and the other status fields. The full API, with the spec's descriptions as doc comments, is in the [Go reference](https://pkg.go.dev/github.com/psyb0t/go-zulip) and in `go doc github.com/psyb0t/go-zulip`.
 
 ```go
 package main
@@ -66,7 +66,7 @@ Method names come from the spec's operation IDs: `GetOwnUserWithResponse` reads 
 
 ## Auth
 
-Zulip's `basicAuth` security scheme uses HTTP Basic auth: the account or bot email address is the username and its API key is the password. Pass `WithRequestEditorFn` as shown above. The client does not attach credentials automatically.
+Zulip's `BasicAuth` security scheme uses HTTP Basic auth: the account or bot email address is the username and its API key is the password. Pass `WithRequestEditorFn` as shown above. The client does not attach credentials automatically.
 
 Use the API key for the intended Zulip organization, and send it only to that organization's trusted HTTPS server. A Zulip Cloud base URL looks like `https://your-organization.zulipchat.com/api/v1`; a self-hosted server uses its own origin followed by `/api/v1`.
 
@@ -90,7 +90,7 @@ make generate
 
 ## Agent integrations
 
-The [skill](.agents/skills/go-zulip) teaches a coding agent how to use go-zulip when it writes Go. It works in any agent that reads `.agents/skills/`. The manifests support the install commands below once the repository and catalog entries are published.
+The [skill](.agents/skills/go-zulip) teaches a coding agent how to use go-zulip when it writes Go. It works in any agent that reads `.agents/skills/`, and installs natively in the clients below.
 
 ### Claude Code
 
@@ -110,7 +110,7 @@ Codex also picks the skill up with no install in any checkout of this repo.
 
 ### OpenClaw
 
-The release workflow publishes the skill to ClawHub. After publication:
+The skill is published to ClawHub on every release:
 
 ```bash
 openclaw skills install @psyb0t/go-zulip

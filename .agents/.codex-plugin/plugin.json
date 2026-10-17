@@ -1,6 +1,6 @@
 {
   "name": "go-zulip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial Go client for the Zulip REST API: messages, users, channels, subscriptions, events and administration, generated from the spec Zulip publishes.",
   "author": { "name": "psyb0t", "url": "https://github.com/psyb0t" },
   "homepage": "https://github.com/psyb0t/go-zulip",

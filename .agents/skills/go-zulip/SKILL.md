@@ -1,6 +1,7 @@
 ---
 name: go-zulip
-description: "Use the unofficial Go client for Zulip REST API calls: messages, users, channels, subscriptions, events and administration. Use when Go code needs Zulip API access or already imports github.com/psyb0t/go-zulip."
+description: "Unofficial Go client for the Zulip REST API, generated with oapi-codegen. Package zulip (github.com/psyb0t/go-zulip) provides typed ...WithResponse methods on ClientWithResponses for messages, users, channels (streams), subscriptions, events long polling, uploads and organization administration, with HTTP Basic auth (email and API key) set through WithRequestEditorFn. Use when Go code needs to send or read Zulip messages, manage a Zulip organization, or already imports go-zulip."
+license: MIT
 homepage: https://github.com/psyb0t/go-zulip
 user-invocable: true
 metadata:
@@ -9,10 +10,6 @@ metadata:
     requires:
       bins:
         - go
-      env:
-        - ZULIP_SERVER
-        - ZULIP_EMAIL
-        - ZULIP_API_KEY
 permissions:
   filesystem: "Guides edits to the Go source of the current project. The library reads and writes no files."
   shell: "The Go toolchain (`go get`, `go build`, `go test`) to add and compile the dependency."
@@ -42,6 +39,20 @@ For install, operation names, request encoding and pagination, see [references/s
 - The code is not Go. This module ships only a Go package.
 - You need a client maintained by Zulip. This client is unofficial.
 - You want to modify generated code. Read the repository's `AGENTS.md` instead.
+
+## Finding endpoints and types
+
+The usage below covers one call. Every operation in the spec has a generated method, and the spec's descriptions are on them as Go doc comments. Look names and fields up instead of guessing. After `go get github.com/psyb0t/go-zulip`, from inside your module:
+
+```bash
+go doc github.com/psyb0t/go-zulip ClientWithResponsesInterface  # every endpoint method
+go doc github.com/psyb0t/go-zulip GetMessagesParams              # one method, params type or model
+go doc -all github.com/psyb0t/go-zulip                           # the whole package
+```
+
+The same documentation is at https://pkg.go.dev/github.com/psyb0t/go-zulip.
+
+Method names come from the spec's operation IDs. `<OperationId>WithResponse` takes the context, then the path parameters in order, then `*<OperationId>Params` when the operation has query or header parameters, then the request body when it has one. The `JSON200` field (or `JSON201` and so on, per declared status) holds the decoded body; it is nil for any other status. Operations with a URL-encoded form body are `<OperationId>WithFormdataBodyWithResponse` (for example `SendMessageWithFormdataBodyWithResponse` with a `SendMessageFormdataRequestBody`), and multipart uploads use `<OperationId>WithBodyWithResponse`.
 
 ## Usage
 
