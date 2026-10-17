@@ -1,0 +1,37 @@
+title = "go-zulip secret scanning"
+
+[extend]
+useDefault = true
+
+# gitleaks' `dir` mode walks the working tree and does NOT honour .gitignore, so
+# every gitignored local path is named again here. Nothing gitignored is tracked
+# by git. The committed Go vendor/ tree is intentionally NOT listed: it ships to
+# consumers, so it gets scanned. Verify with `git check-ignore <path>` before
+# adding a line; an entry for a committed source path silences real leaks.
+[[allowlists]]
+description = "Gitignored local scratch, downloaded specs, caches, and scan artifacts"
+paths = [
+  '''(^|/)\.env$''',
+  '''(^|/)\.vscode(?:/|$)''',
+  '''(^|/)\.telemetry(?:/|$)''',
+  '''(^|/)\.research_files(?:/|$)''',
+  '''(^|/)\.testing(?:/|$)''',
+  '''(^|/)api/openapi(?:\.fixed)?\.yaml$''',
+  '''(^|/)__pycache__(?:/|$)''',
+  '''(^|/)sec\.sarif$''',
+  '''(^|/)git-update\.sh(?:\.debot)?$''',
+  '''(^|/)CLAUDE\.md$''',
+]
+
+# The published JWT schema example is reproduced in a generated doc comment.
+# Match only that exact sample and only the generated client file.
+# Keep this rule-scoped so global path filtering does not skip the file.
+[[rules]]
+id = "jwt"
+
+[[rules.allowlists]]
+description = "Published Zulip JWT example"
+condition = "AND"
+paths = ['''(^|/)client\.gen\.go$''']
+regexTarget = "secret"
+regexes = ['''^eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\.eyJlbWFpbCI6ImhhbWxldEB6dWxpcC5jb20ifQ\.EsHxSVt54zPR\-ywgPH54TB1FYmrGKsfq7hsQEhp_9w0$''']

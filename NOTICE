@@ -1,0 +1,10 @@
+This repository contains code and documentation generated from the Zulip REST API OpenAPI specification.
+Source: https://raw.githubusercontent.com/zulip/zulip/main/zerver/openapi/zulip.yaml
+The specification is licensed under the Apache License, Version 2.0.
+See LICENSE-APACHE-2.0.
+
+scripts/client.tmpl adapts the Apache-2.0 client template from oapi-codegen v2.8.0 to encode Zulip form parameters.
+Source: github.com/oapi-codegen/oapi-codegen/v2/pkg/codegen/templates/client.tmpl
+
+Other repository code is licensed under the MIT license in LICENSE.
+Vendored dependencies retain their individual license and notice files.
