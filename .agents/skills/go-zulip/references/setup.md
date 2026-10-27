@@ -4,7 +4,7 @@ This module is unofficial and not affiliated with Zulip.
 
 ## Requirements
 
-- Go 1.26.9 or newer, per `go.mod`.
+- Go 1.26.10 or newer, per `go.mod`.
 - A Zulip server API URL, account or bot email address and API key, exported as `ZULIP_SERVER`, `ZULIP_EMAIL` and `ZULIP_API_KEY`.
 
 ## Install
