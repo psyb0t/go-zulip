@@ -657,28 +657,13 @@ func (e GetEvents200JSONResponseBodyEvents10Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents11Type.
 const (
-	GetEvents200JSONResponseBodyEvents11TypeInvitesChanged GetEvents200JSONResponseBodyEvents11Type = "invites_changed"
+	GetEvents200JSONResponseBodyEvents11TypeHasGoogleMeetToken GetEvents200JSONResponseBodyEvents11Type = "has_google_meet_token"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents11Type enum.
 func (e GetEvents200JSONResponseBodyEvents11Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents11TypeInvitesChanged:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents12Op.
-const (
-	GetEvents200JSONResponseBodyEvents12OpAdd GetEvents200JSONResponseBodyEvents12Op = "add"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents12Op enum.
-func (e GetEvents200JSONResponseBodyEvents12Op) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents12OpAdd:
+	case GetEvents200JSONResponseBodyEvents11TypeHasGoogleMeetToken:
 		return true
 	default:
 		return false
@@ -687,13 +672,13 @@ func (e GetEvents200JSONResponseBodyEvents12Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents12Type.
 const (
-	GetEvents200JSONResponseBodyEvents12TypeRealmUser GetEvents200JSONResponseBodyEvents12Type = "realm_user"
+	GetEvents200JSONResponseBodyEvents12TypeInvitesChanged GetEvents200JSONResponseBodyEvents12Type = "invites_changed"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents12Type enum.
 func (e GetEvents200JSONResponseBodyEvents12Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents12TypeRealmUser:
+	case GetEvents200JSONResponseBodyEvents12TypeInvitesChanged:
 		return true
 	default:
 		return false
@@ -702,13 +687,13 @@ func (e GetEvents200JSONResponseBodyEvents12Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents13Op.
 const (
-	GetEvents200JSONResponseBodyEvents13OpRemove GetEvents200JSONResponseBodyEvents13Op = "remove"
+	GetEvents200JSONResponseBodyEvents13OpAdd GetEvents200JSONResponseBodyEvents13Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents13Op enum.
 func (e GetEvents200JSONResponseBodyEvents13Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents13OpRemove:
+	case GetEvents200JSONResponseBodyEvents13OpAdd:
 		return true
 	default:
 		return false
@@ -730,18 +715,15 @@ func (e GetEvents200JSONResponseBodyEvents13Type) Valid() bool {
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents14PresenceStatus.
+// Defines values for GetEvents200JSONResponseBodyEvents14Op.
 const (
-	GetEvents200JSONResponseBodyEvents14PresenceStatusActive GetEvents200JSONResponseBodyEvents14PresenceStatus = "active"
-	GetEvents200JSONResponseBodyEvents14PresenceStatusIdle   GetEvents200JSONResponseBodyEvents14PresenceStatus = "idle"
+	GetEvents200JSONResponseBodyEvents14OpRemove GetEvents200JSONResponseBodyEvents14Op = "remove"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents14PresenceStatus enum.
-func (e GetEvents200JSONResponseBodyEvents14PresenceStatus) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents14Op enum.
+func (e GetEvents200JSONResponseBodyEvents14Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents14PresenceStatusActive:
-		return true
-	case GetEvents200JSONResponseBodyEvents14PresenceStatusIdle:
+	case GetEvents200JSONResponseBodyEvents14OpRemove:
 		return true
 	default:
 		return false
@@ -750,28 +732,31 @@ func (e GetEvents200JSONResponseBodyEvents14PresenceStatus) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents14Type.
 const (
-	GetEvents200JSONResponseBodyEvents14TypePresence GetEvents200JSONResponseBodyEvents14Type = "presence"
+	GetEvents200JSONResponseBodyEvents14TypeRealmUser GetEvents200JSONResponseBodyEvents14Type = "realm_user"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents14Type enum.
 func (e GetEvents200JSONResponseBodyEvents14Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents14TypePresence:
+	case GetEvents200JSONResponseBodyEvents14TypeRealmUser:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents15Op.
+// Defines values for GetEvents200JSONResponseBodyEvents15PresenceStatus.
 const (
-	GetEvents200JSONResponseBodyEvents15OpCreate GetEvents200JSONResponseBodyEvents15Op = "create"
+	GetEvents200JSONResponseBodyEvents15PresenceStatusActive GetEvents200JSONResponseBodyEvents15PresenceStatus = "active"
+	GetEvents200JSONResponseBodyEvents15PresenceStatusIdle   GetEvents200JSONResponseBodyEvents15PresenceStatus = "idle"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents15Op enum.
-func (e GetEvents200JSONResponseBodyEvents15Op) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents15PresenceStatus enum.
+func (e GetEvents200JSONResponseBodyEvents15PresenceStatus) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents15OpCreate:
+	case GetEvents200JSONResponseBodyEvents15PresenceStatusActive:
+		return true
+	case GetEvents200JSONResponseBodyEvents15PresenceStatusIdle:
 		return true
 	default:
 		return false
@@ -780,13 +765,13 @@ func (e GetEvents200JSONResponseBodyEvents15Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents15Type.
 const (
-	GetEvents200JSONResponseBodyEvents15TypeStream GetEvents200JSONResponseBodyEvents15Type = "stream"
+	GetEvents200JSONResponseBodyEvents15TypePresence GetEvents200JSONResponseBodyEvents15Type = "presence"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents15Type enum.
 func (e GetEvents200JSONResponseBodyEvents15Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents15TypeStream:
+	case GetEvents200JSONResponseBodyEvents15TypePresence:
 		return true
 	default:
 		return false
@@ -795,13 +780,13 @@ func (e GetEvents200JSONResponseBodyEvents15Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents16Op.
 const (
-	GetEvents200JSONResponseBodyEvents16OpDelete GetEvents200JSONResponseBodyEvents16Op = "delete"
+	GetEvents200JSONResponseBodyEvents16OpCreate GetEvents200JSONResponseBodyEvents16Op = "create"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents16Op enum.
 func (e GetEvents200JSONResponseBodyEvents16Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents16OpDelete:
+	case GetEvents200JSONResponseBodyEvents16OpCreate:
 		return true
 	default:
 		return false
@@ -825,13 +810,13 @@ func (e GetEvents200JSONResponseBodyEvents16Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents17Op.
 const (
-	GetEvents200JSONResponseBodyEvents17OpUpdate GetEvents200JSONResponseBodyEvents17Op = "update"
+	GetEvents200JSONResponseBodyEvents17OpDelete GetEvents200JSONResponseBodyEvents17Op = "delete"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents17Op enum.
 func (e GetEvents200JSONResponseBodyEvents17Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents17OpUpdate:
+	case GetEvents200JSONResponseBodyEvents17OpDelete:
 		return true
 	default:
 		return false
@@ -855,13 +840,13 @@ func (e GetEvents200JSONResponseBodyEvents17Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents18Op.
 const (
-	GetEvents200JSONResponseBodyEvents18OpAdd GetEvents200JSONResponseBodyEvents18Op = "add"
+	GetEvents200JSONResponseBodyEvents18OpUpdate GetEvents200JSONResponseBodyEvents18Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents18Op enum.
 func (e GetEvents200JSONResponseBodyEvents18Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents18OpAdd:
+	case GetEvents200JSONResponseBodyEvents18OpUpdate:
 		return true
 	default:
 		return false
@@ -870,13 +855,13 @@ func (e GetEvents200JSONResponseBodyEvents18Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents18Type.
 const (
-	GetEvents200JSONResponseBodyEvents18TypeReaction GetEvents200JSONResponseBodyEvents18Type = "reaction"
+	GetEvents200JSONResponseBodyEvents18TypeStream GetEvents200JSONResponseBodyEvents18Type = "stream"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents18Type enum.
 func (e GetEvents200JSONResponseBodyEvents18Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents18TypeReaction:
+	case GetEvents200JSONResponseBodyEvents18TypeStream:
 		return true
 	default:
 		return false
@@ -885,13 +870,13 @@ func (e GetEvents200JSONResponseBodyEvents18Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents19Op.
 const (
-	GetEvents200JSONResponseBodyEvents19OpRemove GetEvents200JSONResponseBodyEvents19Op = "remove"
+	GetEvents200JSONResponseBodyEvents19OpAdd GetEvents200JSONResponseBodyEvents19Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents19Op enum.
 func (e GetEvents200JSONResponseBodyEvents19Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents19OpRemove:
+	case GetEvents200JSONResponseBodyEvents19OpAdd:
 		return true
 	default:
 		return false
@@ -915,13 +900,13 @@ func (e GetEvents200JSONResponseBodyEvents19Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents20Op.
 const (
-	GetEvents200JSONResponseBodyEvents20OpAdd GetEvents200JSONResponseBodyEvents20Op = "add"
+	GetEvents200JSONResponseBodyEvents20OpRemove GetEvents200JSONResponseBodyEvents20Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents20Op enum.
 func (e GetEvents200JSONResponseBodyEvents20Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents20OpAdd:
+	case GetEvents200JSONResponseBodyEvents20OpRemove:
 		return true
 	default:
 		return false
@@ -930,13 +915,13 @@ func (e GetEvents200JSONResponseBodyEvents20Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents20Type.
 const (
-	GetEvents200JSONResponseBodyEvents20TypeAttachment GetEvents200JSONResponseBodyEvents20Type = "attachment"
+	GetEvents200JSONResponseBodyEvents20TypeReaction GetEvents200JSONResponseBodyEvents20Type = "reaction"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents20Type enum.
 func (e GetEvents200JSONResponseBodyEvents20Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents20TypeAttachment:
+	case GetEvents200JSONResponseBodyEvents20TypeReaction:
 		return true
 	default:
 		return false
@@ -945,13 +930,13 @@ func (e GetEvents200JSONResponseBodyEvents20Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents21Op.
 const (
-	GetEvents200JSONResponseBodyEvents21OpUpdate GetEvents200JSONResponseBodyEvents21Op = "update"
+	GetEvents200JSONResponseBodyEvents21OpAdd GetEvents200JSONResponseBodyEvents21Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents21Op enum.
 func (e GetEvents200JSONResponseBodyEvents21Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents21OpUpdate:
+	case GetEvents200JSONResponseBodyEvents21OpAdd:
 		return true
 	default:
 		return false
@@ -975,13 +960,13 @@ func (e GetEvents200JSONResponseBodyEvents21Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents22Op.
 const (
-	GetEvents200JSONResponseBodyEvents22OpRemove GetEvents200JSONResponseBodyEvents22Op = "remove"
+	GetEvents200JSONResponseBodyEvents22OpUpdate GetEvents200JSONResponseBodyEvents22Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents22Op enum.
 func (e GetEvents200JSONResponseBodyEvents22Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents22OpRemove:
+	case GetEvents200JSONResponseBodyEvents22OpUpdate:
 		return true
 	default:
 		return false
@@ -1005,13 +990,13 @@ func (e GetEvents200JSONResponseBodyEvents22Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents23Op.
 const (
-	GetEvents200JSONResponseBodyEvents23OpAdd GetEvents200JSONResponseBodyEvents23Op = "add"
+	GetEvents200JSONResponseBodyEvents23OpRemove GetEvents200JSONResponseBodyEvents23Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents23Op enum.
 func (e GetEvents200JSONResponseBodyEvents23Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents23OpAdd:
+	case GetEvents200JSONResponseBodyEvents23OpRemove:
 		return true
 	default:
 		return false
@@ -1020,13 +1005,13 @@ func (e GetEvents200JSONResponseBodyEvents23Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents23Type.
 const (
-	GetEvents200JSONResponseBodyEvents23TypeDevice GetEvents200JSONResponseBodyEvents23Type = "device"
+	GetEvents200JSONResponseBodyEvents23TypeAttachment GetEvents200JSONResponseBodyEvents23Type = "attachment"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents23Type enum.
 func (e GetEvents200JSONResponseBodyEvents23Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents23TypeDevice:
+	case GetEvents200JSONResponseBodyEvents23TypeAttachment:
 		return true
 	default:
 		return false
@@ -1035,13 +1020,13 @@ func (e GetEvents200JSONResponseBodyEvents23Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents24Op.
 const (
-	GetEvents200JSONResponseBodyEvents24OpRemove GetEvents200JSONResponseBodyEvents24Op = "remove"
+	GetEvents200JSONResponseBodyEvents24OpAdd GetEvents200JSONResponseBodyEvents24Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents24Op enum.
 func (e GetEvents200JSONResponseBodyEvents24Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents24OpRemove:
+	case GetEvents200JSONResponseBodyEvents24OpAdd:
 		return true
 	default:
 		return false
@@ -1065,13 +1050,13 @@ func (e GetEvents200JSONResponseBodyEvents24Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents25Op.
 const (
-	GetEvents200JSONResponseBodyEvents25OpUpdate GetEvents200JSONResponseBodyEvents25Op = "update"
+	GetEvents200JSONResponseBodyEvents25OpRemove GetEvents200JSONResponseBodyEvents25Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents25Op enum.
 func (e GetEvents200JSONResponseBodyEvents25Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents25OpUpdate:
+	case GetEvents200JSONResponseBodyEvents25OpRemove:
 		return true
 	default:
 		return false
@@ -1093,36 +1078,30 @@ func (e GetEvents200JSONResponseBodyEvents25Type) Valid() bool {
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents26Type.
+// Defines values for GetEvents200JSONResponseBodyEvents26Op.
 const (
-	GetEvents200JSONResponseBodyEvents26TypeSubmessage GetEvents200JSONResponseBodyEvents26Type = "submessage"
+	GetEvents200JSONResponseBodyEvents26OpUpdate GetEvents200JSONResponseBodyEvents26Op = "update"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents26Type enum.
-func (e GetEvents200JSONResponseBodyEvents26Type) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents26Op enum.
+func (e GetEvents200JSONResponseBodyEvents26Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents26TypeSubmessage:
+	case GetEvents200JSONResponseBodyEvents26OpUpdate:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents27ReactionType.
+// Defines values for GetEvents200JSONResponseBodyEvents26Type.
 const (
-	GetEvents200JSONResponseBodyEvents27ReactionTypeRealmEmoji      GetEvents200JSONResponseBodyEvents27ReactionType = "realm_emoji"
-	GetEvents200JSONResponseBodyEvents27ReactionTypeUnicodeEmoji    GetEvents200JSONResponseBodyEvents27ReactionType = "unicode_emoji"
-	GetEvents200JSONResponseBodyEvents27ReactionTypeZulipExtraEmoji GetEvents200JSONResponseBodyEvents27ReactionType = "zulip_extra_emoji"
+	GetEvents200JSONResponseBodyEvents26TypeDevice GetEvents200JSONResponseBodyEvents26Type = "device"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents27ReactionType enum.
-func (e GetEvents200JSONResponseBodyEvents27ReactionType) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents26Type enum.
+func (e GetEvents200JSONResponseBodyEvents26Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents27ReactionTypeRealmEmoji:
-		return true
-	case GetEvents200JSONResponseBodyEvents27ReactionTypeUnicodeEmoji:
-		return true
-	case GetEvents200JSONResponseBodyEvents27ReactionTypeZulipExtraEmoji:
+	case GetEvents200JSONResponseBodyEvents26TypeDevice:
 		return true
 	default:
 		return false
@@ -1131,13 +1110,34 @@ func (e GetEvents200JSONResponseBodyEvents27ReactionType) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents27Type.
 const (
-	GetEvents200JSONResponseBodyEvents27TypeUserStatus GetEvents200JSONResponseBodyEvents27Type = "user_status"
+	GetEvents200JSONResponseBodyEvents27TypeSubmessage GetEvents200JSONResponseBodyEvents27Type = "submessage"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents27Type enum.
 func (e GetEvents200JSONResponseBodyEvents27Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents27TypeUserStatus:
+	case GetEvents200JSONResponseBodyEvents27TypeSubmessage:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents28ReactionType.
+const (
+	GetEvents200JSONResponseBodyEvents28ReactionTypeRealmEmoji      GetEvents200JSONResponseBodyEvents28ReactionType = "realm_emoji"
+	GetEvents200JSONResponseBodyEvents28ReactionTypeUnicodeEmoji    GetEvents200JSONResponseBodyEvents28ReactionType = "unicode_emoji"
+	GetEvents200JSONResponseBodyEvents28ReactionTypeZulipExtraEmoji GetEvents200JSONResponseBodyEvents28ReactionType = "zulip_extra_emoji"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents28ReactionType enum.
+func (e GetEvents200JSONResponseBodyEvents28ReactionType) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents28ReactionTypeRealmEmoji:
+		return true
+	case GetEvents200JSONResponseBodyEvents28ReactionTypeUnicodeEmoji:
+		return true
+	case GetEvents200JSONResponseBodyEvents28ReactionTypeZulipExtraEmoji:
 		return true
 	default:
 		return false
@@ -1146,13 +1146,13 @@ func (e GetEvents200JSONResponseBodyEvents27Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents28Type.
 const (
-	GetEvents200JSONResponseBodyEvents28TypeCustomProfileFields GetEvents200JSONResponseBodyEvents28Type = "custom_profile_fields"
+	GetEvents200JSONResponseBodyEvents28TypeUserStatus GetEvents200JSONResponseBodyEvents28Type = "user_status"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents28Type enum.
 func (e GetEvents200JSONResponseBodyEvents28Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents28TypeCustomProfileFields:
+	case GetEvents200JSONResponseBodyEvents28TypeUserStatus:
 		return true
 	default:
 		return false
@@ -1161,13 +1161,13 @@ func (e GetEvents200JSONResponseBodyEvents28Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents29Type.
 const (
-	GetEvents200JSONResponseBodyEvents29TypeDefaultStreamGroups GetEvents200JSONResponseBodyEvents29Type = "default_stream_groups"
+	GetEvents200JSONResponseBodyEvents29TypeCustomProfileFields GetEvents200JSONResponseBodyEvents29Type = "custom_profile_fields"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents29Type enum.
 func (e GetEvents200JSONResponseBodyEvents29Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents29TypeDefaultStreamGroups:
+	case GetEvents200JSONResponseBodyEvents29TypeCustomProfileFields:
 		return true
 	default:
 		return false
@@ -1176,31 +1176,13 @@ func (e GetEvents200JSONResponseBodyEvents29Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents30Type.
 const (
-	GetEvents200JSONResponseBodyEvents30TypeDefaultStreams GetEvents200JSONResponseBodyEvents30Type = "default_streams"
+	GetEvents200JSONResponseBodyEvents30TypeDefaultStreamGroups GetEvents200JSONResponseBodyEvents30Type = "default_stream_groups"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents30Type enum.
 func (e GetEvents200JSONResponseBodyEvents30Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents30TypeDefaultStreams:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents31MessageType.
-const (
-	GetEvents200JSONResponseBodyEvents31MessageTypePrivate GetEvents200JSONResponseBodyEvents31MessageType = "private"
-	GetEvents200JSONResponseBodyEvents31MessageTypeStream  GetEvents200JSONResponseBodyEvents31MessageType = "stream"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents31MessageType enum.
-func (e GetEvents200JSONResponseBodyEvents31MessageType) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents31MessageTypePrivate:
-		return true
-	case GetEvents200JSONResponseBodyEvents31MessageTypeStream:
+	case GetEvents200JSONResponseBodyEvents30TypeDefaultStreamGroups:
 		return true
 	default:
 		return false
@@ -1209,13 +1191,31 @@ func (e GetEvents200JSONResponseBodyEvents31MessageType) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents31Type.
 const (
-	GetEvents200JSONResponseBodyEvents31TypeDeleteMessage GetEvents200JSONResponseBodyEvents31Type = "delete_message"
+	GetEvents200JSONResponseBodyEvents31TypeDefaultStreams GetEvents200JSONResponseBodyEvents31Type = "default_streams"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents31Type enum.
 func (e GetEvents200JSONResponseBodyEvents31Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents31TypeDeleteMessage:
+	case GetEvents200JSONResponseBodyEvents31TypeDefaultStreams:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents32MessageType.
+const (
+	GetEvents200JSONResponseBodyEvents32MessageTypePrivate GetEvents200JSONResponseBodyEvents32MessageType = "private"
+	GetEvents200JSONResponseBodyEvents32MessageTypeStream  GetEvents200JSONResponseBodyEvents32MessageType = "stream"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents32MessageType enum.
+func (e GetEvents200JSONResponseBodyEvents32MessageType) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents32MessageTypePrivate:
+		return true
+	case GetEvents200JSONResponseBodyEvents32MessageTypeStream:
 		return true
 	default:
 		return false
@@ -1224,13 +1224,13 @@ func (e GetEvents200JSONResponseBodyEvents31Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents32Type.
 const (
-	GetEvents200JSONResponseBodyEvents32TypeMutedTopics GetEvents200JSONResponseBodyEvents32Type = "muted_topics"
+	GetEvents200JSONResponseBodyEvents32TypeDeleteMessage GetEvents200JSONResponseBodyEvents32Type = "delete_message"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents32Type enum.
 func (e GetEvents200JSONResponseBodyEvents32Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents32TypeMutedTopics:
+	case GetEvents200JSONResponseBodyEvents32TypeDeleteMessage:
 		return true
 	default:
 		return false
@@ -1239,13 +1239,13 @@ func (e GetEvents200JSONResponseBodyEvents32Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents33Type.
 const (
-	GetEvents200JSONResponseBodyEvents33TypeUserTopic GetEvents200JSONResponseBodyEvents33Type = "user_topic"
+	GetEvents200JSONResponseBodyEvents33TypeMutedTopics GetEvents200JSONResponseBodyEvents33Type = "muted_topics"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents33Type enum.
 func (e GetEvents200JSONResponseBodyEvents33Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents33TypeUserTopic:
+	case GetEvents200JSONResponseBodyEvents33TypeMutedTopics:
 		return true
 	default:
 		return false
@@ -1254,13 +1254,13 @@ func (e GetEvents200JSONResponseBodyEvents33Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents34Type.
 const (
-	GetEvents200JSONResponseBodyEvents34TypeMutedUsers GetEvents200JSONResponseBodyEvents34Type = "muted_users"
+	GetEvents200JSONResponseBodyEvents34TypeUserTopic GetEvents200JSONResponseBodyEvents34Type = "user_topic"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents34Type enum.
 func (e GetEvents200JSONResponseBodyEvents34Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents34TypeMutedUsers:
+	case GetEvents200JSONResponseBodyEvents34TypeUserTopic:
 		return true
 	default:
 		return false
@@ -1269,13 +1269,13 @@ func (e GetEvents200JSONResponseBodyEvents34Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents35Type.
 const (
-	GetEvents200JSONResponseBodyEvents35TypeHeartbeat GetEvents200JSONResponseBodyEvents35Type = "heartbeat"
+	GetEvents200JSONResponseBodyEvents35TypeMutedUsers GetEvents200JSONResponseBodyEvents35Type = "muted_users"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents35Type enum.
 func (e GetEvents200JSONResponseBodyEvents35Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents35TypeHeartbeat:
+	case GetEvents200JSONResponseBodyEvents35TypeMutedUsers:
 		return true
 	default:
 		return false
@@ -1284,34 +1284,13 @@ func (e GetEvents200JSONResponseBodyEvents35Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents36Type.
 const (
-	GetEvents200JSONResponseBodyEvents36TypeOnboardingSteps GetEvents200JSONResponseBodyEvents36Type = "onboarding_steps"
+	GetEvents200JSONResponseBodyEvents36TypeHeartbeat GetEvents200JSONResponseBodyEvents36Type = "heartbeat"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents36Type enum.
 func (e GetEvents200JSONResponseBodyEvents36Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents36TypeOnboardingSteps:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents37PropagateMode.
-const (
-	GetEvents200JSONResponseBodyEvents37PropagateModeChangeAll   GetEvents200JSONResponseBodyEvents37PropagateMode = "change_all"
-	GetEvents200JSONResponseBodyEvents37PropagateModeChangeLater GetEvents200JSONResponseBodyEvents37PropagateMode = "change_later"
-	GetEvents200JSONResponseBodyEvents37PropagateModeChangeOne   GetEvents200JSONResponseBodyEvents37PropagateMode = "change_one"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents37PropagateMode enum.
-func (e GetEvents200JSONResponseBodyEvents37PropagateMode) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents37PropagateModeChangeAll:
-		return true
-	case GetEvents200JSONResponseBodyEvents37PropagateModeChangeLater:
-		return true
-	case GetEvents200JSONResponseBodyEvents37PropagateModeChangeOne:
+	case GetEvents200JSONResponseBodyEvents36TypeHeartbeat:
 		return true
 	default:
 		return false
@@ -1320,46 +1299,34 @@ func (e GetEvents200JSONResponseBodyEvents37PropagateMode) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents37Type.
 const (
-	GetEvents200JSONResponseBodyEvents37TypeUpdateMessage GetEvents200JSONResponseBodyEvents37Type = "update_message"
+	GetEvents200JSONResponseBodyEvents37TypeOnboardingSteps GetEvents200JSONResponseBodyEvents37Type = "onboarding_steps"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents37Type enum.
 func (e GetEvents200JSONResponseBodyEvents37Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents37TypeUpdateMessage:
+	case GetEvents200JSONResponseBodyEvents37TypeOnboardingSteps:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents38MessageType.
+// Defines values for GetEvents200JSONResponseBodyEvents38PropagateMode.
 const (
-	GetEvents200JSONResponseBodyEvents38MessageTypeDirect GetEvents200JSONResponseBodyEvents38MessageType = "direct"
-	GetEvents200JSONResponseBodyEvents38MessageTypeStream GetEvents200JSONResponseBodyEvents38MessageType = "stream"
+	GetEvents200JSONResponseBodyEvents38PropagateModeChangeAll   GetEvents200JSONResponseBodyEvents38PropagateMode = "change_all"
+	GetEvents200JSONResponseBodyEvents38PropagateModeChangeLater GetEvents200JSONResponseBodyEvents38PropagateMode = "change_later"
+	GetEvents200JSONResponseBodyEvents38PropagateModeChangeOne   GetEvents200JSONResponseBodyEvents38PropagateMode = "change_one"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents38MessageType enum.
-func (e GetEvents200JSONResponseBodyEvents38MessageType) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents38PropagateMode enum.
+func (e GetEvents200JSONResponseBodyEvents38PropagateMode) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents38MessageTypeDirect:
+	case GetEvents200JSONResponseBodyEvents38PropagateModeChangeAll:
 		return true
-	case GetEvents200JSONResponseBodyEvents38MessageTypeStream:
+	case GetEvents200JSONResponseBodyEvents38PropagateModeChangeLater:
 		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents38Op.
-const (
-	GetEvents200JSONResponseBodyEvents38OpStart GetEvents200JSONResponseBodyEvents38Op = "start"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents38Op enum.
-func (e GetEvents200JSONResponseBodyEvents38Op) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents38OpStart:
+	case GetEvents200JSONResponseBodyEvents38PropagateModeChangeOne:
 		return true
 	default:
 		return false
@@ -1368,13 +1335,13 @@ func (e GetEvents200JSONResponseBodyEvents38Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents38Type.
 const (
-	GetEvents200JSONResponseBodyEvents38TypeTyping GetEvents200JSONResponseBodyEvents38Type = "typing"
+	GetEvents200JSONResponseBodyEvents38TypeUpdateMessage GetEvents200JSONResponseBodyEvents38Type = "update_message"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents38Type enum.
 func (e GetEvents200JSONResponseBodyEvents38Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents38TypeTyping:
+	case GetEvents200JSONResponseBodyEvents38TypeUpdateMessage:
 		return true
 	default:
 		return false
@@ -1401,13 +1368,13 @@ func (e GetEvents200JSONResponseBodyEvents39MessageType) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents39Op.
 const (
-	GetEvents200JSONResponseBodyEvents39OpStop GetEvents200JSONResponseBodyEvents39Op = "stop"
+	GetEvents200JSONResponseBodyEvents39OpStart GetEvents200JSONResponseBodyEvents39Op = "start"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents39Op enum.
 func (e GetEvents200JSONResponseBodyEvents39Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents39OpStop:
+	case GetEvents200JSONResponseBodyEvents39OpStart:
 		return true
 	default:
 		return false
@@ -1429,33 +1396,33 @@ func (e GetEvents200JSONResponseBodyEvents39Type) Valid() bool {
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents40Op.
+// Defines values for GetEvents200JSONResponseBodyEvents40MessageType.
 const (
-	GetEvents200JSONResponseBodyEvents40OpStart GetEvents200JSONResponseBodyEvents40Op = "start"
+	GetEvents200JSONResponseBodyEvents40MessageTypeDirect GetEvents200JSONResponseBodyEvents40MessageType = "direct"
+	GetEvents200JSONResponseBodyEvents40MessageTypeStream GetEvents200JSONResponseBodyEvents40MessageType = "stream"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents40Op enum.
-func (e GetEvents200JSONResponseBodyEvents40Op) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents40MessageType enum.
+func (e GetEvents200JSONResponseBodyEvents40MessageType) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents40OpStart:
+	case GetEvents200JSONResponseBodyEvents40MessageTypeDirect:
+		return true
+	case GetEvents200JSONResponseBodyEvents40MessageTypeStream:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for GetEvents200JSONResponseBodyEvents40RecipientType.
+// Defines values for GetEvents200JSONResponseBodyEvents40Op.
 const (
-	GetEvents200JSONResponseBodyEvents40RecipientTypeChannel GetEvents200JSONResponseBodyEvents40RecipientType = "channel"
-	GetEvents200JSONResponseBodyEvents40RecipientTypeDirect  GetEvents200JSONResponseBodyEvents40RecipientType = "direct"
+	GetEvents200JSONResponseBodyEvents40OpStop GetEvents200JSONResponseBodyEvents40Op = "stop"
 )
 
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents40RecipientType enum.
-func (e GetEvents200JSONResponseBodyEvents40RecipientType) Valid() bool {
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents40Op enum.
+func (e GetEvents200JSONResponseBodyEvents40Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents40RecipientTypeChannel:
-		return true
-	case GetEvents200JSONResponseBodyEvents40RecipientTypeDirect:
+	case GetEvents200JSONResponseBodyEvents40OpStop:
 		return true
 	default:
 		return false
@@ -1464,13 +1431,13 @@ func (e GetEvents200JSONResponseBodyEvents40RecipientType) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents40Type.
 const (
-	GetEvents200JSONResponseBodyEvents40TypeTypingEditMessage GetEvents200JSONResponseBodyEvents40Type = "typing_edit_message"
+	GetEvents200JSONResponseBodyEvents40TypeTyping GetEvents200JSONResponseBodyEvents40Type = "typing"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents40Type enum.
 func (e GetEvents200JSONResponseBodyEvents40Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents40TypeTypingEditMessage:
+	case GetEvents200JSONResponseBodyEvents40TypeTyping:
 		return true
 	default:
 		return false
@@ -1479,13 +1446,13 @@ func (e GetEvents200JSONResponseBodyEvents40Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents41Op.
 const (
-	GetEvents200JSONResponseBodyEvents41OpStop GetEvents200JSONResponseBodyEvents41Op = "stop"
+	GetEvents200JSONResponseBodyEvents41OpStart GetEvents200JSONResponseBodyEvents41Op = "start"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents41Op enum.
 func (e GetEvents200JSONResponseBodyEvents41Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents41OpStop:
+	case GetEvents200JSONResponseBodyEvents41OpStart:
 		return true
 	default:
 		return false
@@ -1525,45 +1492,48 @@ func (e GetEvents200JSONResponseBodyEvents41Type) Valid() bool {
 	}
 }
 
+// Defines values for GetEvents200JSONResponseBodyEvents42Op.
+const (
+	GetEvents200JSONResponseBodyEvents42OpStop GetEvents200JSONResponseBodyEvents42Op = "stop"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents42Op enum.
+func (e GetEvents200JSONResponseBodyEvents42Op) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents42OpStop:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents42RecipientType.
+const (
+	GetEvents200JSONResponseBodyEvents42RecipientTypeChannel GetEvents200JSONResponseBodyEvents42RecipientType = "channel"
+	GetEvents200JSONResponseBodyEvents42RecipientTypeDirect  GetEvents200JSONResponseBodyEvents42RecipientType = "direct"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents42RecipientType enum.
+func (e GetEvents200JSONResponseBodyEvents42RecipientType) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents42RecipientTypeChannel:
+		return true
+	case GetEvents200JSONResponseBodyEvents42RecipientTypeDirect:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for GetEvents200JSONResponseBodyEvents42Type.
 const (
-	GetEvents200JSONResponseBodyEvents42TypeUrlEmbedData GetEvents200JSONResponseBodyEvents42Type = "url_embed_data"
+	GetEvents200JSONResponseBodyEvents42TypeTypingEditMessage GetEvents200JSONResponseBodyEvents42Type = "typing_edit_message"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents42Type enum.
 func (e GetEvents200JSONResponseBodyEvents42Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents42TypeUrlEmbedData:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents43Op.
-const (
-	GetEvents200JSONResponseBodyEvents43OpAdd GetEvents200JSONResponseBodyEvents43Op = "add"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents43Op enum.
-func (e GetEvents200JSONResponseBodyEvents43Op) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents43OpAdd:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents43Operation.
-const (
-	GetEvents200JSONResponseBodyEvents43OperationAdd GetEvents200JSONResponseBodyEvents43Operation = "add"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents43Operation enum.
-func (e GetEvents200JSONResponseBodyEvents43Operation) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents43OperationAdd:
+	case GetEvents200JSONResponseBodyEvents42TypeTypingEditMessage:
 		return true
 	default:
 		return false
@@ -1572,31 +1542,13 @@ func (e GetEvents200JSONResponseBodyEvents43Operation) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents43Type.
 const (
-	GetEvents200JSONResponseBodyEvents43TypeUpdateMessageFlags GetEvents200JSONResponseBodyEvents43Type = "update_message_flags"
+	GetEvents200JSONResponseBodyEvents43TypeUrlEmbedData GetEvents200JSONResponseBodyEvents43Type = "url_embed_data"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents43Type enum.
 func (e GetEvents200JSONResponseBodyEvents43Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents43TypeUpdateMessageFlags:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents44MessageDetailsType.
-const (
-	GetEvents200JSONResponseBodyEvents44MessageDetailsTypePrivate GetEvents200JSONResponseBodyEvents44MessageDetailsType = "private"
-	GetEvents200JSONResponseBodyEvents44MessageDetailsTypeStream  GetEvents200JSONResponseBodyEvents44MessageDetailsType = "stream"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents44MessageDetailsType enum.
-func (e GetEvents200JSONResponseBodyEvents44MessageDetailsType) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents44MessageDetailsTypePrivate:
-		return true
-	case GetEvents200JSONResponseBodyEvents44MessageDetailsTypeStream:
+	case GetEvents200JSONResponseBodyEvents43TypeUrlEmbedData:
 		return true
 	default:
 		return false
@@ -1605,13 +1557,13 @@ func (e GetEvents200JSONResponseBodyEvents44MessageDetailsType) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents44Op.
 const (
-	GetEvents200JSONResponseBodyEvents44OpRemove GetEvents200JSONResponseBodyEvents44Op = "remove"
+	GetEvents200JSONResponseBodyEvents44OpAdd GetEvents200JSONResponseBodyEvents44Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents44Op enum.
 func (e GetEvents200JSONResponseBodyEvents44Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents44OpRemove:
+	case GetEvents200JSONResponseBodyEvents44OpAdd:
 		return true
 	default:
 		return false
@@ -1620,13 +1572,13 @@ func (e GetEvents200JSONResponseBodyEvents44Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents44Operation.
 const (
-	GetEvents200JSONResponseBodyEvents44OperationRemove GetEvents200JSONResponseBodyEvents44Operation = "remove"
+	GetEvents200JSONResponseBodyEvents44OperationAdd GetEvents200JSONResponseBodyEvents44Operation = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents44Operation enum.
 func (e GetEvents200JSONResponseBodyEvents44Operation) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents44OperationRemove:
+	case GetEvents200JSONResponseBodyEvents44OperationAdd:
 		return true
 	default:
 		return false
@@ -1648,15 +1600,48 @@ func (e GetEvents200JSONResponseBodyEvents44Type) Valid() bool {
 	}
 }
 
+// Defines values for GetEvents200JSONResponseBodyEvents45MessageDetailsType.
+const (
+	GetEvents200JSONResponseBodyEvents45MessageDetailsTypePrivate GetEvents200JSONResponseBodyEvents45MessageDetailsType = "private"
+	GetEvents200JSONResponseBodyEvents45MessageDetailsTypeStream  GetEvents200JSONResponseBodyEvents45MessageDetailsType = "stream"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents45MessageDetailsType enum.
+func (e GetEvents200JSONResponseBodyEvents45MessageDetailsType) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents45MessageDetailsTypePrivate:
+		return true
+	case GetEvents200JSONResponseBodyEvents45MessageDetailsTypeStream:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for GetEvents200JSONResponseBodyEvents45Op.
 const (
-	GetEvents200JSONResponseBodyEvents45OpAdd GetEvents200JSONResponseBodyEvents45Op = "add"
+	GetEvents200JSONResponseBodyEvents45OpRemove GetEvents200JSONResponseBodyEvents45Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents45Op enum.
 func (e GetEvents200JSONResponseBodyEvents45Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents45OpAdd:
+	case GetEvents200JSONResponseBodyEvents45OpRemove:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents45Operation.
+const (
+	GetEvents200JSONResponseBodyEvents45OperationRemove GetEvents200JSONResponseBodyEvents45Operation = "remove"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents45Operation enum.
+func (e GetEvents200JSONResponseBodyEvents45Operation) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents45OperationRemove:
 		return true
 	default:
 		return false
@@ -1665,13 +1650,13 @@ func (e GetEvents200JSONResponseBodyEvents45Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents45Type.
 const (
-	GetEvents200JSONResponseBodyEvents45TypeUserGroup GetEvents200JSONResponseBodyEvents45Type = "user_group"
+	GetEvents200JSONResponseBodyEvents45TypeUpdateMessageFlags GetEvents200JSONResponseBodyEvents45Type = "update_message_flags"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents45Type enum.
 func (e GetEvents200JSONResponseBodyEvents45Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents45TypeUserGroup:
+	case GetEvents200JSONResponseBodyEvents45TypeUpdateMessageFlags:
 		return true
 	default:
 		return false
@@ -1680,13 +1665,13 @@ func (e GetEvents200JSONResponseBodyEvents45Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents46Op.
 const (
-	GetEvents200JSONResponseBodyEvents46OpUpdate GetEvents200JSONResponseBodyEvents46Op = "update"
+	GetEvents200JSONResponseBodyEvents46OpAdd GetEvents200JSONResponseBodyEvents46Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents46Op enum.
 func (e GetEvents200JSONResponseBodyEvents46Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents46OpUpdate:
+	case GetEvents200JSONResponseBodyEvents46OpAdd:
 		return true
 	default:
 		return false
@@ -1710,13 +1695,13 @@ func (e GetEvents200JSONResponseBodyEvents46Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents47Op.
 const (
-	GetEvents200JSONResponseBodyEvents47OpAddMembers GetEvents200JSONResponseBodyEvents47Op = "add_members"
+	GetEvents200JSONResponseBodyEvents47OpUpdate GetEvents200JSONResponseBodyEvents47Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents47Op enum.
 func (e GetEvents200JSONResponseBodyEvents47Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents47OpAddMembers:
+	case GetEvents200JSONResponseBodyEvents47OpUpdate:
 		return true
 	default:
 		return false
@@ -1740,13 +1725,13 @@ func (e GetEvents200JSONResponseBodyEvents47Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents48Op.
 const (
-	GetEvents200JSONResponseBodyEvents48OpRemoveMembers GetEvents200JSONResponseBodyEvents48Op = "remove_members"
+	GetEvents200JSONResponseBodyEvents48OpAddMembers GetEvents200JSONResponseBodyEvents48Op = "add_members"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents48Op enum.
 func (e GetEvents200JSONResponseBodyEvents48Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents48OpRemoveMembers:
+	case GetEvents200JSONResponseBodyEvents48OpAddMembers:
 		return true
 	default:
 		return false
@@ -1770,13 +1755,13 @@ func (e GetEvents200JSONResponseBodyEvents48Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents49Op.
 const (
-	GetEvents200JSONResponseBodyEvents49OpAddSubgroups GetEvents200JSONResponseBodyEvents49Op = "add_subgroups"
+	GetEvents200JSONResponseBodyEvents49OpRemoveMembers GetEvents200JSONResponseBodyEvents49Op = "remove_members"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents49Op enum.
 func (e GetEvents200JSONResponseBodyEvents49Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents49OpAddSubgroups:
+	case GetEvents200JSONResponseBodyEvents49OpRemoveMembers:
 		return true
 	default:
 		return false
@@ -1800,13 +1785,13 @@ func (e GetEvents200JSONResponseBodyEvents49Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents50Op.
 const (
-	GetEvents200JSONResponseBodyEvents50OpRemoveSubgroups GetEvents200JSONResponseBodyEvents50Op = "remove_subgroups"
+	GetEvents200JSONResponseBodyEvents50OpAddSubgroups GetEvents200JSONResponseBodyEvents50Op = "add_subgroups"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents50Op enum.
 func (e GetEvents200JSONResponseBodyEvents50Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents50OpRemoveSubgroups:
+	case GetEvents200JSONResponseBodyEvents50OpAddSubgroups:
 		return true
 	default:
 		return false
@@ -1830,13 +1815,13 @@ func (e GetEvents200JSONResponseBodyEvents50Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents51Op.
 const (
-	GetEvents200JSONResponseBodyEvents51OpRemove GetEvents200JSONResponseBodyEvents51Op = "remove"
+	GetEvents200JSONResponseBodyEvents51OpRemoveSubgroups GetEvents200JSONResponseBodyEvents51Op = "remove_subgroups"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents51Op enum.
 func (e GetEvents200JSONResponseBodyEvents51Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents51OpRemove:
+	case GetEvents200JSONResponseBodyEvents51OpRemoveSubgroups:
 		return true
 	default:
 		return false
@@ -1858,15 +1843,30 @@ func (e GetEvents200JSONResponseBodyEvents51Type) Valid() bool {
 	}
 }
 
+// Defines values for GetEvents200JSONResponseBodyEvents52Op.
+const (
+	GetEvents200JSONResponseBodyEvents52OpRemove GetEvents200JSONResponseBodyEvents52Op = "remove"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents52Op enum.
+func (e GetEvents200JSONResponseBodyEvents52Op) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents52OpRemove:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for GetEvents200JSONResponseBodyEvents52Type.
 const (
-	GetEvents200JSONResponseBodyEvents52TypeRealmLinkifiers GetEvents200JSONResponseBodyEvents52Type = "realm_linkifiers"
+	GetEvents200JSONResponseBodyEvents52TypeUserGroup GetEvents200JSONResponseBodyEvents52Type = "user_group"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents52Type enum.
 func (e GetEvents200JSONResponseBodyEvents52Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents52TypeRealmLinkifiers:
+	case GetEvents200JSONResponseBodyEvents52TypeUserGroup:
 		return true
 	default:
 		return false
@@ -1875,13 +1875,13 @@ func (e GetEvents200JSONResponseBodyEvents52Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents53Type.
 const (
-	GetEvents200JSONResponseBodyEvents53TypeRealmFilters GetEvents200JSONResponseBodyEvents53Type = "realm_filters"
+	GetEvents200JSONResponseBodyEvents53TypeRealmLinkifiers GetEvents200JSONResponseBodyEvents53Type = "realm_linkifiers"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents53Type enum.
 func (e GetEvents200JSONResponseBodyEvents53Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents53TypeRealmFilters:
+	case GetEvents200JSONResponseBodyEvents53TypeRealmLinkifiers:
 		return true
 	default:
 		return false
@@ -1890,28 +1890,13 @@ func (e GetEvents200JSONResponseBodyEvents53Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents54Type.
 const (
-	GetEvents200JSONResponseBodyEvents54TypeRealmPlaygrounds GetEvents200JSONResponseBodyEvents54Type = "realm_playgrounds"
+	GetEvents200JSONResponseBodyEvents54TypeRealmFilters GetEvents200JSONResponseBodyEvents54Type = "realm_filters"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents54Type enum.
 func (e GetEvents200JSONResponseBodyEvents54Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents54TypeRealmPlaygrounds:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents55Op.
-const (
-	GetEvents200JSONResponseBodyEvents55OpAdd GetEvents200JSONResponseBodyEvents55Op = "add"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents55Op enum.
-func (e GetEvents200JSONResponseBodyEvents55Op) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents55OpAdd:
+	case GetEvents200JSONResponseBodyEvents54TypeRealmFilters:
 		return true
 	default:
 		return false
@@ -1920,13 +1905,13 @@ func (e GetEvents200JSONResponseBodyEvents55Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents55Type.
 const (
-	GetEvents200JSONResponseBodyEvents55TypeRealmEmoji GetEvents200JSONResponseBodyEvents55Type = "realm_emoji"
+	GetEvents200JSONResponseBodyEvents55TypeRealmPlaygrounds GetEvents200JSONResponseBodyEvents55Type = "realm_playgrounds"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents55Type enum.
 func (e GetEvents200JSONResponseBodyEvents55Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents55TypeRealmEmoji:
+	case GetEvents200JSONResponseBodyEvents55TypeRealmPlaygrounds:
 		return true
 	default:
 		return false
@@ -1935,13 +1920,13 @@ func (e GetEvents200JSONResponseBodyEvents55Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents56Op.
 const (
-	GetEvents200JSONResponseBodyEvents56OpUpdateOne GetEvents200JSONResponseBodyEvents56Op = "update_one"
+	GetEvents200JSONResponseBodyEvents56OpAdd GetEvents200JSONResponseBodyEvents56Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents56Op enum.
 func (e GetEvents200JSONResponseBodyEvents56Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents56OpUpdateOne:
+	case GetEvents200JSONResponseBodyEvents56OpAdd:
 		return true
 	default:
 		return false
@@ -1965,13 +1950,13 @@ func (e GetEvents200JSONResponseBodyEvents56Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents57Op.
 const (
-	GetEvents200JSONResponseBodyEvents57OpUpdate GetEvents200JSONResponseBodyEvents57Op = "update"
+	GetEvents200JSONResponseBodyEvents57OpUpdateOne GetEvents200JSONResponseBodyEvents57Op = "update_one"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents57Op enum.
 func (e GetEvents200JSONResponseBodyEvents57Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents57OpUpdate:
+	case GetEvents200JSONResponseBodyEvents57OpUpdateOne:
 		return true
 	default:
 		return false
@@ -1995,13 +1980,13 @@ func (e GetEvents200JSONResponseBodyEvents57Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents58Op.
 const (
-	GetEvents200JSONResponseBodyEvents58OpAdd GetEvents200JSONResponseBodyEvents58Op = "add"
+	GetEvents200JSONResponseBodyEvents58OpUpdate GetEvents200JSONResponseBodyEvents58Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents58Op enum.
 func (e GetEvents200JSONResponseBodyEvents58Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents58OpAdd:
+	case GetEvents200JSONResponseBodyEvents58OpUpdate:
 		return true
 	default:
 		return false
@@ -2010,13 +1995,13 @@ func (e GetEvents200JSONResponseBodyEvents58Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents58Type.
 const (
-	GetEvents200JSONResponseBodyEvents58TypeRealmDomains GetEvents200JSONResponseBodyEvents58Type = "realm_domains"
+	GetEvents200JSONResponseBodyEvents58TypeRealmEmoji GetEvents200JSONResponseBodyEvents58Type = "realm_emoji"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents58Type enum.
 func (e GetEvents200JSONResponseBodyEvents58Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents58TypeRealmDomains:
+	case GetEvents200JSONResponseBodyEvents58TypeRealmEmoji:
 		return true
 	default:
 		return false
@@ -2025,13 +2010,13 @@ func (e GetEvents200JSONResponseBodyEvents58Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents59Op.
 const (
-	GetEvents200JSONResponseBodyEvents59OpChange GetEvents200JSONResponseBodyEvents59Op = "change"
+	GetEvents200JSONResponseBodyEvents59OpAdd GetEvents200JSONResponseBodyEvents59Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents59Op enum.
 func (e GetEvents200JSONResponseBodyEvents59Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents59OpChange:
+	case GetEvents200JSONResponseBodyEvents59OpAdd:
 		return true
 	default:
 		return false
@@ -2055,13 +2040,13 @@ func (e GetEvents200JSONResponseBodyEvents59Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents60Op.
 const (
-	GetEvents200JSONResponseBodyEvents60OpRemove GetEvents200JSONResponseBodyEvents60Op = "remove"
+	GetEvents200JSONResponseBodyEvents60OpChange GetEvents200JSONResponseBodyEvents60Op = "change"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents60Op enum.
 func (e GetEvents200JSONResponseBodyEvents60Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents60OpRemove:
+	case GetEvents200JSONResponseBodyEvents60OpChange:
 		return true
 	default:
 		return false
@@ -2083,15 +2068,30 @@ func (e GetEvents200JSONResponseBodyEvents60Type) Valid() bool {
 	}
 }
 
+// Defines values for GetEvents200JSONResponseBodyEvents61Op.
+const (
+	GetEvents200JSONResponseBodyEvents61OpRemove GetEvents200JSONResponseBodyEvents61Op = "remove"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents61Op enum.
+func (e GetEvents200JSONResponseBodyEvents61Op) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents61OpRemove:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for GetEvents200JSONResponseBodyEvents61Type.
 const (
-	GetEvents200JSONResponseBodyEvents61TypeRealmExport GetEvents200JSONResponseBodyEvents61Type = "realm_export"
+	GetEvents200JSONResponseBodyEvents61TypeRealmDomains GetEvents200JSONResponseBodyEvents61Type = "realm_domains"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents61Type enum.
 func (e GetEvents200JSONResponseBodyEvents61Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents61TypeRealmExport:
+	case GetEvents200JSONResponseBodyEvents61TypeRealmDomains:
 		return true
 	default:
 		return false
@@ -2100,28 +2100,13 @@ func (e GetEvents200JSONResponseBodyEvents61Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents62Type.
 const (
-	GetEvents200JSONResponseBodyEvents62TypeRealmExportConsent GetEvents200JSONResponseBodyEvents62Type = "realm_export_consent"
+	GetEvents200JSONResponseBodyEvents62TypeRealmExport GetEvents200JSONResponseBodyEvents62Type = "realm_export"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents62Type enum.
 func (e GetEvents200JSONResponseBodyEvents62Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents62TypeRealmExportConsent:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents63Op.
-const (
-	GetEvents200JSONResponseBodyEvents63OpAdd GetEvents200JSONResponseBodyEvents63Op = "add"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents63Op enum.
-func (e GetEvents200JSONResponseBodyEvents63Op) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents63OpAdd:
+	case GetEvents200JSONResponseBodyEvents62TypeRealmExport:
 		return true
 	default:
 		return false
@@ -2130,13 +2115,13 @@ func (e GetEvents200JSONResponseBodyEvents63Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents63Type.
 const (
-	GetEvents200JSONResponseBodyEvents63TypeRealmBot GetEvents200JSONResponseBodyEvents63Type = "realm_bot"
+	GetEvents200JSONResponseBodyEvents63TypeRealmExportConsent GetEvents200JSONResponseBodyEvents63Type = "realm_export_consent"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents63Type enum.
 func (e GetEvents200JSONResponseBodyEvents63Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents63TypeRealmBot:
+	case GetEvents200JSONResponseBodyEvents63TypeRealmExportConsent:
 		return true
 	default:
 		return false
@@ -2145,13 +2130,13 @@ func (e GetEvents200JSONResponseBodyEvents63Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents64Op.
 const (
-	GetEvents200JSONResponseBodyEvents64OpUpdate GetEvents200JSONResponseBodyEvents64Op = "update"
+	GetEvents200JSONResponseBodyEvents64OpAdd GetEvents200JSONResponseBodyEvents64Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents64Op enum.
 func (e GetEvents200JSONResponseBodyEvents64Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents64OpUpdate:
+	case GetEvents200JSONResponseBodyEvents64OpAdd:
 		return true
 	default:
 		return false
@@ -2175,13 +2160,13 @@ func (e GetEvents200JSONResponseBodyEvents64Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents65Op.
 const (
-	GetEvents200JSONResponseBodyEvents65OpRemove GetEvents200JSONResponseBodyEvents65Op = "remove"
+	GetEvents200JSONResponseBodyEvents65OpUpdate GetEvents200JSONResponseBodyEvents65Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents65Op enum.
 func (e GetEvents200JSONResponseBodyEvents65Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents65OpRemove:
+	case GetEvents200JSONResponseBodyEvents65OpUpdate:
 		return true
 	default:
 		return false
@@ -2205,13 +2190,13 @@ func (e GetEvents200JSONResponseBodyEvents65Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents66Op.
 const (
-	GetEvents200JSONResponseBodyEvents66OpDelete GetEvents200JSONResponseBodyEvents66Op = "delete"
+	GetEvents200JSONResponseBodyEvents66OpRemove GetEvents200JSONResponseBodyEvents66Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents66Op enum.
 func (e GetEvents200JSONResponseBodyEvents66Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents66OpDelete:
+	case GetEvents200JSONResponseBodyEvents66OpRemove:
 		return true
 	default:
 		return false
@@ -2235,13 +2220,13 @@ func (e GetEvents200JSONResponseBodyEvents66Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents67Op.
 const (
-	GetEvents200JSONResponseBodyEvents67OpUpdate GetEvents200JSONResponseBodyEvents67Op = "update"
+	GetEvents200JSONResponseBodyEvents67OpDelete GetEvents200JSONResponseBodyEvents67Op = "delete"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents67Op enum.
 func (e GetEvents200JSONResponseBodyEvents67Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents67OpUpdate:
+	case GetEvents200JSONResponseBodyEvents67OpDelete:
 		return true
 	default:
 		return false
@@ -2250,13 +2235,13 @@ func (e GetEvents200JSONResponseBodyEvents67Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents67Type.
 const (
-	GetEvents200JSONResponseBodyEvents67TypeRealm GetEvents200JSONResponseBodyEvents67Type = "realm"
+	GetEvents200JSONResponseBodyEvents67TypeRealmBot GetEvents200JSONResponseBodyEvents67Type = "realm_bot"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents67Type enum.
 func (e GetEvents200JSONResponseBodyEvents67Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents67TypeRealm:
+	case GetEvents200JSONResponseBodyEvents67TypeRealmBot:
 		return true
 	default:
 		return false
@@ -2265,13 +2250,13 @@ func (e GetEvents200JSONResponseBodyEvents67Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents68Op.
 const (
-	GetEvents200JSONResponseBodyEvents68OpDeactivated GetEvents200JSONResponseBodyEvents68Op = "deactivated"
+	GetEvents200JSONResponseBodyEvents68OpUpdate GetEvents200JSONResponseBodyEvents68Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents68Op enum.
 func (e GetEvents200JSONResponseBodyEvents68Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents68OpDeactivated:
+	case GetEvents200JSONResponseBodyEvents68OpUpdate:
 		return true
 	default:
 		return false
@@ -2293,15 +2278,30 @@ func (e GetEvents200JSONResponseBodyEvents68Type) Valid() bool {
 	}
 }
 
+// Defines values for GetEvents200JSONResponseBodyEvents69Op.
+const (
+	GetEvents200JSONResponseBodyEvents69OpDeactivated GetEvents200JSONResponseBodyEvents69Op = "deactivated"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents69Op enum.
+func (e GetEvents200JSONResponseBodyEvents69Op) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents69OpDeactivated:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for GetEvents200JSONResponseBodyEvents69Type.
 const (
-	GetEvents200JSONResponseBodyEvents69TypeRestart GetEvents200JSONResponseBodyEvents69Type = "restart"
+	GetEvents200JSONResponseBodyEvents69TypeRealm GetEvents200JSONResponseBodyEvents69Type = "realm"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents69Type enum.
 func (e GetEvents200JSONResponseBodyEvents69Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents69TypeRestart:
+	case GetEvents200JSONResponseBodyEvents69TypeRealm:
 		return true
 	default:
 		return false
@@ -2310,67 +2310,13 @@ func (e GetEvents200JSONResponseBodyEvents69Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents70Type.
 const (
-	GetEvents200JSONResponseBodyEvents70TypeWebReloadClient GetEvents200JSONResponseBodyEvents70Type = "web_reload_client"
+	GetEvents200JSONResponseBodyEvents70TypeRestart GetEvents200JSONResponseBodyEvents70Type = "restart"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents70Type enum.
 func (e GetEvents200JSONResponseBodyEvents70Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents70TypeWebReloadClient:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize.
-const (
-	GetEvents200JSONResponseBodyEvents71DataMediaPreviewSizeN100 GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize = 100
-	GetEvents200JSONResponseBodyEvents71DataMediaPreviewSizeN150 GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize = 150
-	GetEvents200JSONResponseBodyEvents71DataMediaPreviewSizeN200 GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize = 200
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize enum.
-func (e GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents71DataMediaPreviewSizeN100:
-		return true
-	case GetEvents200JSONResponseBodyEvents71DataMediaPreviewSizeN150:
-		return true
-	case GetEvents200JSONResponseBodyEvents71DataMediaPreviewSizeN200:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents71DataTopicsPolicy.
-const (
-	GetEvents200JSONResponseBodyEvents71DataTopicsPolicyAllowEmptyTopic   GetEvents200JSONResponseBodyEvents71DataTopicsPolicy = "allow_empty_topic"
-	GetEvents200JSONResponseBodyEvents71DataTopicsPolicyDisableEmptyTopic GetEvents200JSONResponseBodyEvents71DataTopicsPolicy = "disable_empty_topic"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents71DataTopicsPolicy enum.
-func (e GetEvents200JSONResponseBodyEvents71DataTopicsPolicy) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents71DataTopicsPolicyAllowEmptyTopic:
-		return true
-	case GetEvents200JSONResponseBodyEvents71DataTopicsPolicyDisableEmptyTopic:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for GetEvents200JSONResponseBodyEvents71Op.
-const (
-	GetEvents200JSONResponseBodyEvents71OpUpdateDict GetEvents200JSONResponseBodyEvents71Op = "update_dict"
-)
-
-// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents71Op enum.
-func (e GetEvents200JSONResponseBodyEvents71Op) Valid() bool {
-	switch e {
-	case GetEvents200JSONResponseBodyEvents71OpUpdateDict:
+	case GetEvents200JSONResponseBodyEvents70TypeRestart:
 		return true
 	default:
 		return false
@@ -2379,13 +2325,52 @@ func (e GetEvents200JSONResponseBodyEvents71Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents71Type.
 const (
-	GetEvents200JSONResponseBodyEvents71TypeRealm GetEvents200JSONResponseBodyEvents71Type = "realm"
+	GetEvents200JSONResponseBodyEvents71TypeWebReloadClient GetEvents200JSONResponseBodyEvents71Type = "web_reload_client"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents71Type enum.
 func (e GetEvents200JSONResponseBodyEvents71Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents71TypeRealm:
+	case GetEvents200JSONResponseBodyEvents71TypeWebReloadClient:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize.
+const (
+	GetEvents200JSONResponseBodyEvents72DataMediaPreviewSizeN100 GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize = 100
+	GetEvents200JSONResponseBodyEvents72DataMediaPreviewSizeN150 GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize = 150
+	GetEvents200JSONResponseBodyEvents72DataMediaPreviewSizeN200 GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize = 200
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize enum.
+func (e GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents72DataMediaPreviewSizeN100:
+		return true
+	case GetEvents200JSONResponseBodyEvents72DataMediaPreviewSizeN150:
+		return true
+	case GetEvents200JSONResponseBodyEvents72DataMediaPreviewSizeN200:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents72DataTopicsPolicy.
+const (
+	GetEvents200JSONResponseBodyEvents72DataTopicsPolicyAllowEmptyTopic   GetEvents200JSONResponseBodyEvents72DataTopicsPolicy = "allow_empty_topic"
+	GetEvents200JSONResponseBodyEvents72DataTopicsPolicyDisableEmptyTopic GetEvents200JSONResponseBodyEvents72DataTopicsPolicy = "disable_empty_topic"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents72DataTopicsPolicy enum.
+func (e GetEvents200JSONResponseBodyEvents72DataTopicsPolicy) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents72DataTopicsPolicyAllowEmptyTopic:
+		return true
+	case GetEvents200JSONResponseBodyEvents72DataTopicsPolicyDisableEmptyTopic:
 		return true
 	default:
 		return false
@@ -2394,13 +2379,13 @@ func (e GetEvents200JSONResponseBodyEvents71Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents72Op.
 const (
-	GetEvents200JSONResponseBodyEvents72OpUpdate GetEvents200JSONResponseBodyEvents72Op = "update"
+	GetEvents200JSONResponseBodyEvents72OpUpdateDict GetEvents200JSONResponseBodyEvents72Op = "update_dict"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents72Op enum.
 func (e GetEvents200JSONResponseBodyEvents72Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents72OpUpdate:
+	case GetEvents200JSONResponseBodyEvents72OpUpdateDict:
 		return true
 	default:
 		return false
@@ -2409,13 +2394,13 @@ func (e GetEvents200JSONResponseBodyEvents72Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents72Type.
 const (
-	GetEvents200JSONResponseBodyEvents72TypeRealmUserSettingsDefaults GetEvents200JSONResponseBodyEvents72Type = "realm_user_settings_defaults"
+	GetEvents200JSONResponseBodyEvents72TypeRealm GetEvents200JSONResponseBodyEvents72Type = "realm"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents72Type enum.
 func (e GetEvents200JSONResponseBodyEvents72Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents72TypeRealmUserSettingsDefaults:
+	case GetEvents200JSONResponseBodyEvents72TypeRealm:
 		return true
 	default:
 		return false
@@ -2424,13 +2409,13 @@ func (e GetEvents200JSONResponseBodyEvents72Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents73Op.
 const (
-	GetEvents200JSONResponseBodyEvents73OpAdd GetEvents200JSONResponseBodyEvents73Op = "add"
+	GetEvents200JSONResponseBodyEvents73OpUpdate GetEvents200JSONResponseBodyEvents73Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents73Op enum.
 func (e GetEvents200JSONResponseBodyEvents73Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents73OpAdd:
+	case GetEvents200JSONResponseBodyEvents73OpUpdate:
 		return true
 	default:
 		return false
@@ -2439,13 +2424,13 @@ func (e GetEvents200JSONResponseBodyEvents73Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents73Type.
 const (
-	GetEvents200JSONResponseBodyEvents73TypeDrafts GetEvents200JSONResponseBodyEvents73Type = "drafts"
+	GetEvents200JSONResponseBodyEvents73TypeRealmUserSettingsDefaults GetEvents200JSONResponseBodyEvents73Type = "realm_user_settings_defaults"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents73Type enum.
 func (e GetEvents200JSONResponseBodyEvents73Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents73TypeDrafts:
+	case GetEvents200JSONResponseBodyEvents73TypeRealmUserSettingsDefaults:
 		return true
 	default:
 		return false
@@ -2454,13 +2439,13 @@ func (e GetEvents200JSONResponseBodyEvents73Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents74Op.
 const (
-	GetEvents200JSONResponseBodyEvents74OpUpdate GetEvents200JSONResponseBodyEvents74Op = "update"
+	GetEvents200JSONResponseBodyEvents74OpAdd GetEvents200JSONResponseBodyEvents74Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents74Op enum.
 func (e GetEvents200JSONResponseBodyEvents74Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents74OpUpdate:
+	case GetEvents200JSONResponseBodyEvents74OpAdd:
 		return true
 	default:
 		return false
@@ -2484,13 +2469,13 @@ func (e GetEvents200JSONResponseBodyEvents74Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents75Op.
 const (
-	GetEvents200JSONResponseBodyEvents75OpRemove GetEvents200JSONResponseBodyEvents75Op = "remove"
+	GetEvents200JSONResponseBodyEvents75OpUpdate GetEvents200JSONResponseBodyEvents75Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents75Op enum.
 func (e GetEvents200JSONResponseBodyEvents75Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents75OpRemove:
+	case GetEvents200JSONResponseBodyEvents75OpUpdate:
 		return true
 	default:
 		return false
@@ -2514,13 +2499,13 @@ func (e GetEvents200JSONResponseBodyEvents75Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents76Op.
 const (
-	GetEvents200JSONResponseBodyEvents76OpAdd GetEvents200JSONResponseBodyEvents76Op = "add"
+	GetEvents200JSONResponseBodyEvents76OpRemove GetEvents200JSONResponseBodyEvents76Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents76Op enum.
 func (e GetEvents200JSONResponseBodyEvents76Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents76OpAdd:
+	case GetEvents200JSONResponseBodyEvents76OpRemove:
 		return true
 	default:
 		return false
@@ -2529,13 +2514,13 @@ func (e GetEvents200JSONResponseBodyEvents76Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents76Type.
 const (
-	GetEvents200JSONResponseBodyEvents76TypeNavigationView GetEvents200JSONResponseBodyEvents76Type = "navigation_view"
+	GetEvents200JSONResponseBodyEvents76TypeDrafts GetEvents200JSONResponseBodyEvents76Type = "drafts"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents76Type enum.
 func (e GetEvents200JSONResponseBodyEvents76Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents76TypeNavigationView:
+	case GetEvents200JSONResponseBodyEvents76TypeDrafts:
 		return true
 	default:
 		return false
@@ -2544,13 +2529,13 @@ func (e GetEvents200JSONResponseBodyEvents76Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents77Op.
 const (
-	GetEvents200JSONResponseBodyEvents77OpUpdate GetEvents200JSONResponseBodyEvents77Op = "update"
+	GetEvents200JSONResponseBodyEvents77OpAdd GetEvents200JSONResponseBodyEvents77Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents77Op enum.
 func (e GetEvents200JSONResponseBodyEvents77Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents77OpUpdate:
+	case GetEvents200JSONResponseBodyEvents77OpAdd:
 		return true
 	default:
 		return false
@@ -2574,13 +2559,13 @@ func (e GetEvents200JSONResponseBodyEvents77Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents78Op.
 const (
-	GetEvents200JSONResponseBodyEvents78OpRemove GetEvents200JSONResponseBodyEvents78Op = "remove"
+	GetEvents200JSONResponseBodyEvents78OpUpdate GetEvents200JSONResponseBodyEvents78Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents78Op enum.
 func (e GetEvents200JSONResponseBodyEvents78Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents78OpRemove:
+	case GetEvents200JSONResponseBodyEvents78OpUpdate:
 		return true
 	default:
 		return false
@@ -2604,13 +2589,13 @@ func (e GetEvents200JSONResponseBodyEvents78Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents79Op.
 const (
-	GetEvents200JSONResponseBodyEvents79OpAdd GetEvents200JSONResponseBodyEvents79Op = "add"
+	GetEvents200JSONResponseBodyEvents79OpRemove GetEvents200JSONResponseBodyEvents79Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents79Op enum.
 func (e GetEvents200JSONResponseBodyEvents79Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents79OpAdd:
+	case GetEvents200JSONResponseBodyEvents79OpRemove:
 		return true
 	default:
 		return false
@@ -2619,13 +2604,13 @@ func (e GetEvents200JSONResponseBodyEvents79Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents79Type.
 const (
-	GetEvents200JSONResponseBodyEvents79TypeSavedSnippets GetEvents200JSONResponseBodyEvents79Type = "saved_snippets"
+	GetEvents200JSONResponseBodyEvents79TypeNavigationView GetEvents200JSONResponseBodyEvents79Type = "navigation_view"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents79Type enum.
 func (e GetEvents200JSONResponseBodyEvents79Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents79TypeSavedSnippets:
+	case GetEvents200JSONResponseBodyEvents79TypeNavigationView:
 		return true
 	default:
 		return false
@@ -2634,13 +2619,13 @@ func (e GetEvents200JSONResponseBodyEvents79Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents80Op.
 const (
-	GetEvents200JSONResponseBodyEvents80OpUpdate GetEvents200JSONResponseBodyEvents80Op = "update"
+	GetEvents200JSONResponseBodyEvents80OpAdd GetEvents200JSONResponseBodyEvents80Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents80Op enum.
 func (e GetEvents200JSONResponseBodyEvents80Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents80OpUpdate:
+	case GetEvents200JSONResponseBodyEvents80OpAdd:
 		return true
 	default:
 		return false
@@ -2664,13 +2649,13 @@ func (e GetEvents200JSONResponseBodyEvents80Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents81Op.
 const (
-	GetEvents200JSONResponseBodyEvents81OpRemove GetEvents200JSONResponseBodyEvents81Op = "remove"
+	GetEvents200JSONResponseBodyEvents81OpUpdate GetEvents200JSONResponseBodyEvents81Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents81Op enum.
 func (e GetEvents200JSONResponseBodyEvents81Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents81OpRemove:
+	case GetEvents200JSONResponseBodyEvents81OpUpdate:
 		return true
 	default:
 		return false
@@ -2694,13 +2679,13 @@ func (e GetEvents200JSONResponseBodyEvents81Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents82Op.
 const (
-	GetEvents200JSONResponseBodyEvents82OpAdd GetEvents200JSONResponseBodyEvents82Op = "add"
+	GetEvents200JSONResponseBodyEvents82OpRemove GetEvents200JSONResponseBodyEvents82Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents82Op enum.
 func (e GetEvents200JSONResponseBodyEvents82Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents82OpAdd:
+	case GetEvents200JSONResponseBodyEvents82OpRemove:
 		return true
 	default:
 		return false
@@ -2709,13 +2694,13 @@ func (e GetEvents200JSONResponseBodyEvents82Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents82Type.
 const (
-	GetEvents200JSONResponseBodyEvents82TypeReminders GetEvents200JSONResponseBodyEvents82Type = "reminders"
+	GetEvents200JSONResponseBodyEvents82TypeSavedSnippets GetEvents200JSONResponseBodyEvents82Type = "saved_snippets"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents82Type enum.
 func (e GetEvents200JSONResponseBodyEvents82Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents82TypeReminders:
+	case GetEvents200JSONResponseBodyEvents82TypeSavedSnippets:
 		return true
 	default:
 		return false
@@ -2724,13 +2709,13 @@ func (e GetEvents200JSONResponseBodyEvents82Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents83Op.
 const (
-	GetEvents200JSONResponseBodyEvents83OpRemove GetEvents200JSONResponseBodyEvents83Op = "remove"
+	GetEvents200JSONResponseBodyEvents83OpAdd GetEvents200JSONResponseBodyEvents83Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents83Op enum.
 func (e GetEvents200JSONResponseBodyEvents83Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents83OpRemove:
+	case GetEvents200JSONResponseBodyEvents83OpAdd:
 		return true
 	default:
 		return false
@@ -2754,13 +2739,13 @@ func (e GetEvents200JSONResponseBodyEvents83Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents84Op.
 const (
-	GetEvents200JSONResponseBodyEvents84OpAdd GetEvents200JSONResponseBodyEvents84Op = "add"
+	GetEvents200JSONResponseBodyEvents84OpRemove GetEvents200JSONResponseBodyEvents84Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents84Op enum.
 func (e GetEvents200JSONResponseBodyEvents84Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents84OpAdd:
+	case GetEvents200JSONResponseBodyEvents84OpRemove:
 		return true
 	default:
 		return false
@@ -2769,13 +2754,13 @@ func (e GetEvents200JSONResponseBodyEvents84Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents84Type.
 const (
-	GetEvents200JSONResponseBodyEvents84TypeScheduledMessages GetEvents200JSONResponseBodyEvents84Type = "scheduled_messages"
+	GetEvents200JSONResponseBodyEvents84TypeReminders GetEvents200JSONResponseBodyEvents84Type = "reminders"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents84Type enum.
 func (e GetEvents200JSONResponseBodyEvents84Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents84TypeScheduledMessages:
+	case GetEvents200JSONResponseBodyEvents84TypeReminders:
 		return true
 	default:
 		return false
@@ -2784,13 +2769,13 @@ func (e GetEvents200JSONResponseBodyEvents84Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents85Op.
 const (
-	GetEvents200JSONResponseBodyEvents85OpUpdate GetEvents200JSONResponseBodyEvents85Op = "update"
+	GetEvents200JSONResponseBodyEvents85OpAdd GetEvents200JSONResponseBodyEvents85Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents85Op enum.
 func (e GetEvents200JSONResponseBodyEvents85Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents85OpUpdate:
+	case GetEvents200JSONResponseBodyEvents85OpAdd:
 		return true
 	default:
 		return false
@@ -2814,13 +2799,13 @@ func (e GetEvents200JSONResponseBodyEvents85Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents86Op.
 const (
-	GetEvents200JSONResponseBodyEvents86OpRemove GetEvents200JSONResponseBodyEvents86Op = "remove"
+	GetEvents200JSONResponseBodyEvents86OpUpdate GetEvents200JSONResponseBodyEvents86Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents86Op enum.
 func (e GetEvents200JSONResponseBodyEvents86Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents86OpRemove:
+	case GetEvents200JSONResponseBodyEvents86OpUpdate:
 		return true
 	default:
 		return false
@@ -2844,13 +2829,13 @@ func (e GetEvents200JSONResponseBodyEvents86Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents87Op.
 const (
-	GetEvents200JSONResponseBodyEvents87OpAdd GetEvents200JSONResponseBodyEvents87Op = "add"
+	GetEvents200JSONResponseBodyEvents87OpRemove GetEvents200JSONResponseBodyEvents87Op = "remove"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents87Op enum.
 func (e GetEvents200JSONResponseBodyEvents87Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents87OpAdd:
+	case GetEvents200JSONResponseBodyEvents87OpRemove:
 		return true
 	default:
 		return false
@@ -2859,13 +2844,13 @@ func (e GetEvents200JSONResponseBodyEvents87Op) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents87Type.
 const (
-	GetEvents200JSONResponseBodyEvents87TypeChannelFolder GetEvents200JSONResponseBodyEvents87Type = "channel_folder"
+	GetEvents200JSONResponseBodyEvents87TypeScheduledMessages GetEvents200JSONResponseBodyEvents87Type = "scheduled_messages"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents87Type enum.
 func (e GetEvents200JSONResponseBodyEvents87Type) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents87TypeChannelFolder:
+	case GetEvents200JSONResponseBodyEvents87TypeScheduledMessages:
 		return true
 	default:
 		return false
@@ -2874,13 +2859,13 @@ func (e GetEvents200JSONResponseBodyEvents87Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents88Op.
 const (
-	GetEvents200JSONResponseBodyEvents88OpUpdate GetEvents200JSONResponseBodyEvents88Op = "update"
+	GetEvents200JSONResponseBodyEvents88OpAdd GetEvents200JSONResponseBodyEvents88Op = "add"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents88Op enum.
 func (e GetEvents200JSONResponseBodyEvents88Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents88OpUpdate:
+	case GetEvents200JSONResponseBodyEvents88OpAdd:
 		return true
 	default:
 		return false
@@ -2904,13 +2889,13 @@ func (e GetEvents200JSONResponseBodyEvents88Type) Valid() bool {
 
 // Defines values for GetEvents200JSONResponseBodyEvents89Op.
 const (
-	GetEvents200JSONResponseBodyEvents89OpReorder GetEvents200JSONResponseBodyEvents89Op = "reorder"
+	GetEvents200JSONResponseBodyEvents89OpUpdate GetEvents200JSONResponseBodyEvents89Op = "update"
 )
 
 // Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents89Op enum.
 func (e GetEvents200JSONResponseBodyEvents89Op) Valid() bool {
 	switch e {
-	case GetEvents200JSONResponseBodyEvents89OpReorder:
+	case GetEvents200JSONResponseBodyEvents89OpUpdate:
 		return true
 	default:
 		return false
@@ -2926,6 +2911,36 @@ const (
 func (e GetEvents200JSONResponseBodyEvents89Type) Valid() bool {
 	switch e {
 	case GetEvents200JSONResponseBodyEvents89TypeChannelFolder:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents90Op.
+const (
+	GetEvents200JSONResponseBodyEvents90OpReorder GetEvents200JSONResponseBodyEvents90Op = "reorder"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents90Op enum.
+func (e GetEvents200JSONResponseBodyEvents90Op) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents90OpReorder:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetEvents200JSONResponseBodyEvents90Type.
+const (
+	GetEvents200JSONResponseBodyEvents90TypeChannelFolder GetEvents200JSONResponseBodyEvents90Type = "channel_folder"
+)
+
+// Valid indicates whether the value is a known member of the GetEvents200JSONResponseBodyEvents90Type enum.
+func (e GetEvents200JSONResponseBodyEvents90Type) Valid() bool {
+	switch e {
+	case GetEvents200JSONResponseBodyEvents90TypeChannelFolder:
 		return true
 	default:
 		return false
@@ -8519,6 +8534,9 @@ type GetEvents200JSONResponseBodyEvents11 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents11Type `json:"type,omitempty"`
+
+	// Value A boolean specifying whether the user has a Google Meet access token.
+	Value *bool `json:"value,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents11Type defines parameters for GetEvents.
@@ -8527,14 +8545,9 @@ type GetEvents200JSONResponseBodyEvents11Type string
 // GetEvents200JSONResponseBodyEvents12 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents12 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id     *EventIdSchema                            `json:"id,omitempty"`
-	Op     *GetEvents200JSONResponseBodyEvents12Op   `json:"op,omitempty"`
-	Person *User                                     `json:"person,omitempty"`
-	Type   *GetEvents200JSONResponseBodyEvents12Type `json:"type,omitempty"`
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents12Type `json:"type,omitempty"`
 }
-
-// GetEvents200JSONResponseBodyEvents12Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents12Op string
 
 // GetEvents200JSONResponseBodyEvents12Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents12Type string
@@ -8542,8 +8555,23 @@ type GetEvents200JSONResponseBodyEvents12Type string
 // GetEvents200JSONResponseBodyEvents13 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents13 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id     *EventIdSchema                            `json:"id,omitempty"`
+	Op     *GetEvents200JSONResponseBodyEvents13Op   `json:"op,omitempty"`
+	Person *User                                     `json:"person,omitempty"`
+	Type   *GetEvents200JSONResponseBodyEvents13Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents13Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents13Op string
+
+// GetEvents200JSONResponseBodyEvents13Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents13Type string
+
+// GetEvents200JSONResponseBodyEvents14 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents14 struct {
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents13Op `json:"op,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents14Op `json:"op,omitempty"`
 
 	// Person Object containing details of the deactivated user.
 	Person *struct {
@@ -8556,17 +8584,17 @@ type GetEvents200JSONResponseBodyEvents13 struct {
 		// UserId The ID of the deactivated user.
 		UserId *int `json:"user_id,omitempty"`
 	} `json:"person,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents13Type `json:"type,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents14Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents13Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents13Op string
+// GetEvents200JSONResponseBodyEvents14Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents14Op string
 
-// GetEvents200JSONResponseBodyEvents13Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents13Type string
+// GetEvents200JSONResponseBodyEvents14Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents14Type string
 
-// GetEvents200JSONResponseBodyEvents14 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents14 struct {
+// GetEvents200JSONResponseBodyEvents15 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents15 struct {
 	// Email Not present for clients that support the `simplified_presence_events`
 	// [client capability](/api/register-queue#parameter-client_capabilities).
 	//
@@ -8603,7 +8631,7 @@ type GetEvents200JSONResponseBodyEvents14 struct {
 
 		// Status The status of the user on this client. Will be either `idle`
 		// or `active`.
-		Status *GetEvents200JSONResponseBodyEvents14PresenceStatus `json:"status,omitempty"`
+		Status *GetEvents200JSONResponseBodyEvents15PresenceStatus `json:"status,omitempty"`
 
 		// Timestamp The UNIX timestamp of when this client sent the user's presence
 		// to the server with the precision of a second.
@@ -8626,7 +8654,7 @@ type GetEvents200JSONResponseBodyEvents14 struct {
 	// The timestamp of when the Zulip server received the user's
 	// presence as a UNIX timestamp.
 	ServerTimestamp *float64                                  `json:"server_timestamp,omitempty"`
-	Type            *GetEvents200JSONResponseBodyEvents14Type `json:"type,omitempty"`
+	Type            *GetEvents200JSONResponseBodyEvents15Type `json:"type,omitempty"`
 
 	// UserId Not present for clients that support the `simplified_presence_events`
 	// [client capability](/api/register-queue#parameter-client_capabilities).
@@ -8635,26 +8663,8 @@ type GetEvents200JSONResponseBodyEvents14 struct {
 	UserId *int `json:"user_id,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents14PresenceStatus defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents14PresenceStatus string
-
-// GetEvents200JSONResponseBodyEvents14Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents14Type string
-
-// GetEvents200JSONResponseBodyEvents15 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents15 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents15Op `json:"op,omitempty"`
-
-	// Streams Array of objects, each containing
-	// details about the newly added channel(s).
-	Streams *[]BasicChannel                           `json:"streams,omitempty"`
-	Type    *GetEvents200JSONResponseBodyEvents15Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents15Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents15Op string
+// GetEvents200JSONResponseBodyEvents15PresenceStatus defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents15PresenceStatus string
 
 // GetEvents200JSONResponseBodyEvents15Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents15Type string
@@ -8664,6 +8674,24 @@ type GetEvents200JSONResponseBodyEvents16 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema                          `json:"id,omitempty"`
 	Op *GetEvents200JSONResponseBodyEvents16Op `json:"op,omitempty"`
+
+	// Streams Array of objects, each containing
+	// details about the newly added channel(s).
+	Streams *[]BasicChannel                           `json:"streams,omitempty"`
+	Type    *GetEvents200JSONResponseBodyEvents16Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents16Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents16Op string
+
+// GetEvents200JSONResponseBodyEvents16Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents16Type string
+
+// GetEvents200JSONResponseBodyEvents17 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents17 struct {
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents17Op `json:"op,omitempty"`
 
 	// StreamIds Array containing the IDs of the channels that were deleted.
 	//
@@ -8682,17 +8710,17 @@ type GetEvents200JSONResponseBodyEvents16 struct {
 		// StreamId ID of the deleted channel.
 		StreamId *int `json:"stream_id,omitempty"`
 	} `json:"streams,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents16Type `json:"type,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents17Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents16Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents16Op string
+// GetEvents200JSONResponseBodyEvents17Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents17Op string
 
-// GetEvents200JSONResponseBodyEvents16Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents16Type string
+// GetEvents200JSONResponseBodyEvents17Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents17Type string
 
-// GetEvents200JSONResponseBodyEvents17 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17 struct {
+// GetEvents200JSONResponseBodyEvents18 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents18 struct {
 	// HistoryPublicToSubscribers Note: Only present if the changed property was `invite_only`.
 	//
 	// Whether the history of the channel is public to its subscribers.
@@ -8714,7 +8742,7 @@ type GetEvents200JSONResponseBodyEvents17 struct {
 
 	// Name The name of the channel whose details have changed.
 	Name *string                                 `json:"name,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents17Op `json:"op,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents18Op `json:"op,omitempty"`
 
 	// Property The property of the channel which has changed. See
 	// [GET /streams](/api/get-streams#response) response for details
@@ -8741,7 +8769,7 @@ type GetEvents200JSONResponseBodyEvents17 struct {
 
 	// StreamId The ID of the channel whose details have changed.
 	StreamId *int                                      `json:"stream_id,omitempty"`
-	Type     *GetEvents200JSONResponseBodyEvents17Type `json:"type,omitempty"`
+	Type     *GetEvents200JSONResponseBodyEvents18Type `json:"type,omitempty"`
 
 	// Value The new value of the changed property.
 	//
@@ -8754,53 +8782,7 @@ type GetEvents200JSONResponseBodyEvents17 struct {
 	// is set to a combination of users and groups.
 	//
 	// [setting-values]: /api/group-setting-values
-	Value *GetEvents200JSONResponseBody_Events_17_Value `json:"value,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents17Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17Op string
-
-// GetEvents200JSONResponseBodyEvents17Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17Type string
-
-// GetEvents200JSONResponseBodyEvents17Value0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17Value0 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents17Value1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17Value1 = int
-
-// GetEvents200JSONResponseBodyEvents17Value2 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17Value2 = bool
-
-// GetEvents200JSONResponseBodyEvents17Value3 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents17Value3 = string
-
-// GetEvents200JSONResponseBody_Events_17_Value defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_17_Value struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents18 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents18 struct {
-	EmojiCode interface{} `json:"emoji_code,omitempty"`
-	EmojiName interface{} `json:"emoji_name,omitempty"`
-
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema `json:"id,omitempty"`
-
-	// MessageId The ID of the message to which a reaction was
-	// added.
-	MessageId    *int                                      `json:"message_id,omitempty"`
-	Op           *GetEvents200JSONResponseBodyEvents18Op   `json:"op,omitempty"`
-	ReactionType interface{}                               `json:"reaction_type,omitempty"`
-	Type         *GetEvents200JSONResponseBodyEvents18Type `json:"type,omitempty"`
-	UserId       interface{}                               `json:"user_id,omitempty"`
+	Value *GetEvents200JSONResponseBody_Events_18_Value `json:"value,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents18Op defines parameters for GetEvents.
@@ -8808,6 +8790,29 @@ type GetEvents200JSONResponseBodyEvents18Op string
 
 // GetEvents200JSONResponseBodyEvents18Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents18Type string
+
+// GetEvents200JSONResponseBodyEvents18Value0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents18Value0 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents18Value1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents18Value1 = int
+
+// GetEvents200JSONResponseBodyEvents18Value2 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents18Value2 = bool
+
+// GetEvents200JSONResponseBodyEvents18Value3 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents18Value3 = string
+
+// GetEvents200JSONResponseBody_Events_18_Value defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_18_Value struct {
+	union json.RawMessage
+}
 
 // GetEvents200JSONResponseBodyEvents19 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents19 struct {
@@ -8817,8 +8822,8 @@ type GetEvents200JSONResponseBodyEvents19 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
-	// MessageId The ID of the message from which the reaction was
-	// removed.
+	// MessageId The ID of the message to which a reaction was
+	// added.
 	MessageId    *int                                      `json:"message_id,omitempty"`
 	Op           *GetEvents200JSONResponseBodyEvents19Op   `json:"op,omitempty"`
 	ReactionType interface{}                               `json:"reaction_type,omitempty"`
@@ -8834,17 +8839,19 @@ type GetEvents200JSONResponseBodyEvents19Type string
 
 // GetEvents200JSONResponseBodyEvents20 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents20 struct {
-	// Attachment Dictionary containing details of a file uploaded by a user.
-	Attachment *Attachment `json:"attachment,omitempty"`
+	EmojiCode interface{} `json:"emoji_code,omitempty"`
+	EmojiName interface{} `json:"emoji_name,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents20Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents20Type `json:"type,omitempty"`
+	Id *EventIdSchema `json:"id,omitempty"`
 
-	// UploadSpaceUsed The total size of all files uploaded by in the organization,
-	// in bytes.
-	UploadSpaceUsed *int `json:"upload_space_used,omitempty"`
+	// MessageId The ID of the message from which the reaction was
+	// removed.
+	MessageId    *int                                      `json:"message_id,omitempty"`
+	Op           *GetEvents200JSONResponseBodyEvents20Op   `json:"op,omitempty"`
+	ReactionType interface{}                               `json:"reaction_type,omitempty"`
+	Type         *GetEvents200JSONResponseBodyEvents20Type `json:"type,omitempty"`
+	UserId       interface{}                               `json:"user_id,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents20Op defines parameters for GetEvents.
@@ -8876,11 +8883,8 @@ type GetEvents200JSONResponseBodyEvents21Type string
 
 // GetEvents200JSONResponseBodyEvents22 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents22 struct {
-	// Attachment Dictionary containing the ID of the deleted attachment.
-	Attachment *struct {
-		// Id The ID of the deleted attachment.
-		Id *int `json:"id,omitempty"`
-	} `json:"attachment,omitempty"`
+	// Attachment Dictionary containing details of a file uploaded by a user.
+	Attachment *Attachment `json:"attachment,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
@@ -8900,13 +8904,20 @@ type GetEvents200JSONResponseBodyEvents22Type string
 
 // GetEvents200JSONResponseBodyEvents23 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents23 struct {
-	// DeviceId The ID of the new registered device.
-	DeviceId *int `json:"device_id,omitempty"`
+	// Attachment Dictionary containing the ID of the deleted attachment.
+	Attachment *struct {
+		// Id The ID of the deleted attachment.
+		Id *int `json:"id,omitempty"`
+	} `json:"attachment,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
 	Op   *GetEvents200JSONResponseBodyEvents23Op   `json:"op,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents23Type `json:"type,omitempty"`
+
+	// UploadSpaceUsed The total size of all files uploaded by in the organization,
+	// in bytes.
+	UploadSpaceUsed *int `json:"upload_space_used,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents23Op defines parameters for GetEvents.
@@ -8917,7 +8928,7 @@ type GetEvents200JSONResponseBodyEvents23Type string
 
 // GetEvents200JSONResponseBodyEvents24 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents24 struct {
-	// DeviceId The ID of the device which deregistered.
+	// DeviceId The ID of the new registered device.
 	DeviceId *int `json:"device_id,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
@@ -8934,12 +8945,29 @@ type GetEvents200JSONResponseBodyEvents24Type string
 
 // GetEvents200JSONResponseBodyEvents25 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents25 struct {
+	// DeviceId The ID of the device which deregistered.
+	DeviceId *int `json:"device_id,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents25Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents25Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents25Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents25Op string
+
+// GetEvents200JSONResponseBodyEvents25Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents25Type string
+
+// GetEvents200JSONResponseBodyEvents26 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents26 struct {
 	// DeviceId The ID of the registered device whose metadata changed.
 	DeviceId *int `json:"device_id,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents25Op `json:"op,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents26Op `json:"op,omitempty"`
 
 	// PendingPushTokenId ID to reference the token provided by FCM/APNs to the device,
 	// whose registration is in progress to the push bouncer service.
@@ -8969,17 +8997,17 @@ type GetEvents200JSONResponseBodyEvents25 struct {
 	// PushTokenLastUpdatedTimestamp The UNIX timestamp for the last time when `pending_push_token_id`
 	// was set to a new non-null value, in UTC seconds.
 	PushTokenLastUpdatedTimestamp *int                                      `json:"push_token_last_updated_timestamp,omitempty"`
-	Type                          *GetEvents200JSONResponseBodyEvents25Type `json:"type,omitempty"`
+	Type                          *GetEvents200JSONResponseBodyEvents26Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents25Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents25Op string
+// GetEvents200JSONResponseBodyEvents26Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents26Op string
 
-// GetEvents200JSONResponseBodyEvents25Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents25Type string
+// GetEvents200JSONResponseBodyEvents26Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents26Type string
 
-// GetEvents200JSONResponseBodyEvents26 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents26 struct {
+// GetEvents200JSONResponseBodyEvents27 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents27 struct {
 	// Content The new content of the submessage.
 	Content *string `json:"content,omitempty"`
 
@@ -8997,14 +9025,14 @@ type GetEvents200JSONResponseBodyEvents26 struct {
 
 	// SubmessageId The ID of the submessage.
 	SubmessageId *int                                      `json:"submessage_id,omitempty"`
-	Type         *GetEvents200JSONResponseBodyEvents26Type `json:"type,omitempty"`
+	Type         *GetEvents200JSONResponseBodyEvents27Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents26Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents26Type string
+// GetEvents200JSONResponseBodyEvents27Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents27Type string
 
-// GetEvents200JSONResponseBodyEvents27 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents27 struct {
+// GetEvents200JSONResponseBodyEvents28 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents28 struct {
 	// Away Whether the user has marked themself "away" with this status.
 	//
 	// **Changes**: Deprecated in Zulip 6.0 (feature level 148);
@@ -9042,45 +9070,31 @@ type GetEvents200JSONResponseBodyEvents27 struct {
 	// an emoji.
 	//
 	// **Changes**: New in Zulip 5.0 (feature level 86).
-	ReactionType *GetEvents200JSONResponseBodyEvents27ReactionType `json:"reaction_type,omitempty"`
+	ReactionType *GetEvents200JSONResponseBodyEvents28ReactionType `json:"reaction_type,omitempty"`
 
 	// StatusText The text content of the status message.
 	//
 	// This will be `""` for users who set a status without selecting
 	// or writing a message.
 	StatusText *string                                   `json:"status_text,omitempty"`
-	Type       *GetEvents200JSONResponseBodyEvents27Type `json:"type,omitempty"`
+	Type       *GetEvents200JSONResponseBodyEvents28Type `json:"type,omitempty"`
 
 	// UserId The ID of the user whose status changed.
 	UserId *int `json:"user_id,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents27ReactionType defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents27ReactionType string
-
-// GetEvents200JSONResponseBodyEvents27Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents27Type string
-
-// GetEvents200JSONResponseBodyEvents28 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents28 struct {
-	// Fields An array of dictionaries where each dictionary contains
-	// details of a single new custom profile field for the Zulip
-	// organization.
-	Fields *[]CustomProfileField `json:"fields,omitempty"`
-
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents28Type `json:"type,omitempty"`
-}
+// GetEvents200JSONResponseBodyEvents28ReactionType defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents28ReactionType string
 
 // GetEvents200JSONResponseBodyEvents28Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents28Type string
 
 // GetEvents200JSONResponseBodyEvents29 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents29 struct {
-	// DefaultStreamGroups An array of dictionaries where each dictionary
-	// contains details about a single default channel group.
-	DefaultStreamGroups *[]DefaultChannelGroup `json:"default_stream_groups,omitempty"`
+	// Fields An array of dictionaries where each dictionary contains
+	// details of a single new custom profile field for the Zulip
+	// organization.
+	Fields *[]CustomProfileField `json:"fields,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
@@ -9092,14 +9106,9 @@ type GetEvents200JSONResponseBodyEvents29Type string
 
 // GetEvents200JSONResponseBodyEvents30 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents30 struct {
-	// DefaultStreams An array of IDs of all the [default channels](/help/set-default-streams-for-new-users)
-	// in the organization.
-	//
-	// **Changes**: Before Zulip 10.0 (feature level 330),
-	// we sent array of dictionaries where each dictionary
-	// contained details about a single default stream for
-	// the Zulip organization.
-	DefaultStreams *[]int `json:"default_streams,omitempty"`
+	// DefaultStreamGroups An array of dictionaries where each dictionary
+	// contains details about a single default channel group.
+	DefaultStreamGroups *[]DefaultChannelGroup `json:"default_stream_groups,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
@@ -9111,6 +9120,25 @@ type GetEvents200JSONResponseBodyEvents30Type string
 
 // GetEvents200JSONResponseBodyEvents31 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents31 struct {
+	// DefaultStreams An array of IDs of all the [default channels](/help/set-default-streams-for-new-users)
+	// in the organization.
+	//
+	// **Changes**: Before Zulip 10.0 (feature level 330),
+	// we sent array of dictionaries where each dictionary
+	// contained details about a single default stream for
+	// the Zulip organization.
+	DefaultStreams *[]int `json:"default_streams,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents31Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents31Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents31Type string
+
+// GetEvents200JSONResponseBodyEvents32 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents32 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9134,7 +9162,7 @@ type GetEvents200JSONResponseBodyEvents31 struct {
 	MessageIds *[]int `json:"message_ids,omitempty"`
 
 	// MessageType The type of message. Either `"stream"` or `"private"`.
-	MessageType *GetEvents200JSONResponseBodyEvents31MessageType `json:"message_type,omitempty"`
+	MessageType *GetEvents200JSONResponseBodyEvents32MessageType `json:"message_type,omitempty"`
 
 	// StreamId Only present if `message_type` is `"stream"`.
 	//
@@ -9156,17 +9184,17 @@ type GetEvents200JSONResponseBodyEvents31 struct {
 	//
 	// [client-capabilities]: /api/register-queue#parameter-client_capabilities
 	Topic *string                                   `json:"topic,omitempty"`
-	Type  *GetEvents200JSONResponseBodyEvents31Type `json:"type,omitempty"`
+	Type  *GetEvents200JSONResponseBodyEvents32Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents31MessageType defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents31MessageType string
+// GetEvents200JSONResponseBodyEvents32MessageType defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents32MessageType string
 
-// GetEvents200JSONResponseBodyEvents31Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents31Type string
+// GetEvents200JSONResponseBodyEvents32Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents32Type string
 
-// GetEvents200JSONResponseBodyEvents32 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents32 struct {
+// GetEvents200JSONResponseBodyEvents33 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents33 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9186,26 +9214,26 @@ type GetEvents200JSONResponseBodyEvents32 struct {
 	// array objects were 2-item tuples and did not include the timestamp
 	// information for when the topic was muted.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	MutedTopics *[][]GetEvents200JSONResponseBody_Events_32_MutedTopics_Item `json:"muted_topics,omitempty"`
-	Type        *GetEvents200JSONResponseBodyEvents32Type                    `json:"type,omitempty"`
+	MutedTopics *[][]GetEvents200JSONResponseBody_Events_33_MutedTopics_Item `json:"muted_topics,omitempty"`
+	Type        *GetEvents200JSONResponseBodyEvents33Type                    `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents32MutedTopics0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents32MutedTopics0 = string
+// GetEvents200JSONResponseBodyEvents33MutedTopics0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents33MutedTopics0 = string
 
-// GetEvents200JSONResponseBodyEvents32MutedTopics1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents32MutedTopics1 = int
+// GetEvents200JSONResponseBodyEvents33MutedTopics1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents33MutedTopics1 = int
 
-// GetEvents200JSONResponseBody_Events_32_MutedTopics_Item defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_32_MutedTopics_Item struct {
+// GetEvents200JSONResponseBody_Events_33_MutedTopics_Item defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_33_MutedTopics_Item struct {
 	union json.RawMessage
 }
 
-// GetEvents200JSONResponseBodyEvents32Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents32Type string
+// GetEvents200JSONResponseBodyEvents33Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents33Type string
 
-// GetEvents200JSONResponseBodyEvents33 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents33 struct {
+// GetEvents200JSONResponseBodyEvents34 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents34 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9229,7 +9257,7 @@ type GetEvents200JSONResponseBodyEvents33 struct {
 	//
 	// [client-capabilities]: /api/register-queue#parameter-client_capabilities
 	TopicName *string                                   `json:"topic_name,omitempty"`
-	Type      *GetEvents200JSONResponseBodyEvents33Type `json:"type,omitempty"`
+	Type      *GetEvents200JSONResponseBodyEvents34Type `json:"type,omitempty"`
 
 	// VisibilityPolicy An integer indicating the user's visibility
 	// preferences for the topic, such as whether the topic
@@ -9249,11 +9277,11 @@ type GetEvents200JSONResponseBodyEvents33 struct {
 	VisibilityPolicy *int `json:"visibility_policy,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents33Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents33Type string
+// GetEvents200JSONResponseBodyEvents34Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents34Type string
 
-// GetEvents200JSONResponseBodyEvents34 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents34 struct {
+// GetEvents200JSONResponseBodyEvents35 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents35 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9266,16 +9294,6 @@ type GetEvents200JSONResponseBodyEvents34 struct {
 		// Timestamp An integer UNIX timestamp representing when the user was muted.
 		Timestamp *int `json:"timestamp,omitempty"`
 	} `json:"muted_users,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents34Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents34Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents34Type string
-
-// GetEvents200JSONResponseBodyEvents35 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents35 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents35Type `json:"type,omitempty"`
 }
 
@@ -9284,6 +9302,16 @@ type GetEvents200JSONResponseBodyEvents35Type string
 
 // GetEvents200JSONResponseBodyEvents36 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents36 struct {
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents36Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents36Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents36Type string
+
+// GetEvents200JSONResponseBodyEvents37 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents37 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9295,14 +9323,14 @@ type GetEvents200JSONResponseBodyEvents36 struct {
 	// steps were not supported, and the `type` field in these objects did not
 	// exist as all onboarding steps were implicitly hotspots.
 	OnboardingSteps *[]OnboardingStep                         `json:"onboarding_steps,omitempty"`
-	Type            *GetEvents200JSONResponseBodyEvents36Type `json:"type,omitempty"`
+	Type            *GetEvents200JSONResponseBodyEvents37Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents36Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents36Type string
+// GetEvents200JSONResponseBodyEvents37Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents37Type string
 
-// GetEvents200JSONResponseBodyEvents37 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents37 struct {
+// GetEvents200JSONResponseBodyEvents38 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents38 struct {
 	// Content Only present if this event changed the message content or
 	// updated the message content for an
 	// [inline URL preview][inline-url-previews].
@@ -9442,7 +9470,7 @@ type GetEvents200JSONResponseBodyEvents37 struct {
 	// This navigation makes it much more convenient to move content
 	// between topics without disruption or messages continuing
 	// to be sent to the pre-edit topic by accident.
-	PropagateMode *GetEvents200JSONResponseBodyEvents37PropagateMode `json:"propagate_mode,omitempty"`
+	PropagateMode *GetEvents200JSONResponseBodyEvents38PropagateMode `json:"propagate_mode,omitempty"`
 
 	// RenderedContent Only present if this event changed the message content or
 	// updated the message content for an
@@ -9527,7 +9555,7 @@ type GetEvents200JSONResponseBodyEvents37 struct {
 		// Url The expanded target url which the link points to.
 		Url *string `json:"url,omitempty"`
 	} `json:"topic_links,omitempty"`
-	Type GetEvents200JSONResponseBodyEvents37Type `json:"type"`
+	Type GetEvents200JSONResponseBodyEvents38Type `json:"type"`
 
 	// UserId The ID of the user who sent the message.
 	//
@@ -9539,14 +9567,14 @@ type GetEvents200JSONResponseBodyEvents37 struct {
 	UserId *int `json:"user_id"`
 }
 
-// GetEvents200JSONResponseBodyEvents37PropagateMode defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents37PropagateMode string
+// GetEvents200JSONResponseBodyEvents38PropagateMode defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents38PropagateMode string
 
-// GetEvents200JSONResponseBodyEvents37Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents37Type string
+// GetEvents200JSONResponseBodyEvents38Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents38Type string
 
-// GetEvents200JSONResponseBodyEvents38 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents38 struct {
+// GetEvents200JSONResponseBodyEvents39 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents39 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9557,8 +9585,8 @@ type GetEvents200JSONResponseBodyEvents38 struct {
 	//
 	// New in Zulip 4.0 (feature level 58). Previously, all typing
 	// notifications were implicitly direct messages.
-	MessageType *GetEvents200JSONResponseBodyEvents38MessageType `json:"message_type,omitempty"`
-	Op          *GetEvents200JSONResponseBodyEvents38Op          `json:"op,omitempty"`
+	MessageType *GetEvents200JSONResponseBodyEvents39MessageType `json:"message_type,omitempty"`
+	Op          *GetEvents200JSONResponseBodyEvents39Op          `json:"op,omitempty"`
 
 	// Recipients Only present if `message_type` is `"direct"`.
 	//
@@ -9609,20 +9637,20 @@ type GetEvents200JSONResponseBodyEvents38 struct {
 	//
 	// [client-capabilities]: /api/register-queue#parameter-client_capabilities
 	Topic *string                                   `json:"topic,omitempty"`
-	Type  *GetEvents200JSONResponseBodyEvents38Type `json:"type,omitempty"`
+	Type  *GetEvents200JSONResponseBodyEvents39Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents38MessageType defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents38MessageType string
+// GetEvents200JSONResponseBodyEvents39MessageType defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents39MessageType string
 
-// GetEvents200JSONResponseBodyEvents38Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents38Op string
+// GetEvents200JSONResponseBodyEvents39Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents39Op string
 
-// GetEvents200JSONResponseBodyEvents38Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents38Type string
+// GetEvents200JSONResponseBodyEvents39Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents39Type string
 
-// GetEvents200JSONResponseBodyEvents39 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents39 struct {
+// GetEvents200JSONResponseBodyEvents40 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents40 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -9633,8 +9661,8 @@ type GetEvents200JSONResponseBodyEvents39 struct {
 	//
 	// New in Zulip 4.0 (feature level 58). Previously all typing
 	// notifications were implicitly direct messages.
-	MessageType *GetEvents200JSONResponseBodyEvents39MessageType `json:"message_type,omitempty"`
-	Op          *GetEvents200JSONResponseBodyEvents39Op          `json:"op,omitempty"`
+	MessageType *GetEvents200JSONResponseBodyEvents40MessageType `json:"message_type,omitempty"`
+	Op          *GetEvents200JSONResponseBodyEvents40Op          `json:"op,omitempty"`
 
 	// Recipients Only present if `message_type` is `"direct"`.
 	//
@@ -9674,63 +9702,14 @@ type GetEvents200JSONResponseBodyEvents39 struct {
 	// **Changes**: New in Zulip 4.0 (feature level 58). Previously,
 	// typing notifications were only for direct messages.
 	Topic *string                                   `json:"topic,omitempty"`
-	Type  *GetEvents200JSONResponseBodyEvents39Type `json:"type,omitempty"`
+	Type  *GetEvents200JSONResponseBodyEvents40Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents39MessageType defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents39MessageType string
-
-// GetEvents200JSONResponseBodyEvents39Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents39Op string
-
-// GetEvents200JSONResponseBodyEvents39Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents39Type string
-
-// GetEvents200JSONResponseBodyEvents40 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents40 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema `json:"id,omitempty"`
-
-	// MessageId Indicates the message id of the message that is being edited.
-	MessageId *int                                    `json:"message_id,omitempty"`
-	Op        *GetEvents200JSONResponseBodyEvents40Op `json:"op,omitempty"`
-
-	// Recipient Object containing details about recipients of message edit typing notification.
-	Recipient *struct {
-		// ChannelId Only present if `type` is `"channel"`.
-		//
-		// The unique ID of the channel to which message is being edited.
-		ChannelId *int `json:"channel_id,omitempty"`
-
-		// Topic Only present if `type` is `"channel"`.
-		//
-		// Topic within the channel where the message is being edited.
-		Topic *string `json:"topic,omitempty"`
-
-		// Type Type of message being composed. Must be `"channel"` or `"direct"`.
-		Type *GetEvents200JSONResponseBodyEvents40RecipientType `json:"type,omitempty"`
-
-		// UserIds Present only if `type` is `direct`.
-		//
-		// The user IDs of every recipient of this direct message.
-		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"recipient,omitempty"`
-
-	// SenderId The ID of the user who is typing the edit of the
-	// message.
-	//
-	// Clients should be careful to display this user as the person who
-	// is typing, not that of the sender of the message, in case a
-	// collaborative editing feature be might be added in the future.
-	SenderId *int                                      `json:"sender_id,omitempty"`
-	Type     *GetEvents200JSONResponseBodyEvents40Type `json:"type,omitempty"`
-}
+// GetEvents200JSONResponseBodyEvents40MessageType defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents40MessageType string
 
 // GetEvents200JSONResponseBodyEvents40Op defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents40Op string
-
-// GetEvents200JSONResponseBodyEvents40RecipientType defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents40RecipientType string
 
 // GetEvents200JSONResponseBodyEvents40Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents40Type string
@@ -9765,7 +9744,12 @@ type GetEvents200JSONResponseBodyEvents41 struct {
 		UserIds *[]int `json:"user_ids,omitempty"`
 	} `json:"recipient,omitempty"`
 
-	// SenderId The ID of the user who sent the message.
+	// SenderId The ID of the user who is typing the edit of the
+	// message.
+	//
+	// Clients should be careful to display this user as the person who
+	// is typing, not that of the sender of the message, in case a
+	// collaborative editing feature be might be added in the future.
 	SenderId *int                                      `json:"sender_id,omitempty"`
 	Type     *GetEvents200JSONResponseBodyEvents41Type `json:"type,omitempty"`
 }
@@ -9781,6 +9765,50 @@ type GetEvents200JSONResponseBodyEvents41Type string
 
 // GetEvents200JSONResponseBodyEvents42 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents42 struct {
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id *EventIdSchema `json:"id,omitempty"`
+
+	// MessageId Indicates the message id of the message that is being edited.
+	MessageId *int                                    `json:"message_id,omitempty"`
+	Op        *GetEvents200JSONResponseBodyEvents42Op `json:"op,omitempty"`
+
+	// Recipient Object containing details about recipients of message edit typing notification.
+	Recipient *struct {
+		// ChannelId Only present if `type` is `"channel"`.
+		//
+		// The unique ID of the channel to which message is being edited.
+		ChannelId *int `json:"channel_id,omitempty"`
+
+		// Topic Only present if `type` is `"channel"`.
+		//
+		// Topic within the channel where the message is being edited.
+		Topic *string `json:"topic,omitempty"`
+
+		// Type Type of message being composed. Must be `"channel"` or `"direct"`.
+		Type *GetEvents200JSONResponseBodyEvents42RecipientType `json:"type,omitempty"`
+
+		// UserIds Present only if `type` is `direct`.
+		//
+		// The user IDs of every recipient of this direct message.
+		UserIds *[]int `json:"user_ids,omitempty"`
+	} `json:"recipient,omitempty"`
+
+	// SenderId The ID of the user who sent the message.
+	SenderId *int                                      `json:"sender_id,omitempty"`
+	Type     *GetEvents200JSONResponseBodyEvents42Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents42Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents42Op string
+
+// GetEvents200JSONResponseBodyEvents42RecipientType defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents42RecipientType string
+
+// GetEvents200JSONResponseBodyEvents42Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents42Type string
+
+// GetEvents200JSONResponseBodyEvents43 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents43 struct {
 	// Content The raw Markdown content that was re-rendered.
 	Content *string `json:"content,omitempty"`
 
@@ -9790,14 +9818,14 @@ type GetEvents200JSONResponseBodyEvents42 struct {
 	// RenderedContent That content re-rendered as HTML, with the fetched URL
 	// embed data included.
 	RenderedContent *string                                   `json:"rendered_content,omitempty"`
-	Type            *GetEvents200JSONResponseBodyEvents42Type `json:"type,omitempty"`
+	Type            *GetEvents200JSONResponseBodyEvents43Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents42Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents42Type string
+// GetEvents200JSONResponseBodyEvents43Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents43Type string
 
-// GetEvents200JSONResponseBodyEvents43 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents43 struct {
+// GetEvents200JSONResponseBodyEvents44 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents44 struct {
 	// All Whether the specified flag was added to all messages.
 	// This field is only relevant for the `"read"` flag, and
 	// will be `false` for all other flags.
@@ -9815,28 +9843,28 @@ type GetEvents200JSONResponseBodyEvents43 struct {
 	// Messages Array containing the IDs of all messages to which
 	// the flag was added.
 	Messages *[]int                                  `json:"messages,omitempty"`
-	Op       *GetEvents200JSONResponseBodyEvents43Op `json:"op,omitempty"`
+	Op       *GetEvents200JSONResponseBodyEvents44Op `json:"op,omitempty"`
 
 	// Operation Old name for the `op` field in this event type.
 	//
 	// **Deprecated** in Zulip 4.0 (feature level 32), and
 	// replaced by the `op` field.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	Operation *GetEvents200JSONResponseBodyEvents43Operation `json:"operation,omitempty"`
-	Type      *GetEvents200JSONResponseBodyEvents43Type      `json:"type,omitempty"`
+	Operation *GetEvents200JSONResponseBodyEvents44Operation `json:"operation,omitempty"`
+	Type      *GetEvents200JSONResponseBodyEvents44Type      `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents43Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents43Op string
+// GetEvents200JSONResponseBodyEvents44Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents44Op string
 
-// GetEvents200JSONResponseBodyEvents43Operation defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents43Operation string
+// GetEvents200JSONResponseBodyEvents44Operation defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents44Operation string
 
-// GetEvents200JSONResponseBodyEvents43Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents43Type string
+// GetEvents200JSONResponseBodyEvents44Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents44Type string
 
-// GetEvents200JSONResponseBodyEvents44 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents44 struct {
+// GetEvents200JSONResponseBodyEvents45 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents45 struct {
 	// All Will be `false` for all specified flags.
 	//
 	// **Deprecated** and will be removed in a future release.
@@ -9889,7 +9917,7 @@ type GetEvents200JSONResponseBodyEvents44 struct {
 		Topic *string `json:"topic,omitempty"`
 
 		// Type The type of this message. Either `"stream"` or `"private"`.
-		Type GetEvents200JSONResponseBodyEvents44MessageDetailsType `json:"type"`
+		Type GetEvents200JSONResponseBodyEvents45MessageDetailsType `json:"type"`
 
 		// UnmutedStreamMsg **Deprecated** internal implementation detail. Clients should
 		// ignore this field as it will be removed in the future.
@@ -9906,56 +9934,56 @@ type GetEvents200JSONResponseBodyEvents44 struct {
 	// Messages Array containing the IDs of the messages from which the flag
 	// was removed.
 	Messages *[]int                                  `json:"messages,omitempty"`
-	Op       *GetEvents200JSONResponseBodyEvents44Op `json:"op,omitempty"`
+	Op       *GetEvents200JSONResponseBodyEvents45Op `json:"op,omitempty"`
 
 	// Operation Old name for the `op` field in this event type.
 	//
 	// **Deprecated** in Zulip 4.0 (feature level 32), and
 	// replaced by the `op` field.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
-	Operation *GetEvents200JSONResponseBodyEvents44Operation `json:"operation,omitempty"`
-	Type      *GetEvents200JSONResponseBodyEvents44Type      `json:"type,omitempty"`
+	Operation *GetEvents200JSONResponseBodyEvents45Operation `json:"operation,omitempty"`
+	Type      *GetEvents200JSONResponseBodyEvents45Type      `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents44MessageDetailsType defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents44MessageDetailsType string
-
-// GetEvents200JSONResponseBodyEvents44Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents44Op string
-
-// GetEvents200JSONResponseBodyEvents44Operation defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents44Operation string
-
-// GetEvents200JSONResponseBodyEvents44Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents44Type string
-
-// GetEvents200JSONResponseBodyEvents45 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents45 struct {
-	// Group Object containing the user group's attributes.
-	Group *UserGroup `json:"group,omitempty"`
-
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents45Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents45Type `json:"type,omitempty"`
-}
+// GetEvents200JSONResponseBodyEvents45MessageDetailsType defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents45MessageDetailsType string
 
 // GetEvents200JSONResponseBodyEvents45Op defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents45Op string
+
+// GetEvents200JSONResponseBodyEvents45Operation defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents45Operation string
 
 // GetEvents200JSONResponseBodyEvents45Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents45Type string
 
 // GetEvents200JSONResponseBodyEvents46 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents46 struct {
+	// Group Object containing the user group's attributes.
+	Group *UserGroup `json:"group,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents46Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents46Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents46Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents46Op string
+
+// GetEvents200JSONResponseBodyEvents46Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents46Type string
+
+// GetEvents200JSONResponseBodyEvents47 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47 struct {
 	// Data Dictionary containing the changed details of the user group.
 	Data *struct {
-		CanAddMembersGroup    *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup    `json:"can_add_members_group,omitempty"`
-		CanJoinGroup          *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup          `json:"can_join_group,omitempty"`
-		CanLeaveGroup         *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup         `json:"can_leave_group,omitempty"`
-		CanManageGroup        *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup        `json:"can_manage_group,omitempty"`
-		CanMentionGroup       *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup       `json:"can_mention_group,omitempty"`
-		CanRemoveMembersGroup *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup `json:"can_remove_members_group,omitempty"`
+		CanAddMembersGroup    *GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup    `json:"can_add_members_group,omitempty"`
+		CanJoinGroup          *GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup          `json:"can_join_group,omitempty"`
+		CanLeaveGroup         *GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup         `json:"can_leave_group,omitempty"`
+		CanManageGroup        *GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup        `json:"can_manage_group,omitempty"`
+		CanMentionGroup       *GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup       `json:"can_mention_group,omitempty"`
+		CanRemoveMembersGroup *GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup `json:"can_remove_members_group,omitempty"`
 
 		// Deactivated Whether the user group is deactivated. Deactivated groups
 		// cannot be used as a subgroup of another group or used for
@@ -9977,149 +10005,128 @@ type GetEvents200JSONResponseBodyEvents46 struct {
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents46Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents46Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents46DataCanManageGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanManageGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents46DataCanManageGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanManageGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents46Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46Op string
-
-// GetEvents200JSONResponseBodyEvents46Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents46Type string
-
-// GetEvents200JSONResponseBodyEvents47 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents47 struct {
-	// GroupId The ID of the user group with new members.
-	GroupId *int `json:"group_id,omitempty"`
-
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
 	Op   *GetEvents200JSONResponseBodyEvents47Op   `json:"op,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents47Type `json:"type,omitempty"`
+}
 
-	// UserIds Array containing the IDs of the users who have been added
-	// to the user group.
-	UserIds *[]int `json:"user_ids,omitempty"`
+// GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents47DataCanManageGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanManageGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents47DataCanManageGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanManageGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup struct {
+	union json.RawMessage
 }
 
 // GetEvents200JSONResponseBodyEvents47Op defines parameters for GetEvents.
@@ -10130,7 +10137,7 @@ type GetEvents200JSONResponseBodyEvents47Type string
 
 // GetEvents200JSONResponseBodyEvents48 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents48 struct {
-	// GroupId The ID of the user group whose details have changed.
+	// GroupId The ID of the user group with new members.
 	GroupId *int `json:"group_id,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
@@ -10138,8 +10145,8 @@ type GetEvents200JSONResponseBodyEvents48 struct {
 	Op   *GetEvents200JSONResponseBodyEvents48Op   `json:"op,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents48Type `json:"type,omitempty"`
 
-	// UserIds Array containing the IDs of the users who have been removed
-	// from the user group.
+	// UserIds Array containing the IDs of the users who have been added
+	// to the user group.
 	UserIds *[]int `json:"user_ids,omitempty"`
 }
 
@@ -10151,15 +10158,6 @@ type GetEvents200JSONResponseBodyEvents48Type string
 
 // GetEvents200JSONResponseBodyEvents49 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents49 struct {
-	// DirectSubgroupIds Array containing the IDs of the subgroups that have been added
-	// to the user group.
-	//
-	// **Changes**: New in Zulip 6.0 (feature level 131).
-	// Previously, this was called `subgroup_ids`, but
-	// clients can ignore older events as this feature level
-	// predates subgroups being fully implemented.
-	DirectSubgroupIds *[]int `json:"direct_subgroup_ids,omitempty"`
-
 	// GroupId The ID of the user group whose details have changed.
 	GroupId *int `json:"group_id,omitempty"`
 
@@ -10167,6 +10165,10 @@ type GetEvents200JSONResponseBodyEvents49 struct {
 	Id   *EventIdSchema                            `json:"id,omitempty"`
 	Op   *GetEvents200JSONResponseBodyEvents49Op   `json:"op,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents49Type `json:"type,omitempty"`
+
+	// UserIds Array containing the IDs of the users who have been removed
+	// from the user group.
+	UserIds *[]int `json:"user_ids,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents49Op defines parameters for GetEvents.
@@ -10177,8 +10179,8 @@ type GetEvents200JSONResponseBodyEvents49Type string
 
 // GetEvents200JSONResponseBodyEvents50 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents50 struct {
-	// DirectSubgroupIds Array containing the IDs of the subgroups that have been
-	// removed from the user group.
+	// DirectSubgroupIds Array containing the IDs of the subgroups that have been added
+	// to the user group.
 	//
 	// **Changes**: New in Zulip 6.0 (feature level 131).
 	// Previously, this was called `subgroup_ids`, but
@@ -10203,7 +10205,16 @@ type GetEvents200JSONResponseBodyEvents50Type string
 
 // GetEvents200JSONResponseBodyEvents51 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents51 struct {
-	// GroupId The ID of the group which has been deleted.
+	// DirectSubgroupIds Array containing the IDs of the subgroups that have been
+	// removed from the user group.
+	//
+	// **Changes**: New in Zulip 6.0 (feature level 131).
+	// Previously, this was called `subgroup_ids`, but
+	// clients can ignore older events as this feature level
+	// predates subgroups being fully implemented.
+	DirectSubgroupIds *[]int `json:"direct_subgroup_ids,omitempty"`
+
+	// GroupId The ID of the user group whose details have changed.
 	GroupId *int `json:"group_id,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
@@ -10220,6 +10231,23 @@ type GetEvents200JSONResponseBodyEvents51Type string
 
 // GetEvents200JSONResponseBodyEvents52 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents52 struct {
+	// GroupId The ID of the group which has been deleted.
+	GroupId *int `json:"group_id,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents52Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents52Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents52Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents52Op string
+
+// GetEvents200JSONResponseBodyEvents52Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents52Type string
+
+// GetEvents200JSONResponseBodyEvents53 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents53 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -10270,37 +10298,7 @@ type GetEvents200JSONResponseBodyEvents52 struct {
 		// which contained a URL format string.
 		UrlTemplate *string `json:"url_template,omitempty"`
 	} `json:"realm_linkifiers,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents52Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents52Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents52Type string
-
-// GetEvents200JSONResponseBodyEvents53 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents53 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema `json:"id,omitempty"`
-
-	// RealmFilters An array of tuples, where each tuple described a linkifier. The first
-	// element of the tuple was a string regex pattern which represented the
-	// pattern to be linkified on matching, for example `"#(?P<id>[123])"`.
-	// The second element was the URL format string that the pattern should be
-	// linkified with. A URL format string for the above example would be
-	// `"https://realm.com/my_realm_filter/%(id)s"`. And the third element
-	// was the ID of the realm filter.
-	RealmFilters *[][]GetEvents200JSONResponseBody_Events_53_RealmFilters_Item `json:"realm_filters,omitempty"`
-	Type         *GetEvents200JSONResponseBodyEvents53Type                     `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents53RealmFilters0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents53RealmFilters0 = int
-
-// GetEvents200JSONResponseBodyEvents53RealmFilters1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents53RealmFilters1 = string
-
-// GetEvents200JSONResponseBody_Events_53_RealmFilters_Item defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_53_RealmFilters_Item struct {
-	union json.RawMessage
+	Type *GetEvents200JSONResponseBodyEvents53Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents53Type defines parameters for GetEvents.
@@ -10311,10 +10309,26 @@ type GetEvents200JSONResponseBodyEvents54 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
-	// RealmPlaygrounds An array of dictionaries where each dictionary contains
-	// data about a single playground entry.
-	RealmPlaygrounds *[]RealmPlayground                        `json:"realm_playgrounds,omitempty"`
-	Type             *GetEvents200JSONResponseBodyEvents54Type `json:"type,omitempty"`
+	// RealmFilters An array of tuples, where each tuple described a linkifier. The first
+	// element of the tuple was a string regex pattern which represented the
+	// pattern to be linkified on matching, for example `"#(?P<id>[123])"`.
+	// The second element was the URL format string that the pattern should be
+	// linkified with. A URL format string for the above example would be
+	// `"https://realm.com/my_realm_filter/%(id)s"`. And the third element
+	// was the ID of the realm filter.
+	RealmFilters *[][]GetEvents200JSONResponseBody_Events_54_RealmFilters_Item `json:"realm_filters,omitempty"`
+	Type         *GetEvents200JSONResponseBodyEvents54Type                     `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents54RealmFilters0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents54RealmFilters0 = int
+
+// GetEvents200JSONResponseBodyEvents54RealmFilters1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents54RealmFilters1 = string
+
+// GetEvents200JSONResponseBody_Events_54_RealmFilters_Item defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_54_RealmFilters_Item struct {
+	union json.RawMessage
 }
 
 // GetEvents200JSONResponseBodyEvents54Type defines parameters for GetEvents.
@@ -10322,24 +10336,38 @@ type GetEvents200JSONResponseBodyEvents54Type string
 
 // GetEvents200JSONResponseBodyEvents55 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents55 struct {
-	// Emoji Object containing details about an emoji. It has the
-	// following properties:
-	Emoji *RealmEmoji `json:"emoji,omitempty"`
-
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents55Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents55Type `json:"type,omitempty"`
-}
+	Id *EventIdSchema `json:"id,omitempty"`
 
-// GetEvents200JSONResponseBodyEvents55Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents55Op string
+	// RealmPlaygrounds An array of dictionaries where each dictionary contains
+	// data about a single playground entry.
+	RealmPlaygrounds *[]RealmPlayground                        `json:"realm_playgrounds,omitempty"`
+	Type             *GetEvents200JSONResponseBodyEvents55Type `json:"type,omitempty"`
+}
 
 // GetEvents200JSONResponseBodyEvents55Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents55Type string
 
 // GetEvents200JSONResponseBodyEvents56 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents56 struct {
+	// Emoji Object containing details about an emoji. It has the
+	// following properties:
+	Emoji *RealmEmoji `json:"emoji,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents56Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents56Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents56Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents56Op string
+
+// GetEvents200JSONResponseBodyEvents56Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents56Type string
+
+// GetEvents200JSONResponseBodyEvents57 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents57 struct {
 	// Data And object containing the properties that have changed.
 	Data struct {
 		// Deactivated Whether the custom emoji has been deactivated.
@@ -10351,26 +10379,8 @@ type GetEvents200JSONResponseBodyEvents56 struct {
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   EventIdSchema                            `json:"id"`
-	Op   GetEvents200JSONResponseBodyEvents56Op   `json:"op"`
-	Type GetEvents200JSONResponseBodyEvents56Type `json:"type"`
-}
-
-// GetEvents200JSONResponseBodyEvents56Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents56Op string
-
-// GetEvents200JSONResponseBodyEvents56Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents56Type string
-
-// GetEvents200JSONResponseBodyEvents57 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents57 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents57Op `json:"op,omitempty"`
-
-	// RealmEmoji An object in which keys are RealmEmoji ids, and the
-	// values describe the custom emoji for that id.
-	RealmEmoji *map[string]RealmEmoji                    `json:"realm_emoji,omitempty"`
-	Type       *GetEvents200JSONResponseBodyEvents57Type `json:"type,omitempty"`
+	Op   GetEvents200JSONResponseBodyEvents57Op   `json:"op"`
+	Type GetEvents200JSONResponseBodyEvents57Type `json:"type"`
 }
 
 // GetEvents200JSONResponseBodyEvents57Op defines parameters for GetEvents.
@@ -10382,16 +10392,13 @@ type GetEvents200JSONResponseBodyEvents57Type string
 // GetEvents200JSONResponseBodyEvents58 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents58 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id          *EventIdSchema                          `json:"id,omitempty"`
-	Op          *GetEvents200JSONResponseBodyEvents58Op `json:"op,omitempty"`
-	RealmDomain *struct {
-		// AllowSubdomains Whether subdomains are allowed for this domain.
-		AllowSubdomains bool `json:"allow_subdomains"`
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents58Op `json:"op,omitempty"`
 
-		// Domain The allowed domain.
-		Domain string `json:"domain"`
-	} `json:"realm_domain,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents58Type `json:"type,omitempty"`
+	// RealmEmoji An object in which keys are RealmEmoji ids, and the
+	// values describe the custom emoji for that id.
+	RealmEmoji *map[string]RealmEmoji                    `json:"realm_emoji,omitempty"`
+	Type       *GetEvents200JSONResponseBodyEvents58Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents58Op defines parameters for GetEvents.
@@ -10423,12 +10430,16 @@ type GetEvents200JSONResponseBodyEvents59Type string
 
 // GetEvents200JSONResponseBodyEvents60 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents60 struct {
-	// Domain The domain to be removed.
-	Domain *string `json:"domain,omitempty"`
-
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents60Op   `json:"op,omitempty"`
+	Id          *EventIdSchema                          `json:"id,omitempty"`
+	Op          *GetEvents200JSONResponseBodyEvents60Op `json:"op,omitempty"`
+	RealmDomain *struct {
+		// AllowSubdomains Whether subdomains are allowed for this domain.
+		AllowSubdomains bool `json:"allow_subdomains"`
+
+		// Domain The allowed domain.
+		Domain string `json:"domain"`
+	} `json:"realm_domain,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents60Type `json:"type,omitempty"`
 }
 
@@ -10440,6 +10451,23 @@ type GetEvents200JSONResponseBodyEvents60Type string
 
 // GetEvents200JSONResponseBodyEvents61 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents61 struct {
+	// Domain The domain to be removed.
+	Domain *string `json:"domain,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents61Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents61Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents61Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents61Op string
+
+// GetEvents200JSONResponseBodyEvents61Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents61Type string
+
+// GetEvents200JSONResponseBodyEvents62 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents62 struct {
 	// Exports An array of dictionaries where each dictionary contains
 	// details about a data export of the organization.
 	//
@@ -10449,23 +10477,7 @@ type GetEvents200JSONResponseBodyEvents61 struct {
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents61Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents61Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents61Type string
-
-// GetEvents200JSONResponseBodyEvents62 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents62 struct {
-	// Consented Whether the user has consented for their private data export.
-	Consented *bool `json:"consented,omitempty"`
-
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents62Type `json:"type,omitempty"`
-
-	// UserId The ID of the user whose setting was changed.
-	UserId *int `json:"user_id,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents62Type defines parameters for GetEvents.
@@ -10473,29 +10485,23 @@ type GetEvents200JSONResponseBodyEvents62Type string
 
 // GetEvents200JSONResponseBodyEvents63 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents63 struct {
-	Bot *Bot `json:"bot,omitempty"`
+	// Consented Whether the user has consented for their private data export.
+	Consented *bool `json:"consented,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents63Op   `json:"op,omitempty"`
 	Type *GetEvents200JSONResponseBodyEvents63Type `json:"type,omitempty"`
-}
 
-// GetEvents200JSONResponseBodyEvents63Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents63Op string
+	// UserId The ID of the user whose setting was changed.
+	UserId *int `json:"user_id,omitempty"`
+}
 
 // GetEvents200JSONResponseBodyEvents63Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents63Type string
 
 // GetEvents200JSONResponseBodyEvents64 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents64 struct {
-	Bot *struct {
-		DefaultAllPublicStreams     interface{} `json:"default_all_public_streams,omitempty"`
-		DefaultEventsRegisterStream interface{} `json:"default_events_register_stream,omitempty"`
-		DefaultSendingStream        interface{} `json:"default_sending_stream,omitempty"`
-		Services                    interface{} `json:"services,omitempty"`
-		UserId                      interface{} `json:"user_id,omitempty"`
-	} `json:"bot,omitempty"`
+	Bot *Bot `json:"bot,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
@@ -10511,13 +10517,12 @@ type GetEvents200JSONResponseBodyEvents64Type string
 
 // GetEvents200JSONResponseBodyEvents65 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents65 struct {
-	// Bot Object containing details about the deactivated bot.
 	Bot *struct {
-		// FullName The full name of the deactivated bot.
-		FullName *string `json:"full_name,omitempty"`
-
-		// UserId The user ID of the deactivated bot.
-		UserId *int `json:"user_id,omitempty"`
+		DefaultAllPublicStreams     interface{} `json:"default_all_public_streams,omitempty"`
+		DefaultEventsRegisterStream interface{} `json:"default_events_register_stream,omitempty"`
+		DefaultSendingStream        interface{} `json:"default_sending_stream,omitempty"`
+		Services                    interface{} `json:"services,omitempty"`
+		UserId                      interface{} `json:"user_id,omitempty"`
 	} `json:"bot,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
@@ -10536,6 +10541,9 @@ type GetEvents200JSONResponseBodyEvents65Type string
 type GetEvents200JSONResponseBodyEvents66 struct {
 	// Bot Object containing details about the deactivated bot.
 	Bot *struct {
+		// FullName The full name of the deactivated bot.
+		FullName *string `json:"full_name,omitempty"`
+
 		// UserId The user ID of the deactivated bot.
 		UserId *int `json:"user_id,omitempty"`
 	} `json:"bot,omitempty"`
@@ -10554,16 +10562,16 @@ type GetEvents200JSONResponseBodyEvents66Type string
 
 // GetEvents200JSONResponseBodyEvents67 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents67 struct {
+	// Bot Object containing details about the deactivated bot.
+	Bot *struct {
+		// UserId The user ID of the deactivated bot.
+		UserId *int `json:"user_id,omitempty"`
+	} `json:"bot,omitempty"`
+
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents67Op `json:"op,omitempty"`
-
-	// Property The name of the property that was changed.
-	Property *string                                   `json:"property,omitempty"`
-	Type     *GetEvents200JSONResponseBodyEvents67Type `json:"type,omitempty"`
-
-	// Value The new value of the property.
-	Value *GetEvents200JSONResponseBody_Events_67_Value `json:"value,omitempty"`
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents67Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents67Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents67Op defines parameters for GetEvents.
@@ -10572,29 +10580,18 @@ type GetEvents200JSONResponseBodyEvents67Op string
 // GetEvents200JSONResponseBodyEvents67Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents67Type string
 
-// GetEvents200JSONResponseBodyEvents67Value0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents67Value0 = string
-
-// GetEvents200JSONResponseBodyEvents67Value1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents67Value1 = bool
-
-// GetEvents200JSONResponseBodyEvents67Value2 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents67Value2 = int
-
-// GetEvents200JSONResponseBody_Events_67_Value defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_67_Value struct {
-	union json.RawMessage
-}
-
 // GetEvents200JSONResponseBodyEvents68 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents68 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema                          `json:"id,omitempty"`
 	Op *GetEvents200JSONResponseBodyEvents68Op `json:"op,omitempty"`
 
-	// RealmId The ID of the deactivated realm.
-	RealmId *int                                      `json:"realm_id,omitempty"`
-	Type    *GetEvents200JSONResponseBodyEvents68Type `json:"type,omitempty"`
+	// Property The name of the property that was changed.
+	Property *string                                   `json:"property,omitempty"`
+	Type     *GetEvents200JSONResponseBodyEvents68Type `json:"type,omitempty"`
+
+	// Value The new value of the property.
+	Value *GetEvents200JSONResponseBody_Events_68_Value `json:"value,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents68Op defines parameters for GetEvents.
@@ -10603,14 +10600,45 @@ type GetEvents200JSONResponseBodyEvents68Op string
 // GetEvents200JSONResponseBodyEvents68Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents68Type string
 
+// GetEvents200JSONResponseBodyEvents68Value0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents68Value0 = string
+
+// GetEvents200JSONResponseBodyEvents68Value1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents68Value1 = bool
+
+// GetEvents200JSONResponseBodyEvents68Value2 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents68Value2 = int
+
+// GetEvents200JSONResponseBody_Events_68_Value defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_68_Value struct {
+	union json.RawMessage
+}
+
 // GetEvents200JSONResponseBodyEvents69 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents69 struct {
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents69Op `json:"op,omitempty"`
+
+	// RealmId The ID of the deactivated realm.
+	RealmId *int                                      `json:"realm_id,omitempty"`
+	Type    *GetEvents200JSONResponseBodyEvents69Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents69Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents69Op string
+
+// GetEvents200JSONResponseBodyEvents69Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents69Type string
+
+// GetEvents200JSONResponseBodyEvents70 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents70 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
 	// ServerGeneration The timestamp at which the server started.
 	ServerGeneration *int                                      `json:"server_generation,omitempty"`
-	Type             *GetEvents200JSONResponseBodyEvents69Type `json:"type,omitempty"`
+	Type             *GetEvents200JSONResponseBodyEvents70Type `json:"type,omitempty"`
 
 	// ZulipFeatureLevel The [Zulip feature level](/api/changelog) of the server
 	// after the restart.
@@ -10641,11 +10669,11 @@ type GetEvents200JSONResponseBodyEvents69 struct {
 	ZulipVersion *string `json:"zulip_version,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents69Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents69Type string
+// GetEvents200JSONResponseBodyEvents70Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents70Type string
 
-// GetEvents200JSONResponseBodyEvents70 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents70 struct {
+// GetEvents200JSONResponseBodyEvents71 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents71 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -10654,14 +10682,14 @@ type GetEvents200JSONResponseBodyEvents70 struct {
 	// A Zulip development server uses this parameter to reload
 	// clients immediately.
 	Immediate *bool                                     `json:"immediate,omitempty"`
-	Type      *GetEvents200JSONResponseBodyEvents70Type `json:"type,omitempty"`
+	Type      *GetEvents200JSONResponseBodyEvents71Type `json:"type,omitempty"`
 }
 
-// GetEvents200JSONResponseBodyEvents70Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents70Type string
+// GetEvents200JSONResponseBodyEvents71Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents71Type string
 
-// GetEvents200JSONResponseBodyEvents71 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71 struct {
+// GetEvents200JSONResponseBodyEvents72 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72 struct {
 	// Data An object containing the properties that have changed.
 	//
 	// **Changes**: In Zulip 10.0 (feature level 316), `edit_topic_policy`
@@ -10703,28 +10731,28 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 		// dictionary were changed. Previously, the values were a simple boolean
 		// indicating whether the backend is enabled or not.
 		AuthenticationMethods               *map[string]RealmAuthenticationMethod                                            `json:"authentication_methods,omitempty"`
-		CanAccessAllUsersGroup              *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup              `json:"can_access_all_users_group,omitempty"`
-		CanAddCustomEmojiGroup              *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup              `json:"can_add_custom_emoji_group,omitempty"`
-		CanAddSubscribersGroup              *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup              `json:"can_add_subscribers_group,omitempty"`
-		CanCreateBotsGroup                  *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup                  `json:"can_create_bots_group,omitempty"`
-		CanCreateGroups                     *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups                     `json:"can_create_groups,omitempty"`
-		CanCreatePrivateChannelGroup        *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup        `json:"can_create_private_channel_group,omitempty"`
-		CanCreatePublicChannelGroup         *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup         `json:"can_create_public_channel_group,omitempty"`
-		CanCreateWebPublicChannelGroup      *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup      `json:"can_create_web_public_channel_group,omitempty"`
-		CanCreateWriteOnlyBotsGroup         *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup         `json:"can_create_write_only_bots_group,omitempty"`
-		CanDeleteAnyMessageGroup            *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup            `json:"can_delete_any_message_group,omitempty"`
-		CanDeleteOwnMessageGroup            *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup            `json:"can_delete_own_message_group,omitempty"`
-		CanInviteUsersGroup                 *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup                 `json:"can_invite_users_group,omitempty"`
-		CanManageAllGroups                  *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups                  `json:"can_manage_all_groups,omitempty"`
-		CanManageBillingGroup               *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup               `json:"can_manage_billing_group,omitempty"`
-		CanMentionManyUsersGroup            *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup            `json:"can_mention_many_users_group,omitempty"`
-		CanMoveMessagesBetweenChannelsGroup *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup `json:"can_move_messages_between_channels_group,omitempty"`
-		CanMoveMessagesBetweenTopicsGroup   *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup   `json:"can_move_messages_between_topics_group,omitempty"`
-		CanResolveTopicsGroup               *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup               `json:"can_resolve_topics_group,omitempty"`
-		CanSetDeleteMessagePolicyGroup      *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup      `json:"can_set_delete_message_policy_group,omitempty"`
-		CanSetTopicsPolicyGroup             *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup             `json:"can_set_topics_policy_group,omitempty"`
-		CanSummarizeTopicsGroup             *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup             `json:"can_summarize_topics_group,omitempty"`
-		CreateMultiuseInviteGroup           *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup           `json:"create_multiuse_invite_group,omitempty"`
+		CanAccessAllUsersGroup              *GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup              `json:"can_access_all_users_group,omitempty"`
+		CanAddCustomEmojiGroup              *GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup              `json:"can_add_custom_emoji_group,omitempty"`
+		CanAddSubscribersGroup              *GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup              `json:"can_add_subscribers_group,omitempty"`
+		CanCreateBotsGroup                  *GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup                  `json:"can_create_bots_group,omitempty"`
+		CanCreateGroups                     *GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups                     `json:"can_create_groups,omitempty"`
+		CanCreatePrivateChannelGroup        *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup        `json:"can_create_private_channel_group,omitempty"`
+		CanCreatePublicChannelGroup         *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup         `json:"can_create_public_channel_group,omitempty"`
+		CanCreateWebPublicChannelGroup      *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup      `json:"can_create_web_public_channel_group,omitempty"`
+		CanCreateWriteOnlyBotsGroup         *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup         `json:"can_create_write_only_bots_group,omitempty"`
+		CanDeleteAnyMessageGroup            *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup            `json:"can_delete_any_message_group,omitempty"`
+		CanDeleteOwnMessageGroup            *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup            `json:"can_delete_own_message_group,omitempty"`
+		CanInviteUsersGroup                 *GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup                 `json:"can_invite_users_group,omitempty"`
+		CanManageAllGroups                  *GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups                  `json:"can_manage_all_groups,omitempty"`
+		CanManageBillingGroup               *GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup               `json:"can_manage_billing_group,omitempty"`
+		CanMentionManyUsersGroup            *GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup            `json:"can_mention_many_users_group,omitempty"`
+		CanMoveMessagesBetweenChannelsGroup *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup `json:"can_move_messages_between_channels_group,omitempty"`
+		CanMoveMessagesBetweenTopicsGroup   *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup   `json:"can_move_messages_between_topics_group,omitempty"`
+		CanResolveTopicsGroup               *GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup               `json:"can_resolve_topics_group,omitempty"`
+		CanSetDeleteMessagePolicyGroup      *GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup      `json:"can_set_delete_message_policy_group,omitempty"`
+		CanSetTopicsPolicyGroup             *GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup             `json:"can_set_topics_policy_group,omitempty"`
+		CanSummarizeTopicsGroup             *GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup             `json:"can_summarize_topics_group,omitempty"`
+		CreateMultiuseInviteGroup           *GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup           `json:"create_multiuse_invite_group,omitempty"`
 
 		// DefaultAvatarSource The avatar data source type for new users.
 		//
@@ -10761,8 +10789,8 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 		// DigestWeekday The day of the week when the organization will send
 		// its weekly digest email to inactive users.
 		DigestWeekday                *int                                                                      `json:"digest_weekday,omitempty"`
-		DirectMessageInitiatorGroup  *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup  `json:"direct_message_initiator_group,omitempty"`
-		DirectMessagePermissionGroup *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup `json:"direct_message_permission_group,omitempty"`
+		DirectMessageInitiatorGroup  *GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup  `json:"direct_message_initiator_group,omitempty"`
+		DirectMessagePermissionGroup *GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup `json:"direct_message_permission_group,omitempty"`
 
 		// DisallowDisposableEmailAddresses Whether the organization disallows disposable email
 		// addresses.
@@ -10893,7 +10921,7 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 		// - `200`: 200% height.
 		//
 		// **Changes**: New in Zulip 12.0 (feature level 469).
-		MediaPreviewSize *GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize `json:"media_preview_size,omitempty"`
+		MediaPreviewSize *GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize `json:"media_preview_size,omitempty"`
 
 		// MessageContentAllowedInEmailNotifications Whether notification emails in this organization are allowed to
 		// contain Zulip the message content, or simply indicate that a new
@@ -11150,7 +11178,7 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 		// **Changes**: New in Zulip 11.0 (feature level 392). Previously, this was
 		// controlled by the boolean realm `mandatory_topics` setting, which is now
 		// deprecated.
-		TopicsPolicy *GetEvents200JSONResponseBodyEvents71DataTopicsPolicy `json:"topics_policy,omitempty"`
+		TopicsPolicy *GetEvents200JSONResponseBodyEvents72DataTopicsPolicy `json:"topics_policy,omitempty"`
 
 		// UploadQuotaMib The new upload quota for the Zulip organization.
 		//
@@ -11172,11 +11200,15 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 		// - 6 = Constructor Groups
 		// - 7 = Nextcloud Talk
 		// - 8 = Webex (User OAuth integration)
+		// - 9 = Google Meet (User OAuth integration)
 		//
 		// Note that only one of the [Zoom integrations][zoom-video-calls] can
 		// be configured on a Zulip server.
 		//
-		// **Changes**: In Zulip 12.0 (feature level 493),
+		// **Changes**: In Zulip 13.0 (feature level 514),
+		// added the Google Meet option.
+		//
+		// In Zulip 12.0 (feature level 493),
 		// added the Webex OAuth option.
 		//
 		// In Zulip 12.0 (feature level 465), added the
@@ -11214,7 +11246,7 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 		//
 		// **Changes**: New in Zulip 11.0 (feature level 416).
 		WelcomeMessageCustomText *string                                                          `json:"welcome_message_custom_text,omitempty"`
-		WorkplaceUsersGroup      *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup `json:"workplace_users_group,omitempty"`
+		WorkplaceUsersGroup      *GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup `json:"workplace_users_group,omitempty"`
 
 		// ZulipUpdateAnnouncementsStreamId The ID of the channel to which automated messages announcing
 		// new features or other end-user updates about the Zulip software are sent.
@@ -11230,7 +11262,7 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents71Op `json:"op,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents72Op `json:"op,omitempty"`
 
 	// Property Always `"default"`. Present for backwards-compatibility with older
 	// clients that predate the `update_dict` event style.
@@ -11238,533 +11270,513 @@ type GetEvents200JSONResponseBodyEvents71 struct {
 	// **Deprecated** and will be removed in a future release.
 	// Deprecated: this property has been marked as deprecated upstream, but no `x-deprecated-reason` was set
 	Property *string                                   `json:"property,omitempty"`
-	Type     *GetEvents200JSONResponseBodyEvents71Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataMediaPreviewSize int
-
-// GetEvents200JSONResponseBodyEvents71DataTopicsPolicy defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataTopicsPolicy string
-
-// GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0 = int
-
-// GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1 struct {
-	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
-	//
-	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
-	// deactivated users who had the permission before being deactivated.
-	DirectMembers *[]int `json:"direct_members,omitempty"`
-
-	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
-	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
-}
-
-// GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup struct {
-	union json.RawMessage
-}
-
-// GetEvents200JSONResponseBodyEvents71Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71Op string
-
-// GetEvents200JSONResponseBodyEvents71Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents71Type string
-
-// GetEvents200JSONResponseBodyEvents72 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents72 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents72Op `json:"op,omitempty"`
-
-	// Property The name of the property that was changed.
-	Property *string                                   `json:"property,omitempty"`
 	Type     *GetEvents200JSONResponseBodyEvents72Type `json:"type,omitempty"`
+}
 
-	// Value The new value of the property.
-	Value *GetEvents200JSONResponseBody_Events_72_Value `json:"value,omitempty"`
+// GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup struct {
+	union json.RawMessage
+}
+
+// GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataMediaPreviewSize int
+
+// GetEvents200JSONResponseBodyEvents72DataTopicsPolicy defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataTopicsPolicy string
+
+// GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0 = int
+
+// GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1 struct {
+	// DirectMembers The list of IDs of individual users in the collection of users with this permission.
+	//
+	// **Changes**: Prior to Zulip 10.0 (feature level 303), this list would include
+	// deactivated users who had the permission before being deactivated.
+	DirectMembers *[]int `json:"direct_members,omitempty"`
+
+	// DirectSubgroups The list of IDs of the groups in the collection of users with this permission.
+	DirectSubgroups *[]int `json:"direct_subgroups,omitempty"`
+}
+
+// GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup struct {
+	union json.RawMessage
 }
 
 // GetEvents200JSONResponseBodyEvents72Op defines parameters for GetEvents.
@@ -11773,29 +11785,18 @@ type GetEvents200JSONResponseBodyEvents72Op string
 // GetEvents200JSONResponseBodyEvents72Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents72Type string
 
-// GetEvents200JSONResponseBodyEvents72Value0 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents72Value0 = bool
-
-// GetEvents200JSONResponseBodyEvents72Value1 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents72Value1 = int
-
-// GetEvents200JSONResponseBodyEvents72Value2 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents72Value2 = string
-
-// GetEvents200JSONResponseBody_Events_72_Value defines parameters for GetEvents.
-type GetEvents200JSONResponseBody_Events_72_Value struct {
-	union json.RawMessage
-}
-
 // GetEvents200JSONResponseBodyEvents73 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents73 struct {
-	// Drafts An array containing objects for the newly created drafts.
-	Drafts *[]Draft `json:"drafts,omitempty"`
-
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents73Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents73Type `json:"type,omitempty"`
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents73Op `json:"op,omitempty"`
+
+	// Property The name of the property that was changed.
+	Property *string                                   `json:"property,omitempty"`
+	Type     *GetEvents200JSONResponseBodyEvents73Type `json:"type,omitempty"`
+
+	// Value The new value of the property.
+	Value *GetEvents200JSONResponseBody_Events_73_Value `json:"value,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents73Op defines parameters for GetEvents.
@@ -11804,10 +11805,24 @@ type GetEvents200JSONResponseBodyEvents73Op string
 // GetEvents200JSONResponseBodyEvents73Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents73Type string
 
+// GetEvents200JSONResponseBodyEvents73Value0 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents73Value0 = bool
+
+// GetEvents200JSONResponseBodyEvents73Value1 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents73Value1 = int
+
+// GetEvents200JSONResponseBodyEvents73Value2 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents73Value2 = string
+
+// GetEvents200JSONResponseBody_Events_73_Value defines parameters for GetEvents.
+type GetEvents200JSONResponseBody_Events_73_Value struct {
+	union json.RawMessage
+}
+
 // GetEvents200JSONResponseBodyEvents74 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents74 struct {
-	// Draft A dictionary for representing a message draft.
-	Draft *Draft `json:"draft,omitempty"`
+	// Drafts An array containing objects for the newly created drafts.
+	Drafts *[]Draft `json:"drafts,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
@@ -11823,8 +11838,8 @@ type GetEvents200JSONResponseBodyEvents74Type string
 
 // GetEvents200JSONResponseBodyEvents75 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents75 struct {
-	// DraftId The ID of the draft that was just deleted.
-	DraftId *int `json:"draft_id,omitempty"`
+	// Draft A dictionary for representing a message draft.
+	Draft *Draft `json:"draft,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
@@ -11840,6 +11855,23 @@ type GetEvents200JSONResponseBodyEvents75Type string
 
 // GetEvents200JSONResponseBodyEvents76 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents76 struct {
+	// DraftId The ID of the draft that was just deleted.
+	DraftId *int `json:"draft_id,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents76Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents76Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents76Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents76Op string
+
+// GetEvents200JSONResponseBodyEvents76Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents76Type string
+
+// GetEvents200JSONResponseBodyEvents77 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents77 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id *EventIdSchema `json:"id,omitempty"`
 
@@ -11852,34 +11884,8 @@ type GetEvents200JSONResponseBodyEvents76 struct {
 	//
 	// **Changes**: New in Zulip 11.0 (feature level 390).
 	NavigationView *NavigationView                           `json:"navigation_view,omitempty"`
-	Op             *GetEvents200JSONResponseBodyEvents76Op   `json:"op,omitempty"`
-	Type           *GetEvents200JSONResponseBodyEvents76Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents76Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents76Op string
-
-// GetEvents200JSONResponseBodyEvents76Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents76Type string
-
-// GetEvents200JSONResponseBodyEvents77 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents77 struct {
-	// Data A dictionary containing the updated properties of the navigation view.
-	Data *struct {
-		// IsPinned Determines whether the view is pinned (true) or hidden in the menu (false).
-		IsPinned *bool `json:"is_pinned,omitempty"`
-
-		// Name The user-facing name for custom navigation views. Omit this field for built-in views.
-		Name *string `json:"name,omitempty"`
-	} `json:"data,omitempty"`
-
-	// Fragment The unique URL hash of the navigation view being updated.
-	Fragment *string `json:"fragment,omitempty"`
-
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents77Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents77Type `json:"type,omitempty"`
+	Op             *GetEvents200JSONResponseBodyEvents77Op   `json:"op,omitempty"`
+	Type           *GetEvents200JSONResponseBodyEvents77Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents77Op defines parameters for GetEvents.
@@ -11890,7 +11896,16 @@ type GetEvents200JSONResponseBodyEvents77Type string
 
 // GetEvents200JSONResponseBodyEvents78 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents78 struct {
-	// Fragment The unique URL hash of the navigation view that was just deleted.
+	// Data A dictionary containing the updated properties of the navigation view.
+	Data *struct {
+		// IsPinned Determines whether the view is pinned (true) or hidden in the menu (false).
+		IsPinned *bool `json:"is_pinned,omitempty"`
+
+		// Name The user-facing name for custom navigation views. Omit this field for built-in views.
+		Name *string `json:"name,omitempty"`
+	} `json:"data,omitempty"`
+
+	// Fragment The unique URL hash of the navigation view being updated.
 	Fragment *string `json:"fragment,omitempty"`
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
@@ -11907,13 +11922,13 @@ type GetEvents200JSONResponseBodyEvents78Type string
 
 // GetEvents200JSONResponseBodyEvents79 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents79 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents79Op `json:"op,omitempty"`
+	// Fragment The unique URL hash of the navigation view that was just deleted.
+	Fragment *string `json:"fragment,omitempty"`
 
-	// SavedSnippet Object containing the details of the saved snippet.
-	SavedSnippet *SavedSnippet                             `json:"saved_snippet,omitempty"`
-	Type         *GetEvents200JSONResponseBodyEvents79Type `json:"type,omitempty"`
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents79Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents79Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents79Op defines parameters for GetEvents.
@@ -11945,11 +11960,9 @@ type GetEvents200JSONResponseBodyEvents81 struct {
 	Id *EventIdSchema                          `json:"id,omitempty"`
 	Op *GetEvents200JSONResponseBodyEvents81Op `json:"op,omitempty"`
 
-	// SavedSnippetId The ID of the saved snippet that was just deleted.
-	//
-	// **Changes**: New in Zulip 10.0 (feature level 297).
-	SavedSnippetId *int                                      `json:"saved_snippet_id,omitempty"`
-	Type           *GetEvents200JSONResponseBodyEvents81Type `json:"type,omitempty"`
+	// SavedSnippet Object containing the details of the saved snippet.
+	SavedSnippet *SavedSnippet                             `json:"saved_snippet,omitempty"`
+	Type         *GetEvents200JSONResponseBodyEvents81Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents81Op defines parameters for GetEvents.
@@ -11964,10 +11977,11 @@ type GetEvents200JSONResponseBodyEvents82 struct {
 	Id *EventIdSchema                          `json:"id,omitempty"`
 	Op *GetEvents200JSONResponseBodyEvents82Op `json:"op,omitempty"`
 
-	// Reminders An array of objects containing details of the newly created
-	// reminders.
-	Reminders *[]Reminder                               `json:"reminders,omitempty"`
-	Type      *GetEvents200JSONResponseBodyEvents82Type `json:"type,omitempty"`
+	// SavedSnippetId The ID of the saved snippet that was just deleted.
+	//
+	// **Changes**: New in Zulip 10.0 (feature level 297).
+	SavedSnippetId *int                                      `json:"saved_snippet_id,omitempty"`
+	Type           *GetEvents200JSONResponseBodyEvents82Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents82Op defines parameters for GetEvents.
@@ -11982,9 +11996,10 @@ type GetEvents200JSONResponseBodyEvents83 struct {
 	Id *EventIdSchema                          `json:"id,omitempty"`
 	Op *GetEvents200JSONResponseBodyEvents83Op `json:"op,omitempty"`
 
-	// ReminderId The ID of the reminder that was deleted.
-	ReminderId *int                                      `json:"reminder_id,omitempty"`
-	Type       *GetEvents200JSONResponseBodyEvents83Type `json:"type,omitempty"`
+	// Reminders An array of objects containing details of the newly created
+	// reminders.
+	Reminders *[]Reminder                               `json:"reminders,omitempty"`
+	Type      *GetEvents200JSONResponseBodyEvents83Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents83Op defines parameters for GetEvents.
@@ -11999,10 +12014,9 @@ type GetEvents200JSONResponseBodyEvents84 struct {
 	Id *EventIdSchema                          `json:"id,omitempty"`
 	Op *GetEvents200JSONResponseBodyEvents84Op `json:"op,omitempty"`
 
-	// ScheduledMessages An array of objects containing details of the newly created
-	// scheduled messages.
-	ScheduledMessages *[]ScheduledMessage                       `json:"scheduled_messages,omitempty"`
-	Type              *GetEvents200JSONResponseBodyEvents84Type `json:"type,omitempty"`
+	// ReminderId The ID of the reminder that was deleted.
+	ReminderId *int                                      `json:"reminder_id,omitempty"`
+	Type       *GetEvents200JSONResponseBodyEvents84Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents84Op defines parameters for GetEvents.
@@ -12014,10 +12028,13 @@ type GetEvents200JSONResponseBodyEvents84Type string
 // GetEvents200JSONResponseBodyEvents85 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents85 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id               *EventIdSchema                            `json:"id,omitempty"`
-	Op               *GetEvents200JSONResponseBodyEvents85Op   `json:"op,omitempty"`
-	ScheduledMessage *ScheduledMessage                         `json:"scheduled_message,omitempty"`
-	Type             *GetEvents200JSONResponseBodyEvents85Type `json:"type,omitempty"`
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents85Op `json:"op,omitempty"`
+
+	// ScheduledMessages An array of objects containing details of the newly created
+	// scheduled messages.
+	ScheduledMessages *[]ScheduledMessage                       `json:"scheduled_messages,omitempty"`
+	Type              *GetEvents200JSONResponseBodyEvents85Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents85Op defines parameters for GetEvents.
@@ -12029,12 +12046,10 @@ type GetEvents200JSONResponseBodyEvents85Type string
 // GetEvents200JSONResponseBodyEvents86 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents86 struct {
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents86Op `json:"op,omitempty"`
-
-	// ScheduledMessageId The ID of the scheduled message that was deleted.
-	ScheduledMessageId *int                                      `json:"scheduled_message_id,omitempty"`
-	Type               *GetEvents200JSONResponseBodyEvents86Type `json:"type,omitempty"`
+	Id               *EventIdSchema                            `json:"id,omitempty"`
+	Op               *GetEvents200JSONResponseBodyEvents86Op   `json:"op,omitempty"`
+	ScheduledMessage *ScheduledMessage                         `json:"scheduled_message,omitempty"`
+	Type             *GetEvents200JSONResponseBodyEvents86Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents86Op defines parameters for GetEvents.
@@ -12045,13 +12060,13 @@ type GetEvents200JSONResponseBodyEvents86Type string
 
 // GetEvents200JSONResponseBodyEvents87 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents87 struct {
-	// ChannelFolder Object containing the channel folder's attributes.
-	ChannelFolder *ChannelFolder `json:"channel_folder,omitempty"`
-
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents87Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents87Type `json:"type,omitempty"`
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents87Op `json:"op,omitempty"`
+
+	// ScheduledMessageId The ID of the scheduled message that was deleted.
+	ScheduledMessageId *int                                      `json:"scheduled_message_id,omitempty"`
+	Type               *GetEvents200JSONResponseBodyEvents87Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents87Op defines parameters for GetEvents.
@@ -12062,6 +12077,23 @@ type GetEvents200JSONResponseBodyEvents87Type string
 
 // GetEvents200JSONResponseBodyEvents88 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents88 struct {
+	// ChannelFolder Object containing the channel folder's attributes.
+	ChannelFolder *ChannelFolder `json:"channel_folder,omitempty"`
+
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id   *EventIdSchema                            `json:"id,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents88Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents88Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents88Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents88Op string
+
+// GetEvents200JSONResponseBodyEvents88Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents88Type string
+
+// GetEvents200JSONResponseBodyEvents89 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents89 struct {
 	// ChannelFolderId ID of the updated channel folder.
 	ChannelFolderId *float64 `json:"channel_folder_id,omitempty"`
 
@@ -12088,25 +12120,8 @@ type GetEvents200JSONResponseBodyEvents88 struct {
 
 	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
 	Id   *EventIdSchema                            `json:"id,omitempty"`
-	Op   *GetEvents200JSONResponseBodyEvents88Op   `json:"op,omitempty"`
-	Type *GetEvents200JSONResponseBodyEvents88Type `json:"type,omitempty"`
-}
-
-// GetEvents200JSONResponseBodyEvents88Op defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents88Op string
-
-// GetEvents200JSONResponseBodyEvents88Type defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents88Type string
-
-// GetEvents200JSONResponseBodyEvents89 defines parameters for GetEvents.
-type GetEvents200JSONResponseBodyEvents89 struct {
-	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
-	Id *EventIdSchema                          `json:"id,omitempty"`
-	Op *GetEvents200JSONResponseBodyEvents89Op `json:"op,omitempty"`
-
-	// Order A list of channel folder IDs representing the new order.
-	Order *[]int                                    `json:"order,omitempty"`
-	Type  *GetEvents200JSONResponseBodyEvents89Type `json:"type,omitempty"`
+	Op   *GetEvents200JSONResponseBodyEvents89Op   `json:"op,omitempty"`
+	Type *GetEvents200JSONResponseBodyEvents89Type `json:"type,omitempty"`
 }
 
 // GetEvents200JSONResponseBodyEvents89Op defines parameters for GetEvents.
@@ -12114,6 +12129,23 @@ type GetEvents200JSONResponseBodyEvents89Op string
 
 // GetEvents200JSONResponseBodyEvents89Type defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents89Type string
+
+// GetEvents200JSONResponseBodyEvents90 defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents90 struct {
+	// Id The ID of the event. Events appear in increasing order but may not be consecutive.
+	Id *EventIdSchema                          `json:"id,omitempty"`
+	Op *GetEvents200JSONResponseBodyEvents90Op `json:"op,omitempty"`
+
+	// Order A list of channel folder IDs representing the new order.
+	Order *[]int                                    `json:"order,omitempty"`
+	Type  *GetEvents200JSONResponseBodyEvents90Type `json:"type,omitempty"`
+}
+
+// GetEvents200JSONResponseBodyEvents90Op defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents90Op string
+
+// GetEvents200JSONResponseBodyEvents90Type defines parameters for GetEvents.
+type GetEvents200JSONResponseBodyEvents90Type string
 
 // GetEvents200JSONResponseBody_Events_Item defines parameters for GetEvents.
 type GetEvents200JSONResponseBody_Events_Item struct {
@@ -22683,22 +22715,22 @@ func (t *GetEvents200JSONResponseBody_Events_5_Value) UnmarshalJSON(b []byte) er
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents17Value0 returns the union data inside the GetEvents200JSONResponseBody_Events_17_Value as a GetEvents200JSONResponseBodyEvents17Value0
-func (t GetEvents200JSONResponseBody_Events_17_Value) AsGetEvents200JSONResponseBodyEvents17Value0() (GetEvents200JSONResponseBodyEvents17Value0, error) {
-	var body GetEvents200JSONResponseBodyEvents17Value0
+// AsGetEvents200JSONResponseBodyEvents18Value0 returns the union data inside the GetEvents200JSONResponseBody_Events_18_Value as a GetEvents200JSONResponseBodyEvents18Value0
+func (t GetEvents200JSONResponseBody_Events_18_Value) AsGetEvents200JSONResponseBodyEvents18Value0() (GetEvents200JSONResponseBodyEvents18Value0, error) {
+	var body GetEvents200JSONResponseBodyEvents18Value0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents17Value0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_17_Value as the provided GetEvents200JSONResponseBodyEvents17Value0
-func (t *GetEvents200JSONResponseBody_Events_17_Value) FromGetEvents200JSONResponseBodyEvents17Value0(v GetEvents200JSONResponseBodyEvents17Value0) error {
+// FromGetEvents200JSONResponseBodyEvents18Value0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_18_Value as the provided GetEvents200JSONResponseBodyEvents18Value0
+func (t *GetEvents200JSONResponseBody_Events_18_Value) FromGetEvents200JSONResponseBodyEvents18Value0(v GetEvents200JSONResponseBodyEvents18Value0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents17Value0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_17_Value, using the provided GetEvents200JSONResponseBodyEvents17Value0
-func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResponseBodyEvents17Value0(v GetEvents200JSONResponseBodyEvents17Value0) error {
+// MergeGetEvents200JSONResponseBodyEvents18Value0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_18_Value, using the provided GetEvents200JSONResponseBodyEvents18Value0
+func (t *GetEvents200JSONResponseBody_Events_18_Value) MergeGetEvents200JSONResponseBodyEvents18Value0(v GetEvents200JSONResponseBodyEvents18Value0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22709,22 +22741,22 @@ func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents17Value1 returns the union data inside the GetEvents200JSONResponseBody_Events_17_Value as a GetEvents200JSONResponseBodyEvents17Value1
-func (t GetEvents200JSONResponseBody_Events_17_Value) AsGetEvents200JSONResponseBodyEvents17Value1() (GetEvents200JSONResponseBodyEvents17Value1, error) {
-	var body GetEvents200JSONResponseBodyEvents17Value1
+// AsGetEvents200JSONResponseBodyEvents18Value1 returns the union data inside the GetEvents200JSONResponseBody_Events_18_Value as a GetEvents200JSONResponseBodyEvents18Value1
+func (t GetEvents200JSONResponseBody_Events_18_Value) AsGetEvents200JSONResponseBodyEvents18Value1() (GetEvents200JSONResponseBodyEvents18Value1, error) {
+	var body GetEvents200JSONResponseBodyEvents18Value1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents17Value1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_17_Value as the provided GetEvents200JSONResponseBodyEvents17Value1
-func (t *GetEvents200JSONResponseBody_Events_17_Value) FromGetEvents200JSONResponseBodyEvents17Value1(v GetEvents200JSONResponseBodyEvents17Value1) error {
+// FromGetEvents200JSONResponseBodyEvents18Value1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_18_Value as the provided GetEvents200JSONResponseBodyEvents18Value1
+func (t *GetEvents200JSONResponseBody_Events_18_Value) FromGetEvents200JSONResponseBodyEvents18Value1(v GetEvents200JSONResponseBodyEvents18Value1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents17Value1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_17_Value, using the provided GetEvents200JSONResponseBodyEvents17Value1
-func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResponseBodyEvents17Value1(v GetEvents200JSONResponseBodyEvents17Value1) error {
+// MergeGetEvents200JSONResponseBodyEvents18Value1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_18_Value, using the provided GetEvents200JSONResponseBodyEvents18Value1
+func (t *GetEvents200JSONResponseBody_Events_18_Value) MergeGetEvents200JSONResponseBodyEvents18Value1(v GetEvents200JSONResponseBodyEvents18Value1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22735,22 +22767,22 @@ func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents17Value2 returns the union data inside the GetEvents200JSONResponseBody_Events_17_Value as a GetEvents200JSONResponseBodyEvents17Value2
-func (t GetEvents200JSONResponseBody_Events_17_Value) AsGetEvents200JSONResponseBodyEvents17Value2() (GetEvents200JSONResponseBodyEvents17Value2, error) {
-	var body GetEvents200JSONResponseBodyEvents17Value2
+// AsGetEvents200JSONResponseBodyEvents18Value2 returns the union data inside the GetEvents200JSONResponseBody_Events_18_Value as a GetEvents200JSONResponseBodyEvents18Value2
+func (t GetEvents200JSONResponseBody_Events_18_Value) AsGetEvents200JSONResponseBodyEvents18Value2() (GetEvents200JSONResponseBodyEvents18Value2, error) {
+	var body GetEvents200JSONResponseBodyEvents18Value2
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents17Value2 overwrites any union data inside the GetEvents200JSONResponseBody_Events_17_Value as the provided GetEvents200JSONResponseBodyEvents17Value2
-func (t *GetEvents200JSONResponseBody_Events_17_Value) FromGetEvents200JSONResponseBodyEvents17Value2(v GetEvents200JSONResponseBodyEvents17Value2) error {
+// FromGetEvents200JSONResponseBodyEvents18Value2 overwrites any union data inside the GetEvents200JSONResponseBody_Events_18_Value as the provided GetEvents200JSONResponseBodyEvents18Value2
+func (t *GetEvents200JSONResponseBody_Events_18_Value) FromGetEvents200JSONResponseBodyEvents18Value2(v GetEvents200JSONResponseBodyEvents18Value2) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents17Value2 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_17_Value, using the provided GetEvents200JSONResponseBodyEvents17Value2
-func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResponseBodyEvents17Value2(v GetEvents200JSONResponseBodyEvents17Value2) error {
+// MergeGetEvents200JSONResponseBodyEvents18Value2 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_18_Value, using the provided GetEvents200JSONResponseBodyEvents18Value2
+func (t *GetEvents200JSONResponseBody_Events_18_Value) MergeGetEvents200JSONResponseBodyEvents18Value2(v GetEvents200JSONResponseBodyEvents18Value2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22761,22 +22793,22 @@ func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents17Value3 returns the union data inside the GetEvents200JSONResponseBody_Events_17_Value as a GetEvents200JSONResponseBodyEvents17Value3
-func (t GetEvents200JSONResponseBody_Events_17_Value) AsGetEvents200JSONResponseBodyEvents17Value3() (GetEvents200JSONResponseBodyEvents17Value3, error) {
-	var body GetEvents200JSONResponseBodyEvents17Value3
+// AsGetEvents200JSONResponseBodyEvents18Value3 returns the union data inside the GetEvents200JSONResponseBody_Events_18_Value as a GetEvents200JSONResponseBodyEvents18Value3
+func (t GetEvents200JSONResponseBody_Events_18_Value) AsGetEvents200JSONResponseBodyEvents18Value3() (GetEvents200JSONResponseBodyEvents18Value3, error) {
+	var body GetEvents200JSONResponseBodyEvents18Value3
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents17Value3 overwrites any union data inside the GetEvents200JSONResponseBody_Events_17_Value as the provided GetEvents200JSONResponseBodyEvents17Value3
-func (t *GetEvents200JSONResponseBody_Events_17_Value) FromGetEvents200JSONResponseBodyEvents17Value3(v GetEvents200JSONResponseBodyEvents17Value3) error {
+// FromGetEvents200JSONResponseBodyEvents18Value3 overwrites any union data inside the GetEvents200JSONResponseBody_Events_18_Value as the provided GetEvents200JSONResponseBodyEvents18Value3
+func (t *GetEvents200JSONResponseBody_Events_18_Value) FromGetEvents200JSONResponseBodyEvents18Value3(v GetEvents200JSONResponseBodyEvents18Value3) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents17Value3 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_17_Value, using the provided GetEvents200JSONResponseBodyEvents17Value3
-func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResponseBodyEvents17Value3(v GetEvents200JSONResponseBodyEvents17Value3) error {
+// MergeGetEvents200JSONResponseBodyEvents18Value3 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_18_Value, using the provided GetEvents200JSONResponseBodyEvents18Value3
+func (t *GetEvents200JSONResponseBody_Events_18_Value) MergeGetEvents200JSONResponseBodyEvents18Value3(v GetEvents200JSONResponseBodyEvents18Value3) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22787,32 +22819,32 @@ func (t *GetEvents200JSONResponseBody_Events_17_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_17_Value) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_18_Value) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_17_Value) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_18_Value) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents32MutedTopics0 returns the union data inside the GetEvents200JSONResponseBody_Events_32_MutedTopics_Item as a GetEvents200JSONResponseBodyEvents32MutedTopics0
-func (t GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) AsGetEvents200JSONResponseBodyEvents32MutedTopics0() (GetEvents200JSONResponseBodyEvents32MutedTopics0, error) {
-	var body GetEvents200JSONResponseBodyEvents32MutedTopics0
+// AsGetEvents200JSONResponseBodyEvents33MutedTopics0 returns the union data inside the GetEvents200JSONResponseBody_Events_33_MutedTopics_Item as a GetEvents200JSONResponseBodyEvents33MutedTopics0
+func (t GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) AsGetEvents200JSONResponseBodyEvents33MutedTopics0() (GetEvents200JSONResponseBodyEvents33MutedTopics0, error) {
+	var body GetEvents200JSONResponseBodyEvents33MutedTopics0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents32MutedTopics0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_32_MutedTopics_Item as the provided GetEvents200JSONResponseBodyEvents32MutedTopics0
-func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) FromGetEvents200JSONResponseBodyEvents32MutedTopics0(v GetEvents200JSONResponseBodyEvents32MutedTopics0) error {
+// FromGetEvents200JSONResponseBodyEvents33MutedTopics0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_33_MutedTopics_Item as the provided GetEvents200JSONResponseBodyEvents33MutedTopics0
+func (t *GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) FromGetEvents200JSONResponseBodyEvents33MutedTopics0(v GetEvents200JSONResponseBodyEvents33MutedTopics0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents32MutedTopics0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_32_MutedTopics_Item, using the provided GetEvents200JSONResponseBodyEvents32MutedTopics0
-func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) MergeGetEvents200JSONResponseBodyEvents32MutedTopics0(v GetEvents200JSONResponseBodyEvents32MutedTopics0) error {
+// MergeGetEvents200JSONResponseBodyEvents33MutedTopics0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_33_MutedTopics_Item, using the provided GetEvents200JSONResponseBodyEvents33MutedTopics0
+func (t *GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) MergeGetEvents200JSONResponseBodyEvents33MutedTopics0(v GetEvents200JSONResponseBodyEvents33MutedTopics0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22823,22 +22855,22 @@ func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) MergeGetEvents
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents32MutedTopics1 returns the union data inside the GetEvents200JSONResponseBody_Events_32_MutedTopics_Item as a GetEvents200JSONResponseBodyEvents32MutedTopics1
-func (t GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) AsGetEvents200JSONResponseBodyEvents32MutedTopics1() (GetEvents200JSONResponseBodyEvents32MutedTopics1, error) {
-	var body GetEvents200JSONResponseBodyEvents32MutedTopics1
+// AsGetEvents200JSONResponseBodyEvents33MutedTopics1 returns the union data inside the GetEvents200JSONResponseBody_Events_33_MutedTopics_Item as a GetEvents200JSONResponseBodyEvents33MutedTopics1
+func (t GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) AsGetEvents200JSONResponseBodyEvents33MutedTopics1() (GetEvents200JSONResponseBodyEvents33MutedTopics1, error) {
+	var body GetEvents200JSONResponseBodyEvents33MutedTopics1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents32MutedTopics1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_32_MutedTopics_Item as the provided GetEvents200JSONResponseBodyEvents32MutedTopics1
-func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) FromGetEvents200JSONResponseBodyEvents32MutedTopics1(v GetEvents200JSONResponseBodyEvents32MutedTopics1) error {
+// FromGetEvents200JSONResponseBodyEvents33MutedTopics1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_33_MutedTopics_Item as the provided GetEvents200JSONResponseBodyEvents33MutedTopics1
+func (t *GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) FromGetEvents200JSONResponseBodyEvents33MutedTopics1(v GetEvents200JSONResponseBodyEvents33MutedTopics1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents32MutedTopics1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_32_MutedTopics_Item, using the provided GetEvents200JSONResponseBodyEvents32MutedTopics1
-func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) MergeGetEvents200JSONResponseBodyEvents32MutedTopics1(v GetEvents200JSONResponseBodyEvents32MutedTopics1) error {
+// MergeGetEvents200JSONResponseBodyEvents33MutedTopics1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_33_MutedTopics_Item, using the provided GetEvents200JSONResponseBodyEvents33MutedTopics1
+func (t *GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) MergeGetEvents200JSONResponseBodyEvents33MutedTopics1(v GetEvents200JSONResponseBodyEvents33MutedTopics1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22849,32 +22881,32 @@ func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) MergeGetEvents
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_32_MutedTopics_Item) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_33_MutedTopics_Item) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup as a GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) AsGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0() (GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0
+// AsGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup as a GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) AsGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0() (GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) FromGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0(v GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) FromGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0(v GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0(v GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0(v GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22885,22 +22917,22 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) MergeGe
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup as a GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) AsGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1() (GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1
+// AsGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup as a GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) AsGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1() (GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) FromGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1(v GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) FromGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1(v GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1(v GetEvents200JSONResponseBodyEvents46DataCanAddMembersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1(v GetEvents200JSONResponseBodyEvents47DataCanAddMembersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22911,32 +22943,32 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) MergeGe
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanAddMembersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanAddMembersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanJoinGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup as a GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) AsGetEvents200JSONResponseBodyEvents46DataCanJoinGroup0() (GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0
+// AsGetEvents200JSONResponseBodyEvents47DataCanJoinGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup as a GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) AsGetEvents200JSONResponseBodyEvents47DataCanJoinGroup0() (GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanJoinGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) FromGetEvents200JSONResponseBodyEvents46DataCanJoinGroup0(v GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanJoinGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) FromGetEvents200JSONResponseBodyEvents47DataCanJoinGroup0(v GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanJoinGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanJoinGroup0(v GetEvents200JSONResponseBodyEvents46DataCanJoinGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanJoinGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanJoinGroup0(v GetEvents200JSONResponseBodyEvents47DataCanJoinGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22947,22 +22979,22 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) MergeGetEvent
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanJoinGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup as a GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) AsGetEvents200JSONResponseBodyEvents46DataCanJoinGroup1() (GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1
+// AsGetEvents200JSONResponseBodyEvents47DataCanJoinGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup as a GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) AsGetEvents200JSONResponseBodyEvents47DataCanJoinGroup1() (GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanJoinGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) FromGetEvents200JSONResponseBodyEvents46DataCanJoinGroup1(v GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanJoinGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) FromGetEvents200JSONResponseBodyEvents47DataCanJoinGroup1(v GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanJoinGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanJoinGroup1(v GetEvents200JSONResponseBodyEvents46DataCanJoinGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanJoinGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanJoinGroup1(v GetEvents200JSONResponseBodyEvents47DataCanJoinGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -22973,32 +23005,32 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) MergeGetEvent
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanJoinGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanJoinGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup as a GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) AsGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0() (GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0
+// AsGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup as a GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) AsGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0() (GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) FromGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0(v GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) FromGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0(v GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0(v GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0(v GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23009,22 +23041,22 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) MergeGetEven
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup as a GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) AsGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1() (GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1
+// AsGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup as a GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) AsGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1() (GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) FromGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1(v GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) FromGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1(v GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1(v GetEvents200JSONResponseBodyEvents46DataCanLeaveGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1(v GetEvents200JSONResponseBodyEvents47DataCanLeaveGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23035,32 +23067,32 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) MergeGetEven
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanLeaveGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanLeaveGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanManageGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup as a GetEvents200JSONResponseBodyEvents46DataCanManageGroup0
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) AsGetEvents200JSONResponseBodyEvents46DataCanManageGroup0() (GetEvents200JSONResponseBodyEvents46DataCanManageGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanManageGroup0
+// AsGetEvents200JSONResponseBodyEvents47DataCanManageGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup as a GetEvents200JSONResponseBodyEvents47DataCanManageGroup0
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) AsGetEvents200JSONResponseBodyEvents47DataCanManageGroup0() (GetEvents200JSONResponseBodyEvents47DataCanManageGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanManageGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanManageGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanManageGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) FromGetEvents200JSONResponseBodyEvents46DataCanManageGroup0(v GetEvents200JSONResponseBodyEvents46DataCanManageGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanManageGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanManageGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) FromGetEvents200JSONResponseBodyEvents47DataCanManageGroup0(v GetEvents200JSONResponseBodyEvents47DataCanManageGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanManageGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanManageGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanManageGroup0(v GetEvents200JSONResponseBodyEvents46DataCanManageGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanManageGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanManageGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanManageGroup0(v GetEvents200JSONResponseBodyEvents47DataCanManageGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23071,22 +23103,22 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) MergeGetEve
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanManageGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup as a GetEvents200JSONResponseBodyEvents46DataCanManageGroup1
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) AsGetEvents200JSONResponseBodyEvents46DataCanManageGroup1() (GetEvents200JSONResponseBodyEvents46DataCanManageGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanManageGroup1
+// AsGetEvents200JSONResponseBodyEvents47DataCanManageGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup as a GetEvents200JSONResponseBodyEvents47DataCanManageGroup1
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) AsGetEvents200JSONResponseBodyEvents47DataCanManageGroup1() (GetEvents200JSONResponseBodyEvents47DataCanManageGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanManageGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanManageGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanManageGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) FromGetEvents200JSONResponseBodyEvents46DataCanManageGroup1(v GetEvents200JSONResponseBodyEvents46DataCanManageGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanManageGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanManageGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) FromGetEvents200JSONResponseBodyEvents47DataCanManageGroup1(v GetEvents200JSONResponseBodyEvents47DataCanManageGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanManageGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanManageGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanManageGroup1(v GetEvents200JSONResponseBodyEvents46DataCanManageGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanManageGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanManageGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanManageGroup1(v GetEvents200JSONResponseBodyEvents47DataCanManageGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23097,32 +23129,32 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) MergeGetEve
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanManageGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanManageGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanMentionGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup as a GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) AsGetEvents200JSONResponseBodyEvents46DataCanMentionGroup0() (GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0
+// AsGetEvents200JSONResponseBodyEvents47DataCanMentionGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup as a GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) AsGetEvents200JSONResponseBodyEvents47DataCanMentionGroup0() (GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanMentionGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) FromGetEvents200JSONResponseBodyEvents46DataCanMentionGroup0(v GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanMentionGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) FromGetEvents200JSONResponseBodyEvents47DataCanMentionGroup0(v GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanMentionGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanMentionGroup0(v GetEvents200JSONResponseBodyEvents46DataCanMentionGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanMentionGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanMentionGroup0(v GetEvents200JSONResponseBodyEvents47DataCanMentionGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23133,22 +23165,22 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) MergeGetEv
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanMentionGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup as a GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) AsGetEvents200JSONResponseBodyEvents46DataCanMentionGroup1() (GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1
+// AsGetEvents200JSONResponseBodyEvents47DataCanMentionGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup as a GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) AsGetEvents200JSONResponseBodyEvents47DataCanMentionGroup1() (GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanMentionGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) FromGetEvents200JSONResponseBodyEvents46DataCanMentionGroup1(v GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanMentionGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) FromGetEvents200JSONResponseBodyEvents47DataCanMentionGroup1(v GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanMentionGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanMentionGroup1(v GetEvents200JSONResponseBodyEvents46DataCanMentionGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanMentionGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanMentionGroup1(v GetEvents200JSONResponseBodyEvents47DataCanMentionGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23159,32 +23191,32 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) MergeGetEv
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanMentionGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanMentionGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup as a GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) AsGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0() (GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0
+// AsGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup as a GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) AsGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0() (GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) FromGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0(v GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) FromGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0(v GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0(v GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0(v GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23195,22 +23227,22 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) Merg
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup as a GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) AsGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1() (GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1
+// AsGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup as a GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) AsGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1() (GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup as the provided GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) FromGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1(v GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup as the provided GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) FromGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1(v GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup, using the provided GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) MergeGetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1(v GetEvents200JSONResponseBodyEvents46DataCanRemoveMembersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup, using the provided GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) MergeGetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1(v GetEvents200JSONResponseBodyEvents47DataCanRemoveMembersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23221,32 +23253,32 @@ func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) Merg
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_46_Data_CanRemoveMembersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_47_Data_CanRemoveMembersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents53RealmFilters0 returns the union data inside the GetEvents200JSONResponseBody_Events_53_RealmFilters_Item as a GetEvents200JSONResponseBodyEvents53RealmFilters0
-func (t GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) AsGetEvents200JSONResponseBodyEvents53RealmFilters0() (GetEvents200JSONResponseBodyEvents53RealmFilters0, error) {
-	var body GetEvents200JSONResponseBodyEvents53RealmFilters0
+// AsGetEvents200JSONResponseBodyEvents54RealmFilters0 returns the union data inside the GetEvents200JSONResponseBody_Events_54_RealmFilters_Item as a GetEvents200JSONResponseBodyEvents54RealmFilters0
+func (t GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) AsGetEvents200JSONResponseBodyEvents54RealmFilters0() (GetEvents200JSONResponseBodyEvents54RealmFilters0, error) {
+	var body GetEvents200JSONResponseBodyEvents54RealmFilters0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents53RealmFilters0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_53_RealmFilters_Item as the provided GetEvents200JSONResponseBodyEvents53RealmFilters0
-func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) FromGetEvents200JSONResponseBodyEvents53RealmFilters0(v GetEvents200JSONResponseBodyEvents53RealmFilters0) error {
+// FromGetEvents200JSONResponseBodyEvents54RealmFilters0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_54_RealmFilters_Item as the provided GetEvents200JSONResponseBodyEvents54RealmFilters0
+func (t *GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) FromGetEvents200JSONResponseBodyEvents54RealmFilters0(v GetEvents200JSONResponseBodyEvents54RealmFilters0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents53RealmFilters0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_53_RealmFilters_Item, using the provided GetEvents200JSONResponseBodyEvents53RealmFilters0
-func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) MergeGetEvents200JSONResponseBodyEvents53RealmFilters0(v GetEvents200JSONResponseBodyEvents53RealmFilters0) error {
+// MergeGetEvents200JSONResponseBodyEvents54RealmFilters0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_54_RealmFilters_Item, using the provided GetEvents200JSONResponseBodyEvents54RealmFilters0
+func (t *GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) MergeGetEvents200JSONResponseBodyEvents54RealmFilters0(v GetEvents200JSONResponseBodyEvents54RealmFilters0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23257,22 +23289,22 @@ func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) MergeGetEvent
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents53RealmFilters1 returns the union data inside the GetEvents200JSONResponseBody_Events_53_RealmFilters_Item as a GetEvents200JSONResponseBodyEvents53RealmFilters1
-func (t GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) AsGetEvents200JSONResponseBodyEvents53RealmFilters1() (GetEvents200JSONResponseBodyEvents53RealmFilters1, error) {
-	var body GetEvents200JSONResponseBodyEvents53RealmFilters1
+// AsGetEvents200JSONResponseBodyEvents54RealmFilters1 returns the union data inside the GetEvents200JSONResponseBody_Events_54_RealmFilters_Item as a GetEvents200JSONResponseBodyEvents54RealmFilters1
+func (t GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) AsGetEvents200JSONResponseBodyEvents54RealmFilters1() (GetEvents200JSONResponseBodyEvents54RealmFilters1, error) {
+	var body GetEvents200JSONResponseBodyEvents54RealmFilters1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents53RealmFilters1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_53_RealmFilters_Item as the provided GetEvents200JSONResponseBodyEvents53RealmFilters1
-func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) FromGetEvents200JSONResponseBodyEvents53RealmFilters1(v GetEvents200JSONResponseBodyEvents53RealmFilters1) error {
+// FromGetEvents200JSONResponseBodyEvents54RealmFilters1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_54_RealmFilters_Item as the provided GetEvents200JSONResponseBodyEvents54RealmFilters1
+func (t *GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) FromGetEvents200JSONResponseBodyEvents54RealmFilters1(v GetEvents200JSONResponseBodyEvents54RealmFilters1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents53RealmFilters1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_53_RealmFilters_Item, using the provided GetEvents200JSONResponseBodyEvents53RealmFilters1
-func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) MergeGetEvents200JSONResponseBodyEvents53RealmFilters1(v GetEvents200JSONResponseBodyEvents53RealmFilters1) error {
+// MergeGetEvents200JSONResponseBodyEvents54RealmFilters1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_54_RealmFilters_Item, using the provided GetEvents200JSONResponseBodyEvents54RealmFilters1
+func (t *GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) MergeGetEvents200JSONResponseBodyEvents54RealmFilters1(v GetEvents200JSONResponseBodyEvents54RealmFilters1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23283,32 +23315,32 @@ func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) MergeGetEvent
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_53_RealmFilters_Item) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_54_RealmFilters_Item) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents67Value0 returns the union data inside the GetEvents200JSONResponseBody_Events_67_Value as a GetEvents200JSONResponseBodyEvents67Value0
-func (t GetEvents200JSONResponseBody_Events_67_Value) AsGetEvents200JSONResponseBodyEvents67Value0() (GetEvents200JSONResponseBodyEvents67Value0, error) {
-	var body GetEvents200JSONResponseBodyEvents67Value0
+// AsGetEvents200JSONResponseBodyEvents68Value0 returns the union data inside the GetEvents200JSONResponseBody_Events_68_Value as a GetEvents200JSONResponseBodyEvents68Value0
+func (t GetEvents200JSONResponseBody_Events_68_Value) AsGetEvents200JSONResponseBodyEvents68Value0() (GetEvents200JSONResponseBodyEvents68Value0, error) {
+	var body GetEvents200JSONResponseBodyEvents68Value0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents67Value0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_67_Value as the provided GetEvents200JSONResponseBodyEvents67Value0
-func (t *GetEvents200JSONResponseBody_Events_67_Value) FromGetEvents200JSONResponseBodyEvents67Value0(v GetEvents200JSONResponseBodyEvents67Value0) error {
+// FromGetEvents200JSONResponseBodyEvents68Value0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_68_Value as the provided GetEvents200JSONResponseBodyEvents68Value0
+func (t *GetEvents200JSONResponseBody_Events_68_Value) FromGetEvents200JSONResponseBodyEvents68Value0(v GetEvents200JSONResponseBodyEvents68Value0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents67Value0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_67_Value, using the provided GetEvents200JSONResponseBodyEvents67Value0
-func (t *GetEvents200JSONResponseBody_Events_67_Value) MergeGetEvents200JSONResponseBodyEvents67Value0(v GetEvents200JSONResponseBodyEvents67Value0) error {
+// MergeGetEvents200JSONResponseBodyEvents68Value0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_68_Value, using the provided GetEvents200JSONResponseBodyEvents68Value0
+func (t *GetEvents200JSONResponseBody_Events_68_Value) MergeGetEvents200JSONResponseBodyEvents68Value0(v GetEvents200JSONResponseBodyEvents68Value0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23319,22 +23351,22 @@ func (t *GetEvents200JSONResponseBody_Events_67_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents67Value1 returns the union data inside the GetEvents200JSONResponseBody_Events_67_Value as a GetEvents200JSONResponseBodyEvents67Value1
-func (t GetEvents200JSONResponseBody_Events_67_Value) AsGetEvents200JSONResponseBodyEvents67Value1() (GetEvents200JSONResponseBodyEvents67Value1, error) {
-	var body GetEvents200JSONResponseBodyEvents67Value1
+// AsGetEvents200JSONResponseBodyEvents68Value1 returns the union data inside the GetEvents200JSONResponseBody_Events_68_Value as a GetEvents200JSONResponseBodyEvents68Value1
+func (t GetEvents200JSONResponseBody_Events_68_Value) AsGetEvents200JSONResponseBodyEvents68Value1() (GetEvents200JSONResponseBodyEvents68Value1, error) {
+	var body GetEvents200JSONResponseBodyEvents68Value1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents67Value1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_67_Value as the provided GetEvents200JSONResponseBodyEvents67Value1
-func (t *GetEvents200JSONResponseBody_Events_67_Value) FromGetEvents200JSONResponseBodyEvents67Value1(v GetEvents200JSONResponseBodyEvents67Value1) error {
+// FromGetEvents200JSONResponseBodyEvents68Value1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_68_Value as the provided GetEvents200JSONResponseBodyEvents68Value1
+func (t *GetEvents200JSONResponseBody_Events_68_Value) FromGetEvents200JSONResponseBodyEvents68Value1(v GetEvents200JSONResponseBodyEvents68Value1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents67Value1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_67_Value, using the provided GetEvents200JSONResponseBodyEvents67Value1
-func (t *GetEvents200JSONResponseBody_Events_67_Value) MergeGetEvents200JSONResponseBodyEvents67Value1(v GetEvents200JSONResponseBodyEvents67Value1) error {
+// MergeGetEvents200JSONResponseBodyEvents68Value1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_68_Value, using the provided GetEvents200JSONResponseBodyEvents68Value1
+func (t *GetEvents200JSONResponseBody_Events_68_Value) MergeGetEvents200JSONResponseBodyEvents68Value1(v GetEvents200JSONResponseBodyEvents68Value1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23345,22 +23377,22 @@ func (t *GetEvents200JSONResponseBody_Events_67_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents67Value2 returns the union data inside the GetEvents200JSONResponseBody_Events_67_Value as a GetEvents200JSONResponseBodyEvents67Value2
-func (t GetEvents200JSONResponseBody_Events_67_Value) AsGetEvents200JSONResponseBodyEvents67Value2() (GetEvents200JSONResponseBodyEvents67Value2, error) {
-	var body GetEvents200JSONResponseBodyEvents67Value2
+// AsGetEvents200JSONResponseBodyEvents68Value2 returns the union data inside the GetEvents200JSONResponseBody_Events_68_Value as a GetEvents200JSONResponseBodyEvents68Value2
+func (t GetEvents200JSONResponseBody_Events_68_Value) AsGetEvents200JSONResponseBodyEvents68Value2() (GetEvents200JSONResponseBodyEvents68Value2, error) {
+	var body GetEvents200JSONResponseBodyEvents68Value2
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents67Value2 overwrites any union data inside the GetEvents200JSONResponseBody_Events_67_Value as the provided GetEvents200JSONResponseBodyEvents67Value2
-func (t *GetEvents200JSONResponseBody_Events_67_Value) FromGetEvents200JSONResponseBodyEvents67Value2(v GetEvents200JSONResponseBodyEvents67Value2) error {
+// FromGetEvents200JSONResponseBodyEvents68Value2 overwrites any union data inside the GetEvents200JSONResponseBody_Events_68_Value as the provided GetEvents200JSONResponseBodyEvents68Value2
+func (t *GetEvents200JSONResponseBody_Events_68_Value) FromGetEvents200JSONResponseBodyEvents68Value2(v GetEvents200JSONResponseBodyEvents68Value2) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents67Value2 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_67_Value, using the provided GetEvents200JSONResponseBodyEvents67Value2
-func (t *GetEvents200JSONResponseBody_Events_67_Value) MergeGetEvents200JSONResponseBodyEvents67Value2(v GetEvents200JSONResponseBodyEvents67Value2) error {
+// MergeGetEvents200JSONResponseBodyEvents68Value2 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_68_Value, using the provided GetEvents200JSONResponseBodyEvents68Value2
+func (t *GetEvents200JSONResponseBody_Events_68_Value) MergeGetEvents200JSONResponseBodyEvents68Value2(v GetEvents200JSONResponseBodyEvents68Value2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23371,32 +23403,32 @@ func (t *GetEvents200JSONResponseBody_Events_67_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_67_Value) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_68_Value) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_67_Value) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_68_Value) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup as a GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0() (GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup as a GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0() (GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23407,22 +23439,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) Mer
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup as a GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1() (GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup as a GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1() (GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanAccessAllUsersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanAccessAllUsersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23433,32 +23465,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) Mer
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAccessAllUsersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAccessAllUsersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup as a GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) AsGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0() (GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup as a GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) AsGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0() (GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) FromGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0(v GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) FromGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0(v GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0(v GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0(v GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23469,22 +23501,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) Mer
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup as a GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) AsGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1() (GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup as a GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) AsGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1() (GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) FromGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1(v GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) FromGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1(v GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1(v GetEvents200JSONResponseBodyEvents71DataCanAddCustomEmojiGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1(v GetEvents200JSONResponseBodyEvents72DataCanAddCustomEmojiGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23495,32 +23527,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) Mer
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddCustomEmojiGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddCustomEmojiGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup as a GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0() (GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup as a GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0() (GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23531,22 +23563,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) Mer
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup as a GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1() (GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup as a GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1() (GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanAddSubscribersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanAddSubscribersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23557,32 +23589,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) Mer
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanAddSubscribersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanAddSubscribersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0() (GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0() (GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23593,22 +23625,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) MergeGe
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1() (GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1() (GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreateBotsGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreateBotsGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23619,32 +23651,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) MergeGe
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateBotsGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateBotsGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateGroups0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups as a GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) AsGetEvents200JSONResponseBodyEvents71DataCanCreateGroups0() (GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateGroups0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups as a GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) AsGetEvents200JSONResponseBodyEvents72DataCanCreateGroups0() (GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateGroups0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) FromGetEvents200JSONResponseBodyEvents71DataCanCreateGroups0(v GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateGroups0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) FromGetEvents200JSONResponseBodyEvents72DataCanCreateGroups0(v GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateGroups0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateGroups0(v GetEvents200JSONResponseBodyEvents71DataCanCreateGroups0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateGroups0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateGroups0(v GetEvents200JSONResponseBodyEvents72DataCanCreateGroups0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23655,22 +23687,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) MergeGetEv
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateGroups1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups as a GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) AsGetEvents200JSONResponseBodyEvents71DataCanCreateGroups1() (GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateGroups1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups as a GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) AsGetEvents200JSONResponseBodyEvents72DataCanCreateGroups1() (GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateGroups1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) FromGetEvents200JSONResponseBodyEvents71DataCanCreateGroups1(v GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateGroups1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) FromGetEvents200JSONResponseBodyEvents72DataCanCreateGroups1(v GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateGroups1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateGroups1(v GetEvents200JSONResponseBodyEvents71DataCanCreateGroups1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateGroups1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateGroups1(v GetEvents200JSONResponseBodyEvents72DataCanCreateGroups1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23681,32 +23713,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) MergeGetEv
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateGroups) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateGroups) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0() (GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0() (GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23717,22 +23749,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGrou
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1() (GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1() (GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreatePrivateChannelGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreatePrivateChannelGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23743,32 +23775,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGrou
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePrivateChannelGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePrivateChannelGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0() (GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0() (GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23779,22 +23811,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1() (GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1() (GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreatePublicChannelGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreatePublicChannelGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23805,32 +23837,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreatePublicChannelGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreatePublicChannelGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0() (GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0() (GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23841,22 +23873,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGr
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1() (GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1() (GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreateWebPublicChannelGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreateWebPublicChannelGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23867,32 +23899,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGr
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWebPublicChannelGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWebPublicChannelGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0() (GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0() (GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23903,22 +23935,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup as a GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1() (GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup as a GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1() (GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanCreateWriteOnlyBotsGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanCreateWriteOnlyBotsGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23929,32 +23961,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanCreateWriteOnlyBotsGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanCreateWriteOnlyBotsGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup as a GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) AsGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0() (GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup as a GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) AsGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0() (GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) FromGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0(v GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) FromGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0(v GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0(v GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0(v GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23965,22 +23997,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) M
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup as a GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) AsGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1() (GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup as a GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) AsGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1() (GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) FromGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1(v GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) FromGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1(v GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1(v GetEvents200JSONResponseBodyEvents71DataCanDeleteAnyMessageGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1(v GetEvents200JSONResponseBodyEvents72DataCanDeleteAnyMessageGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -23991,32 +24023,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) M
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteAnyMessageGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteAnyMessageGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup as a GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) AsGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0() (GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup as a GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) AsGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0() (GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) FromGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0(v GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) FromGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0(v GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0(v GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0(v GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24027,22 +24059,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) M
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup as a GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) AsGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1() (GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup as a GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) AsGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1() (GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) FromGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1(v GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) FromGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1(v GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1(v GetEvents200JSONResponseBodyEvents71DataCanDeleteOwnMessageGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1(v GetEvents200JSONResponseBodyEvents72DataCanDeleteOwnMessageGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24053,32 +24085,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) M
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanDeleteOwnMessageGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanDeleteOwnMessageGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup as a GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0() (GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup as a GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0() (GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24089,22 +24121,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) MergeG
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup as a GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1() (GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup as a GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1() (GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanInviteUsersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanInviteUsersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24115,32 +24147,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) MergeG
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanInviteUsersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanInviteUsersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups as a GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) AsGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0() (GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0
+// AsGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups as a GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) AsGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0() (GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups as the provided GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) FromGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0(v GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups as the provided GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) FromGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0(v GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups, using the provided GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) MergeGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0(v GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups, using the provided GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) MergeGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0(v GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24151,22 +24183,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) MergeGe
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups as a GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) AsGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1() (GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1
+// AsGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups as a GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) AsGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1() (GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups as the provided GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) FromGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1(v GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups as the provided GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) FromGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1(v GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups, using the provided GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) MergeGetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1(v GetEvents200JSONResponseBodyEvents71DataCanManageAllGroups1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups, using the provided GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) MergeGetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1(v GetEvents200JSONResponseBodyEvents72DataCanManageAllGroups1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24177,32 +24209,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) MergeGe
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageAllGroups) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageAllGroups) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup as a GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) AsGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0() (GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup as a GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) AsGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0() (GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) FromGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0(v GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) FromGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0(v GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0(v GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0(v GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24213,22 +24245,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) Merg
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup as a GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) AsGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1() (GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup as a GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) AsGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1() (GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) FromGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1(v GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) FromGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1(v GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1(v GetEvents200JSONResponseBodyEvents71DataCanManageBillingGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1(v GetEvents200JSONResponseBodyEvents72DataCanManageBillingGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24239,32 +24271,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) Merg
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanManageBillingGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanManageBillingGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup as a GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0() (GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup as a GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0() (GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24275,22 +24307,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) M
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup as a GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1() (GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup as a GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1() (GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataCanMentionManyUsersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataCanMentionManyUsersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24301,32 +24333,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) M
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMentionManyUsersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMentionManyUsersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup as a GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0() (GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup as a GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0() (GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24337,22 +24369,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChann
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup as a GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1() (GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup as a GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1() (GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenChannelsGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenChannelsGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24363,32 +24395,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChann
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenChannelsGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenChannelsGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup as a GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0() (GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup as a GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0() (GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24399,22 +24431,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopic
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup as a GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1() (GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup as a GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1() (GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanMoveMessagesBetweenTopicsGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanMoveMessagesBetweenTopicsGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24425,32 +24457,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopic
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanMoveMessagesBetweenTopicsGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanMoveMessagesBetweenTopicsGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup as a GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0() (GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup as a GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0() (GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24461,22 +24493,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) Merg
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup as a GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1() (GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup as a GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1() (GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanResolveTopicsGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanResolveTopicsGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24487,32 +24519,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) Merg
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanResolveTopicsGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanResolveTopicsGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup as a GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) AsGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0() (GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup as a GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) AsGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0() (GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) FromGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0(v GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) FromGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0(v GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0(v GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0(v GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24523,22 +24555,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGr
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup as a GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) AsGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1() (GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup as a GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) AsGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1() (GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) FromGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1(v GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) FromGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1(v GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1(v GetEvents200JSONResponseBodyEvents71DataCanSetDeleteMessagePolicyGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1(v GetEvents200JSONResponseBodyEvents72DataCanSetDeleteMessagePolicyGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24549,32 +24581,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGr
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetDeleteMessagePolicyGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetDeleteMessagePolicyGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup as a GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) AsGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0() (GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup as a GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) AsGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0() (GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) FromGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0(v GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) FromGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0(v GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0(v GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0(v GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24585,22 +24617,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) Me
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup as a GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) AsGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1() (GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup as a GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) AsGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1() (GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) FromGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1(v GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) FromGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1(v GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1(v GetEvents200JSONResponseBodyEvents71DataCanSetTopicsPolicyGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1(v GetEvents200JSONResponseBodyEvents72DataCanSetTopicsPolicyGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24611,32 +24643,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) Me
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSetTopicsPolicyGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSetTopicsPolicyGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup as a GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0() (GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup as a GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0() (GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0(v GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0(v GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24647,22 +24679,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) Me
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup as a GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) AsGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1() (GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup as a GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) AsGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1() (GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup as the provided GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) FromGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup as the provided GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) FromGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) MergeGetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1(v GetEvents200JSONResponseBodyEvents71DataCanSummarizeTopicsGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) MergeGetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1(v GetEvents200JSONResponseBodyEvents72DataCanSummarizeTopicsGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24673,32 +24705,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) Me
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CanSummarizeTopicsGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CanSummarizeTopicsGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup as a GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) AsGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0() (GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup as a GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) AsGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0() (GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup as the provided GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) FromGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0(v GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup as the provided GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) FromGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0(v GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) MergeGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0(v GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) MergeGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0(v GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24709,22 +24741,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) 
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup as a GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) AsGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1() (GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup as a GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) AsGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1() (GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup as the provided GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) FromGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1(v GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup as the provided GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) FromGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1(v GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup, using the provided GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) MergeGetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1(v GetEvents200JSONResponseBodyEvents71DataCreateMultiuseInviteGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup, using the provided GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) MergeGetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1(v GetEvents200JSONResponseBodyEvents72DataCreateMultiuseInviteGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24735,32 +24767,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) 
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_CreateMultiuseInviteGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_CreateMultiuseInviteGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup as a GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) AsGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0() (GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup as a GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) AsGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0() (GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup as the provided GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) FromGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0(v GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup as the provided GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) FromGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0(v GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup, using the provided GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) MergeGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0(v GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup, using the provided GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) MergeGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0(v GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24771,22 +24803,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup as a GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) AsGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1() (GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup as a GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) AsGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1() (GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup as the provided GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) FromGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1(v GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup as the provided GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) FromGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1(v GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup, using the provided GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) MergeGetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1(v GetEvents200JSONResponseBodyEvents71DataDirectMessageInitiatorGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup, using the provided GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) MergeGetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1(v GetEvents200JSONResponseBodyEvents72DataDirectMessageInitiatorGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24797,32 +24829,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessageInitiatorGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessageInitiatorGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup as a GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) AsGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0() (GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup as a GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) AsGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0() (GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup as the provided GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) FromGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0(v GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup as the provided GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) FromGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0(v GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup, using the provided GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) MergeGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0(v GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup, using the provided GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) MergeGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0(v GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24833,22 +24865,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGrou
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup as a GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) AsGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1() (GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup as a GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) AsGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1() (GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup as the provided GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) FromGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1(v GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup as the provided GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) FromGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1(v GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup, using the provided GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) MergeGetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1(v GetEvents200JSONResponseBodyEvents71DataDirectMessagePermissionGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup, using the provided GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) MergeGetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1(v GetEvents200JSONResponseBodyEvents72DataDirectMessagePermissionGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24859,32 +24891,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGrou
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_DirectMessagePermissionGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_DirectMessagePermissionGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup as a GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0
-func (t GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0() (GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0
+// AsGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup as a GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0
+func (t GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0() (GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0) error {
+// FromGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0
-func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0(v GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup0) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0
+func (t *GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0(v GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24895,22 +24927,22 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) MergeG
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup as a GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1
-func (t GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) AsGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1() (GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1, error) {
-	var body GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1
+// AsGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup as a GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1
+func (t GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) AsGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1() (GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1, error) {
+	var body GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup as the provided GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) FromGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1) error {
+// FromGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup as the provided GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) FromGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup, using the provided GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1
-func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) MergeGetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1(v GetEvents200JSONResponseBodyEvents71DataWorkplaceUsersGroup1) error {
+// MergeGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup, using the provided GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1
+func (t *GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) MergeGetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1(v GetEvents200JSONResponseBodyEvents72DataWorkplaceUsersGroup1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24921,32 +24953,32 @@ func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) MergeG
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_71_Data_WorkplaceUsersGroup) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_72_Data_WorkplaceUsersGroup) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents72Value0 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Value as a GetEvents200JSONResponseBodyEvents72Value0
-func (t GetEvents200JSONResponseBody_Events_72_Value) AsGetEvents200JSONResponseBodyEvents72Value0() (GetEvents200JSONResponseBodyEvents72Value0, error) {
-	var body GetEvents200JSONResponseBodyEvents72Value0
+// AsGetEvents200JSONResponseBodyEvents73Value0 returns the union data inside the GetEvents200JSONResponseBody_Events_73_Value as a GetEvents200JSONResponseBodyEvents73Value0
+func (t GetEvents200JSONResponseBody_Events_73_Value) AsGetEvents200JSONResponseBodyEvents73Value0() (GetEvents200JSONResponseBodyEvents73Value0, error) {
+	var body GetEvents200JSONResponseBodyEvents73Value0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents72Value0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Value as the provided GetEvents200JSONResponseBodyEvents72Value0
-func (t *GetEvents200JSONResponseBody_Events_72_Value) FromGetEvents200JSONResponseBodyEvents72Value0(v GetEvents200JSONResponseBodyEvents72Value0) error {
+// FromGetEvents200JSONResponseBodyEvents73Value0 overwrites any union data inside the GetEvents200JSONResponseBody_Events_73_Value as the provided GetEvents200JSONResponseBodyEvents73Value0
+func (t *GetEvents200JSONResponseBody_Events_73_Value) FromGetEvents200JSONResponseBodyEvents73Value0(v GetEvents200JSONResponseBodyEvents73Value0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents72Value0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Value, using the provided GetEvents200JSONResponseBodyEvents72Value0
-func (t *GetEvents200JSONResponseBody_Events_72_Value) MergeGetEvents200JSONResponseBodyEvents72Value0(v GetEvents200JSONResponseBodyEvents72Value0) error {
+// MergeGetEvents200JSONResponseBodyEvents73Value0 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_73_Value, using the provided GetEvents200JSONResponseBodyEvents73Value0
+func (t *GetEvents200JSONResponseBody_Events_73_Value) MergeGetEvents200JSONResponseBodyEvents73Value0(v GetEvents200JSONResponseBodyEvents73Value0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24957,22 +24989,22 @@ func (t *GetEvents200JSONResponseBody_Events_72_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents72Value1 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Value as a GetEvents200JSONResponseBodyEvents72Value1
-func (t GetEvents200JSONResponseBody_Events_72_Value) AsGetEvents200JSONResponseBodyEvents72Value1() (GetEvents200JSONResponseBodyEvents72Value1, error) {
-	var body GetEvents200JSONResponseBodyEvents72Value1
+// AsGetEvents200JSONResponseBodyEvents73Value1 returns the union data inside the GetEvents200JSONResponseBody_Events_73_Value as a GetEvents200JSONResponseBodyEvents73Value1
+func (t GetEvents200JSONResponseBody_Events_73_Value) AsGetEvents200JSONResponseBodyEvents73Value1() (GetEvents200JSONResponseBodyEvents73Value1, error) {
+	var body GetEvents200JSONResponseBodyEvents73Value1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents72Value1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Value as the provided GetEvents200JSONResponseBodyEvents72Value1
-func (t *GetEvents200JSONResponseBody_Events_72_Value) FromGetEvents200JSONResponseBodyEvents72Value1(v GetEvents200JSONResponseBodyEvents72Value1) error {
+// FromGetEvents200JSONResponseBodyEvents73Value1 overwrites any union data inside the GetEvents200JSONResponseBody_Events_73_Value as the provided GetEvents200JSONResponseBodyEvents73Value1
+func (t *GetEvents200JSONResponseBody_Events_73_Value) FromGetEvents200JSONResponseBodyEvents73Value1(v GetEvents200JSONResponseBodyEvents73Value1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents72Value1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Value, using the provided GetEvents200JSONResponseBodyEvents72Value1
-func (t *GetEvents200JSONResponseBody_Events_72_Value) MergeGetEvents200JSONResponseBodyEvents72Value1(v GetEvents200JSONResponseBodyEvents72Value1) error {
+// MergeGetEvents200JSONResponseBodyEvents73Value1 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_73_Value, using the provided GetEvents200JSONResponseBodyEvents73Value1
+func (t *GetEvents200JSONResponseBody_Events_73_Value) MergeGetEvents200JSONResponseBodyEvents73Value1(v GetEvents200JSONResponseBodyEvents73Value1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -24983,22 +25015,22 @@ func (t *GetEvents200JSONResponseBody_Events_72_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-// AsGetEvents200JSONResponseBodyEvents72Value2 returns the union data inside the GetEvents200JSONResponseBody_Events_72_Value as a GetEvents200JSONResponseBodyEvents72Value2
-func (t GetEvents200JSONResponseBody_Events_72_Value) AsGetEvents200JSONResponseBodyEvents72Value2() (GetEvents200JSONResponseBodyEvents72Value2, error) {
-	var body GetEvents200JSONResponseBodyEvents72Value2
+// AsGetEvents200JSONResponseBodyEvents73Value2 returns the union data inside the GetEvents200JSONResponseBody_Events_73_Value as a GetEvents200JSONResponseBodyEvents73Value2
+func (t GetEvents200JSONResponseBody_Events_73_Value) AsGetEvents200JSONResponseBodyEvents73Value2() (GetEvents200JSONResponseBodyEvents73Value2, error) {
+	var body GetEvents200JSONResponseBodyEvents73Value2
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromGetEvents200JSONResponseBodyEvents72Value2 overwrites any union data inside the GetEvents200JSONResponseBody_Events_72_Value as the provided GetEvents200JSONResponseBodyEvents72Value2
-func (t *GetEvents200JSONResponseBody_Events_72_Value) FromGetEvents200JSONResponseBodyEvents72Value2(v GetEvents200JSONResponseBodyEvents72Value2) error {
+// FromGetEvents200JSONResponseBodyEvents73Value2 overwrites any union data inside the GetEvents200JSONResponseBody_Events_73_Value as the provided GetEvents200JSONResponseBodyEvents73Value2
+func (t *GetEvents200JSONResponseBody_Events_73_Value) FromGetEvents200JSONResponseBodyEvents73Value2(v GetEvents200JSONResponseBodyEvents73Value2) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergeGetEvents200JSONResponseBodyEvents72Value2 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_72_Value, using the provided GetEvents200JSONResponseBodyEvents72Value2
-func (t *GetEvents200JSONResponseBody_Events_72_Value) MergeGetEvents200JSONResponseBodyEvents72Value2(v GetEvents200JSONResponseBodyEvents72Value2) error {
+// MergeGetEvents200JSONResponseBodyEvents73Value2 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_73_Value, using the provided GetEvents200JSONResponseBodyEvents73Value2
+func (t *GetEvents200JSONResponseBody_Events_73_Value) MergeGetEvents200JSONResponseBodyEvents73Value2(v GetEvents200JSONResponseBodyEvents73Value2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -25009,12 +25041,12 @@ func (t *GetEvents200JSONResponseBody_Events_72_Value) MergeGetEvents200JSONResp
 	return err
 }
 
-func (t GetEvents200JSONResponseBody_Events_72_Value) MarshalJSON() ([]byte, error) {
+func (t GetEvents200JSONResponseBody_Events_73_Value) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *GetEvents200JSONResponseBody_Events_72_Value) UnmarshalJSON(b []byte) error {
+func (t *GetEvents200JSONResponseBody_Events_73_Value) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -27349,6 +27381,32 @@ func (t *GetEvents200JSONResponseBody_Events_Item) FromGetEvents200JSONResponseB
 
 // MergeGetEvents200JSONResponseBodyEvents89 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_Item, using the provided GetEvents200JSONResponseBodyEvents89
 func (t *GetEvents200JSONResponseBody_Events_Item) MergeGetEvents200JSONResponseBodyEvents89(v GetEvents200JSONResponseBodyEvents89) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsGetEvents200JSONResponseBodyEvents90 returns the union data inside the GetEvents200JSONResponseBody_Events_Item as a GetEvents200JSONResponseBodyEvents90
+func (t GetEvents200JSONResponseBody_Events_Item) AsGetEvents200JSONResponseBodyEvents90() (GetEvents200JSONResponseBodyEvents90, error) {
+	var body GetEvents200JSONResponseBodyEvents90
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromGetEvents200JSONResponseBodyEvents90 overwrites any union data inside the GetEvents200JSONResponseBody_Events_Item as the provided GetEvents200JSONResponseBodyEvents90
+func (t *GetEvents200JSONResponseBody_Events_Item) FromGetEvents200JSONResponseBodyEvents90(v GetEvents200JSONResponseBodyEvents90) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeGetEvents200JSONResponseBodyEvents90 performs a merge with any union data inside the GetEvents200JSONResponseBody_Events_Item, using the provided GetEvents200JSONResponseBodyEvents90
+func (t *GetEvents200JSONResponseBody_Events_Item) MergeGetEvents200JSONResponseBodyEvents90(v GetEvents200JSONResponseBodyEvents90) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -35833,6 +35891,24 @@ type ClientInterface interface {
 	// Corresponds with POST /calls/constructorgroups/create (the `CreateConstructorGroupsVideoCall` operationId).
 	CreateConstructorGroupsVideoCall(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
 
+	// CreateGoogleMeetVideoCall Create Google Meet video call
+	//
+	// Create a video call URL for a Google Meet video call.
+	//
+	// Requires the [Google Meet integration](/integrations/google-meet) to be
+	// configured on the Zulip server.
+	//
+	// Clients should confirm that the user has completed the OAuth process
+	// with Google and has a Google Meet token before attempting to create a
+	// video call URL. See the `has_google_meet_token` field in the [`POST
+	// /register` response](/api/register-queue), as well as the
+	// [`has_google_meet_token` event type](/api/get-events#has_google_meet_token).
+	//
+	// **Changes**: New in Zulip 13.0 (feature level 514).
+	//
+	// Corresponds with POST /calls/google_meet/create (the `CreateGoogleMeetVideoCall` operationId).
+	CreateGoogleMeetVideoCall(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// CreateNextcloudTalkVideoCallWithBody Create Nextcloud Talk video call
 	//
 	// Create a video call URL for a Nextcloud Talk video call. Requires
@@ -40621,6 +40697,34 @@ func (c *Client) CreateBigBlueButtonVideoCall(ctx context.Context, params *Creat
 // Corresponds with POST /calls/constructorgroups/create (the `CreateConstructorGroupsVideoCall` operationId).
 func (c *Client) CreateConstructorGroupsVideoCall(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewCreateConstructorGroupsVideoCallRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// CreateGoogleMeetVideoCall Create Google Meet video call
+//
+// Create a video call URL for a Google Meet video call.
+//
+// Requires the [Google Meet integration](/integrations/google-meet) to be
+// configured on the Zulip server.
+//
+// Clients should confirm that the user has completed the OAuth process
+// with Google and has a Google Meet token before attempting to create a
+// video call URL. See the `has_google_meet_token` field in the [`POST
+// /register` response](/api/register-queue), as well as the
+// [`has_google_meet_token` event type](/api/get-events#has_google_meet_token).
+//
+// **Changes**: New in Zulip 13.0 (feature level 514).
+//
+// Corresponds with POST /calls/google_meet/create (the `CreateGoogleMeetVideoCall` operationId).
+func (c *Client) CreateGoogleMeetVideoCall(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewCreateGoogleMeetVideoCallRequest(c.Server)
 	if err != nil {
 		return nil, err
 	}
@@ -47888,6 +47992,33 @@ func NewCreateConstructorGroupsVideoCallRequest(server string) (*http.Request, e
 	}
 
 	operationPath := fmt.Sprintf("/calls/constructorgroups/create")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewCreateGoogleMeetVideoCallRequest constructs an http.Request for the CreateGoogleMeetVideoCall method
+func NewCreateGoogleMeetVideoCallRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/calls/google_meet/create")
 	if operationPath[0] == '/' {
 		operationPath = "." + operationPath
 	}
@@ -55257,6 +55388,26 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with POST /calls/constructorgroups/create (the `CreateConstructorGroupsVideoCall` operationId).
 	CreateConstructorGroupsVideoCallWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*CreateConstructorGroupsVideoCallResponse, error)
 
+	// CreateGoogleMeetVideoCallWithResponse Create Google Meet video call
+	//
+	// Create a video call URL for a Google Meet video call.
+	//
+	// Requires the [Google Meet integration](/integrations/google-meet) to be
+	// configured on the Zulip server.
+	//
+	// Clients should confirm that the user has completed the OAuth process
+	// with Google and has a Google Meet token before attempting to create a
+	// video call URL. See the `has_google_meet_token` field in the [`POST
+	// /register` response](/api/register-queue), as well as the
+	// [`has_google_meet_token` event type](/api/get-events#has_google_meet_token).
+	//
+	// **Changes**: New in Zulip 13.0 (feature level 514).
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /calls/google_meet/create (the `CreateGoogleMeetVideoCall` operationId).
+	CreateGoogleMeetVideoCallWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*CreateGoogleMeetVideoCallResponse, error)
+
 	// CreateNextcloudTalkVideoCallWithBodyWithResponse Create Nextcloud Talk video call
 	//
 	// Create a video call URL for a Nextcloud Talk video call. Requires
@@ -60471,6 +60622,67 @@ func (r CreateConstructorGroupsVideoCallResponse) StatusCode() int {
 
 // ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
 func (r CreateConstructorGroupsVideoCallResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
+type CreateGoogleMeetVideoCallResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *struct {
+		IgnoredParametersUnsupported interface{} `json:"ignored_parameters_unsupported,omitempty"`
+		Msg                          interface{} `json:"msg"`
+		Result                       interface{} `json:"result"`
+
+		// Url The URL for the Google Meet video call.
+		//
+		//
+		// Example: https://meet.google.com/abc-mnop-xyz
+		Url *string `json:"url,omitempty"`
+	}
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r CreateGoogleMeetVideoCallResponse) GetJSON200() *struct {
+	IgnoredParametersUnsupported interface{} `json:"ignored_parameters_unsupported,omitempty"`
+	Msg                          interface{} `json:"msg"`
+	Result                       interface{} `json:"result"`
+
+	// Url The URL for the Google Meet video call.
+	//
+	//
+	// Example: https://meet.google.com/abc-mnop-xyz
+	Url *string `json:"url,omitempty"`
+} {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r CreateGoogleMeetVideoCallResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r CreateGoogleMeetVideoCallResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r CreateGoogleMeetVideoCallResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r CreateGoogleMeetVideoCallResponse) ContentType() string {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.Header.Get("Content-Type")
 	}
@@ -66053,6 +66265,16 @@ type RegisterQueueResponse struct {
 		// **Changes**: Added in Zulip 4.0 (feature level 47).
 		GiphyApiKey *string `json:"giphy_api_key,omitempty"`
 
+		// HasGoogleMeetToken Present if `video_calls` is present in `fetch_event_types`.
+		//
+		// A boolean that denotes whether the user has completed the OAuth flow for
+		// the [Google Meet integration](/help/configure-call-provider). Clients need
+		// to know whether initiating Google Meet OAuth flow is required before
+		// creating a Google Meet call.
+		//
+		// **Changes**: New in Zulip 13.0 (feature level 514).
+		HasGoogleMeetToken *bool `json:"has_google_meet_token,omitempty"`
+
 		// HasWebexToken Present if `video_calls` is present in `fetch_event_types`.
 		//
 		// A boolean that denotes whether the user has completed the OAuth flow for
@@ -67980,11 +68202,15 @@ type RegisterQueueResponse struct {
 		// - 6 = Constructor Groups
 		// - 7 = Nextcloud Talk
 		// - 8 = Webex (User OAuth integration)
+		// - 9 = Google Meet (User OAuth integration)
 		//
 		// Note that only one of the [Zoom integrations][zoom-video-calls] can
 		// be configured on a Zulip server.
 		//
-		// **Changes**: In Zulip 12.0 (feature level 493), added the
+		// **Changes**: In Zulip 13.0 (feature level 514), added the
+		// Google Meet option.
+		//
+		// In Zulip 12.0 (feature level 493), added the
 		// Webex OAuth option.
 		//
 		// In Zulip 12.0 (feature level 465), added the
@@ -68176,6 +68402,18 @@ type RegisterQueueResponse struct {
 		// event queue was started. Clients will likely only find
 		// this value useful for inclusion in detailed error reports.
 		ServerGeneration *int `json:"server_generation,omitempty"`
+
+		// ServerGoogleMeetAppInternal Present if `realm` is present in `fetch_event_types`.
+		//
+		// Whether a configured Google Meet video call integration should be
+		// considered to have an internal, workspace-restricted audience.
+		//
+		// Clients should use this to warn users that the video call feature
+		// is restricted to a particular Google Workspace before starting the
+		// Google OAuth flow for the Google Meet video call integration.
+		//
+		// **Changes**: New in Zulip 13.0 (feature level 514).
+		ServerGoogleMeetAppInternal *bool `json:"server_google_meet_app_internal,omitempty"`
 
 		// ServerInlineImagePreview Present if `realm` is present in `fetch_event_types`.
 		//
@@ -69520,6 +69758,16 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 	//
 	// **Changes**: Added in Zulip 4.0 (feature level 47).
 	GiphyApiKey *string `json:"giphy_api_key,omitempty"`
+
+	// HasGoogleMeetToken Present if `video_calls` is present in `fetch_event_types`.
+	//
+	// A boolean that denotes whether the user has completed the OAuth flow for
+	// the [Google Meet integration](/help/configure-call-provider). Clients need
+	// to know whether initiating Google Meet OAuth flow is required before
+	// creating a Google Meet call.
+	//
+	// **Changes**: New in Zulip 13.0 (feature level 514).
+	HasGoogleMeetToken *bool `json:"has_google_meet_token,omitempty"`
 
 	// HasWebexToken Present if `video_calls` is present in `fetch_event_types`.
 	//
@@ -71448,11 +71696,15 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 	// - 6 = Constructor Groups
 	// - 7 = Nextcloud Talk
 	// - 8 = Webex (User OAuth integration)
+	// - 9 = Google Meet (User OAuth integration)
 	//
 	// Note that only one of the [Zoom integrations][zoom-video-calls] can
 	// be configured on a Zulip server.
 	//
-	// **Changes**: In Zulip 12.0 (feature level 493), added the
+	// **Changes**: In Zulip 13.0 (feature level 514), added the
+	// Google Meet option.
+	//
+	// In Zulip 12.0 (feature level 493), added the
 	// Webex OAuth option.
 	//
 	// In Zulip 12.0 (feature level 465), added the
@@ -71644,6 +71896,18 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 	// event queue was started. Clients will likely only find
 	// this value useful for inclusion in detailed error reports.
 	ServerGeneration *int `json:"server_generation,omitempty"`
+
+	// ServerGoogleMeetAppInternal Present if `realm` is present in `fetch_event_types`.
+	//
+	// Whether a configured Google Meet video call integration should be
+	// considered to have an internal, workspace-restricted audience.
+	//
+	// Clients should use this to warn users that the video call feature
+	// is restricted to a particular Google Workspace before starting the
+	// Google OAuth flow for the Google Meet video call integration.
+	//
+	// **Changes**: New in Zulip 13.0 (feature level 514).
+	ServerGoogleMeetAppInternal *bool `json:"server_google_meet_app_internal,omitempty"`
 
 	// ServerInlineImagePreview Present if `realm` is present in `fetch_event_types`.
 	//
@@ -78702,6 +78966,32 @@ func (c *ClientWithResponses) CreateConstructorGroupsVideoCallWithResponse(ctx c
 	return ParseCreateConstructorGroupsVideoCallResponse(rsp)
 }
 
+// CreateGoogleMeetVideoCallWithResponse Create Google Meet video call
+//
+// Create a video call URL for a Google Meet video call.
+//
+// Requires the [Google Meet integration](/integrations/google-meet) to be
+// configured on the Zulip server.
+//
+// Clients should confirm that the user has completed the OAuth process
+// with Google and has a Google Meet token before attempting to create a
+// video call URL. See the `has_google_meet_token` field in the [`POST
+// /register` response](/api/register-queue), as well as the
+// [`has_google_meet_token` event type](/api/get-events#has_google_meet_token).
+//
+// **Changes**: New in Zulip 13.0 (feature level 514).
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /calls/google_meet/create (the `CreateGoogleMeetVideoCall` operationId).
+func (c *ClientWithResponses) CreateGoogleMeetVideoCallWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*CreateGoogleMeetVideoCallResponse, error) {
+	rsp, err := c.CreateGoogleMeetVideoCall(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseCreateGoogleMeetVideoCallResponse(rsp)
+}
+
 // CreateNextcloudTalkVideoCallWithBodyWithResponse Create Nextcloud Talk video call
 //
 // Create a video call URL for a Nextcloud Talk video call. Requires
@@ -85157,6 +85447,42 @@ func ParseCreateConstructorGroupsVideoCallResponse(rsp *http.Response) (*CreateC
 	return response, nil
 }
 
+// ParseCreateGoogleMeetVideoCallResponse parses an HTTP response from a CreateGoogleMeetVideoCallWithResponse call
+func ParseCreateGoogleMeetVideoCallResponse(rsp *http.Response) (*CreateGoogleMeetVideoCallResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &CreateGoogleMeetVideoCallResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest struct {
+			IgnoredParametersUnsupported interface{} `json:"ignored_parameters_unsupported,omitempty"`
+			Msg                          interface{} `json:"msg"`
+			Result                       interface{} `json:"result"`
+
+			// Url The URL for the Google Meet video call.
+			//
+			//
+			// Example: https://meet.google.com/abc-mnop-xyz
+			Url *string `json:"url,omitempty"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParseCreateNextcloudTalkVideoCallResponse parses an HTTP response from a CreateNextcloudTalkVideoCallWithResponse call
 func ParseCreateNextcloudTalkVideoCallResponse(rsp *http.Response) (*CreateNextcloudTalkVideoCallResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -88681,6 +89007,16 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 			// **Changes**: Added in Zulip 4.0 (feature level 47).
 			GiphyApiKey *string `json:"giphy_api_key,omitempty"`
 
+			// HasGoogleMeetToken Present if `video_calls` is present in `fetch_event_types`.
+			//
+			// A boolean that denotes whether the user has completed the OAuth flow for
+			// the [Google Meet integration](/help/configure-call-provider). Clients need
+			// to know whether initiating Google Meet OAuth flow is required before
+			// creating a Google Meet call.
+			//
+			// **Changes**: New in Zulip 13.0 (feature level 514).
+			HasGoogleMeetToken *bool `json:"has_google_meet_token,omitempty"`
+
 			// HasWebexToken Present if `video_calls` is present in `fetch_event_types`.
 			//
 			// A boolean that denotes whether the user has completed the OAuth flow for
@@ -90608,11 +90944,15 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 			// - 6 = Constructor Groups
 			// - 7 = Nextcloud Talk
 			// - 8 = Webex (User OAuth integration)
+			// - 9 = Google Meet (User OAuth integration)
 			//
 			// Note that only one of the [Zoom integrations][zoom-video-calls] can
 			// be configured on a Zulip server.
 			//
-			// **Changes**: In Zulip 12.0 (feature level 493), added the
+			// **Changes**: In Zulip 13.0 (feature level 514), added the
+			// Google Meet option.
+			//
+			// In Zulip 12.0 (feature level 493), added the
 			// Webex OAuth option.
 			//
 			// In Zulip 12.0 (feature level 465), added the
@@ -90804,6 +91144,18 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 			// event queue was started. Clients will likely only find
 			// this value useful for inclusion in detailed error reports.
 			ServerGeneration *int `json:"server_generation,omitempty"`
+
+			// ServerGoogleMeetAppInternal Present if `realm` is present in `fetch_event_types`.
+			//
+			// Whether a configured Google Meet video call integration should be
+			// considered to have an internal, workspace-restricted audience.
+			//
+			// Clients should use this to warn users that the video call feature
+			// is restricted to a particular Google Workspace before starting the
+			// Google OAuth flow for the Google Meet video call integration.
+			//
+			// **Changes**: New in Zulip 13.0 (feature level 514).
+			ServerGoogleMeetAppInternal *bool `json:"server_google_meet_app_internal,omitempty"`
 
 			// ServerInlineImagePreview Present if `realm` is present in `fetch_event_types`.
 			//

@@ -2,6 +2,14 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.2.0, 2026-10-28
+
+- Breaking: the numbered union variants of the `GetEvents` response body (`GetEvents200JSONResponseBodyEvents11` and the other `GetEvents200JSONResponseBodyEvents<N>` types) were regenerated from the updated spec. Many were removed or reshaped, so code that names them must change. Examples: `GetEvents200JSONResponseBodyEvents12.Op` and `.Person`, `GetEvents200JSONResponseBodyEvents14.Presence`, `.Presences`, `.UserId` and `.Email`, and `GetEvents200JSONResponseBodyEvents15.Streams` no longer exist, along with their related `Op`, `Type` and `PresenceStatus` constants.
+- Changed field types: `GetEvents200JSONResponseBodyEvents13.Person` is now `*User`, `GetEvents200JSONResponseBodyEvents37.Id` is now `*EventIdSchema`, and `GetEvents200JSONResponseBodyEvents16.Streams` and `GetEvents200JSONResponseBodyEvents22.Attachment` have new types.
+- `RegisterQueueResponse.JSON200` and `RegisterQueueResponse.GetJSON200` return a different anonymous struct type, so code that assigns or declares the old type must change.
+- Added the Google Meet video call endpoint: `Client.CreateGoogleMeetVideoCall`, `ClientWithResponses.CreateGoogleMeetVideoCallWithResponse`, `NewCreateGoogleMeetVideoCallRequest`, `ParseCreateGoogleMeetVideoCallResponse` and `CreateGoogleMeetVideoCallResponse`. The matching methods were added to `ClientInterface` and `ClientWithResponsesInterface`, so custom implementations of those interfaces must add them.
+- Added the event type constant `GetEvents200JSONResponseBodyEvents11TypeHasGoogleMeetToken`.
+
 ## v0.1.3, 2026-10-28
 
 - Updated Semgrep in the development image to 1.182.1 and refreshed its locked dependencies. certifi 2026.10.23 drops the emSign root CAs whose intermediate keys were compromised (GHSA-6q48-6c7w-9gw2).
