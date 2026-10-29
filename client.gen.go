@@ -6585,7 +6585,7 @@ type ScheduledMessageBaseType string
 //
 // The server will never send direct messages when the total number of users
 // who were subscribed to channels in this request was more than the value
-// of `max_bulk_new_subscription_messages`, which is available in the [`POST
+// of `max_bulk_subscription_messages`, which is available in the [`POST
 // /register`](/api/register-queue) response.
 //
 // **Changes**: Before Zulip 11.0 (feature level 397), new subscribers
@@ -19180,6 +19180,21 @@ type UnsubscribeFormdataBody struct {
 	// Example: [11]
 	Principals *Principals `form:"principals,omitempty" json:"principals,omitempty"`
 
+	// SendMessagesToRemovedSubscribers Whether other users unsubscribed via this request should be sent a
+	// direct message, from Notification Bot, notifying them that they
+	// were unsubscribed and by whom.
+	//
+	// The server will never send direct messages when the total number of
+	// users who were unsubscribed from channels in this request was more
+	// than the value of `max_bulk_subscription_messages`, which is
+	// available in the [`POST /register`](/api/register-queue) response.
+	//
+	// **Changes**: New in Zulip 13.0 (feature level 515).
+	//
+	//
+	// Example: true
+	SendMessagesToRemovedSubscribers *bool `form:"send_messages_to_removed_subscribers,omitempty" json:"send_messages_to_removed_subscribers,omitempty"`
+
 	// Subscriptions A list of channel names to unsubscribe from. This parameter is called
 	// `streams` in our Python API.
 	//
@@ -19376,7 +19391,7 @@ type SubscribeFormdataBody struct {
 	//
 	// The server will never send direct messages when the total number of users
 	// who were subscribed to channels in this request was more than the value
-	// of `max_bulk_new_subscription_messages`, which is available in the [`POST
+	// of `max_bulk_subscription_messages`, which is available in the [`POST
 	// /register`](/api/register-queue) response.
 	//
 	// **Changes**: Before Zulip 11.0 (feature level 397), new subscribers
@@ -39881,8 +39896,18 @@ type ClientInterface interface {
 	//   by the [`can_remove_subscribers_group`][can-remove-parameter]
 	//   for the channel.
 	//
-	// **Changes**: Before Zulip 10.0 (feature level 362),
-	// subscriptions in archived channels could not be modified.
+	// When other users are removed from a channel, they may receive
+	// a direct message notifying them that they were unsubscribed by
+	// the current user; see
+	// [`send_messages_to_removed_subscribers`][send-notifications-param]
+	// below.
+	//
+	// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+	// server never sent direct messages to users who were unsubscribed
+	// from one or more channels by the current user.
+	//
+	// Before Zulip 10.0 (feature level 362), subscriptions in archived
+	// channels could not be modified.
 	//
 	// Before Zulip 8.0 (feature level 208), if a user specified by
 	// the [`principals`][principals-param] parameter was a
@@ -39905,6 +39930,7 @@ type ClientInterface interface {
 	//
 	// [principals-param]: /api/unsubscribe#parameter-principals
 	// [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+	// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 	//
 	// Takes any type of body and a specified content type.
 	//
@@ -39929,8 +39955,18 @@ type ClientInterface interface {
 	//   by the [`can_remove_subscribers_group`][can-remove-parameter]
 	//   for the channel.
 	//
-	// **Changes**: Before Zulip 10.0 (feature level 362),
-	// subscriptions in archived channels could not be modified.
+	// When other users are removed from a channel, they may receive
+	// a direct message notifying them that they were unsubscribed by
+	// the current user; see
+	// [`send_messages_to_removed_subscribers`][send-notifications-param]
+	// below.
+	//
+	// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+	// server never sent direct messages to users who were unsubscribed
+	// from one or more channels by the current user.
+	//
+	// Before Zulip 10.0 (feature level 362), subscriptions in archived
+	// channels could not be modified.
 	//
 	// Before Zulip 8.0 (feature level 208), if a user specified by
 	// the [`principals`][principals-param] parameter was a
@@ -39953,6 +39989,7 @@ type ClientInterface interface {
 	//
 	// [principals-param]: /api/unsubscribe#parameter-principals
 	// [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+	// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 	//
 	// Takes a body of the `application/x-www-form-urlencoded` content type.
 	//
@@ -46822,8 +46859,18 @@ func (c *Client) UpdateStatusWithFormdataBody(ctx context.Context, body UpdateSt
 //     by the [`can_remove_subscribers_group`][can-remove-parameter]
 //     for the channel.
 //
-// **Changes**: Before Zulip 10.0 (feature level 362),
-// subscriptions in archived channels could not be modified.
+// When other users are removed from a channel, they may receive
+// a direct message notifying them that they were unsubscribed by
+// the current user; see
+// [`send_messages_to_removed_subscribers`][send-notifications-param]
+// below.
+//
+// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+// server never sent direct messages to users who were unsubscribed
+// from one or more channels by the current user.
+//
+// Before Zulip 10.0 (feature level 362), subscriptions in archived
+// channels could not be modified.
 //
 // Before Zulip 8.0 (feature level 208), if a user specified by
 // the [`principals`][principals-param] parameter was a
@@ -46846,6 +46893,7 @@ func (c *Client) UpdateStatusWithFormdataBody(ctx context.Context, body UpdateSt
 //
 // [principals-param]: /api/unsubscribe#parameter-principals
 // [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 //
 // Takes any type of body and a specified content type.
 //
@@ -46880,8 +46928,18 @@ func (c *Client) UnsubscribeWithBody(ctx context.Context, contentType string, bo
 //     by the [`can_remove_subscribers_group`][can-remove-parameter]
 //     for the channel.
 //
-// **Changes**: Before Zulip 10.0 (feature level 362),
-// subscriptions in archived channels could not be modified.
+// When other users are removed from a channel, they may receive
+// a direct message notifying them that they were unsubscribed by
+// the current user; see
+// [`send_messages_to_removed_subscribers`][send-notifications-param]
+// below.
+//
+// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+// server never sent direct messages to users who were unsubscribed
+// from one or more channels by the current user.
+//
+// Before Zulip 10.0 (feature level 362), subscriptions in archived
+// channels could not be modified.
 //
 // Before Zulip 8.0 (feature level 208), if a user specified by
 // the [`principals`][principals-param] parameter was a
@@ -46904,6 +46962,7 @@ func (c *Client) UnsubscribeWithBody(ctx context.Context, contentType string, bo
 //
 // [principals-param]: /api/unsubscribe#parameter-principals
 // [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 //
 // Takes a body of the `application/x-www-form-urlencoded` content type.
 //
@@ -54224,6 +54283,8 @@ func NewUnsubscribeRequestWithFormdataBody(server string, body UnsubscribeFormda
 
 		"principals": true,
 
+		"send_messages_to_removed_subscribers": true,
+
 		"subscriptions": true,
 	})
 	if err != nil {
@@ -59502,8 +59563,18 @@ type ClientWithResponsesInterface interface {
 	//   by the [`can_remove_subscribers_group`][can-remove-parameter]
 	//   for the channel.
 	//
-	// **Changes**: Before Zulip 10.0 (feature level 362),
-	// subscriptions in archived channels could not be modified.
+	// When other users are removed from a channel, they may receive
+	// a direct message notifying them that they were unsubscribed by
+	// the current user; see
+	// [`send_messages_to_removed_subscribers`][send-notifications-param]
+	// below.
+	//
+	// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+	// server never sent direct messages to users who were unsubscribed
+	// from one or more channels by the current user.
+	//
+	// Before Zulip 10.0 (feature level 362), subscriptions in archived
+	// channels could not be modified.
 	//
 	// Before Zulip 8.0 (feature level 208), if a user specified by
 	// the [`principals`][principals-param] parameter was a
@@ -59526,6 +59597,7 @@ type ClientWithResponsesInterface interface {
 	//
 	// [principals-param]: /api/unsubscribe#parameter-principals
 	// [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+	// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -59550,8 +59622,18 @@ type ClientWithResponsesInterface interface {
 	//   by the [`can_remove_subscribers_group`][can-remove-parameter]
 	//   for the channel.
 	//
-	// **Changes**: Before Zulip 10.0 (feature level 362),
-	// subscriptions in archived channels could not be modified.
+	// When other users are removed from a channel, they may receive
+	// a direct message notifying them that they were unsubscribed by
+	// the current user; see
+	// [`send_messages_to_removed_subscribers`][send-notifications-param]
+	// below.
+	//
+	// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+	// server never sent direct messages to users who were unsubscribed
+	// from one or more channels by the current user.
+	//
+	// Before Zulip 10.0 (feature level 362), subscriptions in archived
+	// channels could not be modified.
 	//
 	// Before Zulip 8.0 (feature level 208), if a user specified by
 	// the [`principals`][principals-param] parameter was a
@@ -59574,6 +59656,7 @@ type ClientWithResponsesInterface interface {
 	//
 	// [principals-param]: /api/unsubscribe#parameter-principals
 	// [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+	// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 	//
 	// Takes a body of the `application/x-www-form-urlencoded` content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -66365,15 +66448,23 @@ type RegisterQueueResponse struct {
 		// The maximum avatar size that can be uploaded to this Zulip server.
 		MaxAvatarFileSizeMib *int `json:"max_avatar_file_size_mib,omitempty"`
 
-		// MaxBulkNewSubscriptionMessages Maximum number of new subscribers for which the server will
-		// respect the `send_new_subscription_messages` parameter when
-		// [adding subscribers to a channel](/api/subscribe#parameter-send_new_subscription_messages).
+		// MaxBulkSubscriptionMessages The maximum number of affected users for which the server will respect the
+		// [`send_new_subscription_messages` parameter][new-subs], when subscribing
+		// users to a channel, and the [`send_messages_to_removed_subscribers`
+		// parameter][removed-subs], when unsubscribing users from a channel.
 		//
-		// **Changes**: New in Zulip 11.0 (feature level 397).
+		// **Changes**: Prior to Zulip 13.0 (feature level 515), this field
+		// was named `max_bulk_new_subscription_messages` as it only applied when
+		// subscribing users to a channel.
+		//
+		// New in Zulip 11.0 (feature level 397).
+		//
+		// [new-subs]: /api/subscribe#parameter-send_new_subscription_messages
+		// [removed-subs]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 		//
 		//
 		// Example: 100
-		MaxBulkNewSubscriptionMessages *float64 `json:"max_bulk_new_subscription_messages,omitempty"`
+		MaxBulkSubscriptionMessages *float64 `json:"max_bulk_subscription_messages,omitempty"`
 
 		// MaxChannelFolderDescriptionLength Present if `realm` is present in `fetch_event_types`.
 		//
@@ -69859,15 +69950,23 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 	// The maximum avatar size that can be uploaded to this Zulip server.
 	MaxAvatarFileSizeMib *int `json:"max_avatar_file_size_mib,omitempty"`
 
-	// MaxBulkNewSubscriptionMessages Maximum number of new subscribers for which the server will
-	// respect the `send_new_subscription_messages` parameter when
-	// [adding subscribers to a channel](/api/subscribe#parameter-send_new_subscription_messages).
+	// MaxBulkSubscriptionMessages The maximum number of affected users for which the server will respect the
+	// [`send_new_subscription_messages` parameter][new-subs], when subscribing
+	// users to a channel, and the [`send_messages_to_removed_subscribers`
+	// parameter][removed-subs], when unsubscribing users from a channel.
 	//
-	// **Changes**: New in Zulip 11.0 (feature level 397).
+	// **Changes**: Prior to Zulip 13.0 (feature level 515), this field
+	// was named `max_bulk_new_subscription_messages` as it only applied when
+	// subscribing users to a channel.
+	//
+	// New in Zulip 11.0 (feature level 397).
+	//
+	// [new-subs]: /api/subscribe#parameter-send_new_subscription_messages
+	// [removed-subs]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 	//
 	//
 	// Example: 100
-	MaxBulkNewSubscriptionMessages *float64 `json:"max_bulk_new_subscription_messages,omitempty"`
+	MaxBulkSubscriptionMessages *float64 `json:"max_bulk_subscription_messages,omitempty"`
 
 	// MaxChannelFolderDescriptionLength Present if `realm` is present in `fetch_event_types`.
 	//
@@ -77293,7 +77392,19 @@ type UnsubscribeResponse struct {
 	// JSON200 the response for an HTTP 200 `application/json` response
 	JSON200 *struct {
 		IgnoredParametersUnsupported interface{} `json:"ignored_parameters_unsupported,omitempty"`
-		Msg                          interface{} `json:"msg"`
+
+		// MessagesSentToRemovedSubscribers Only present if the parameter `send_messages_to_removed_subscribers`
+		// in the request was `true`.
+		//
+		// Whether Notification Bot DMs were in fact sent to the removed
+		// subscribers as requested by the
+		// `send_messages_to_removed_subscribers` parameter. Clients may
+		// find this value useful to communicate with users about the
+		// effect of this request.
+		//
+		// **Changes**: New in Zulip 13.0 (feature level 515).
+		MessagesSentToRemovedSubscribers *bool       `json:"messages_sent_to_removed_subscribers,omitempty"`
+		Msg                              interface{} `json:"msg"`
 
 		// NotRemoved A list of the names of channels that the user is already unsubscribed
 		// from, and hence doesn't need to be unsubscribed.
@@ -77318,7 +77429,19 @@ type UnsubscribeResponse struct {
 // GetJSON200 returns the response for an HTTP 200 `application/json` response
 func (r UnsubscribeResponse) GetJSON200() *struct {
 	IgnoredParametersUnsupported interface{} `json:"ignored_parameters_unsupported,omitempty"`
-	Msg                          interface{} `json:"msg"`
+
+	// MessagesSentToRemovedSubscribers Only present if the parameter `send_messages_to_removed_subscribers`
+	// in the request was `true`.
+	//
+	// Whether Notification Bot DMs were in fact sent to the removed
+	// subscribers as requested by the
+	// `send_messages_to_removed_subscribers` parameter. Clients may
+	// find this value useful to communicate with users about the
+	// effect of this request.
+	//
+	// **Changes**: New in Zulip 13.0 (feature level 515).
+	MessagesSentToRemovedSubscribers *bool       `json:"messages_sent_to_removed_subscribers,omitempty"`
+	Msg                              interface{} `json:"msg"`
 
 	// NotRemoved A list of the names of channels that the user is already unsubscribed
 	// from, and hence doesn't need to be unsubscribed.
@@ -84357,8 +84480,18 @@ func (c *ClientWithResponses) UpdateStatusWithFormdataBodyWithResponse(ctx conte
 //     by the [`can_remove_subscribers_group`][can-remove-parameter]
 //     for the channel.
 //
-// **Changes**: Before Zulip 10.0 (feature level 362),
-// subscriptions in archived channels could not be modified.
+// When other users are removed from a channel, they may receive
+// a direct message notifying them that they were unsubscribed by
+// the current user; see
+// [`send_messages_to_removed_subscribers`][send-notifications-param]
+// below.
+//
+// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+// server never sent direct messages to users who were unsubscribed
+// from one or more channels by the current user.
+//
+// Before Zulip 10.0 (feature level 362), subscriptions in archived
+// channels could not be modified.
 //
 // Before Zulip 8.0 (feature level 208), if a user specified by
 // the [`principals`][principals-param] parameter was a
@@ -84381,6 +84514,7 @@ func (c *ClientWithResponses) UpdateStatusWithFormdataBodyWithResponse(ctx conte
 //
 // [principals-param]: /api/unsubscribe#parameter-principals
 // [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
@@ -84411,8 +84545,18 @@ func (c *ClientWithResponses) UnsubscribeWithBodyWithResponse(ctx context.Contex
 //     by the [`can_remove_subscribers_group`][can-remove-parameter]
 //     for the channel.
 //
-// **Changes**: Before Zulip 10.0 (feature level 362),
-// subscriptions in archived channels could not be modified.
+// When other users are removed from a channel, they may receive
+// a direct message notifying them that they were unsubscribed by
+// the current user; see
+// [`send_messages_to_removed_subscribers`][send-notifications-param]
+// below.
+//
+// **Changes**: Prior to Zulip 13.0 (feature level 515), the
+// server never sent direct messages to users who were unsubscribed
+// from one or more channels by the current user.
+//
+// Before Zulip 10.0 (feature level 362), subscriptions in archived
+// channels could not be modified.
 //
 // Before Zulip 8.0 (feature level 208), if a user specified by
 // the [`principals`][principals-param] parameter was a
@@ -84435,6 +84579,7 @@ func (c *ClientWithResponses) UnsubscribeWithBodyWithResponse(ctx context.Contex
 //
 // [principals-param]: /api/unsubscribe#parameter-principals
 // [can-remove-parameter]: /api/subscribe#parameter-can_remove_subscribers_group
+// [send-notifications-param]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 //
 // Takes a body of the `application/x-www-form-urlencoded` content type, and returns a wrapper object for the known response body format(s).
 //
@@ -89107,15 +89252,23 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 			// The maximum avatar size that can be uploaded to this Zulip server.
 			MaxAvatarFileSizeMib *int `json:"max_avatar_file_size_mib,omitempty"`
 
-			// MaxBulkNewSubscriptionMessages Maximum number of new subscribers for which the server will
-			// respect the `send_new_subscription_messages` parameter when
-			// [adding subscribers to a channel](/api/subscribe#parameter-send_new_subscription_messages).
+			// MaxBulkSubscriptionMessages The maximum number of affected users for which the server will respect the
+			// [`send_new_subscription_messages` parameter][new-subs], when subscribing
+			// users to a channel, and the [`send_messages_to_removed_subscribers`
+			// parameter][removed-subs], when unsubscribing users from a channel.
 			//
-			// **Changes**: New in Zulip 11.0 (feature level 397).
+			// **Changes**: Prior to Zulip 13.0 (feature level 515), this field
+			// was named `max_bulk_new_subscription_messages` as it only applied when
+			// subscribing users to a channel.
+			//
+			// New in Zulip 11.0 (feature level 397).
+			//
+			// [new-subs]: /api/subscribe#parameter-send_new_subscription_messages
+			// [removed-subs]: /api/unsubscribe#parameter-send_messages_to_removed_subscribers
 			//
 			//
 			// Example: 100
-			MaxBulkNewSubscriptionMessages *float64 `json:"max_bulk_new_subscription_messages,omitempty"`
+			MaxBulkSubscriptionMessages *float64 `json:"max_bulk_subscription_messages,omitempty"`
 
 			// MaxChannelFolderDescriptionLength Present if `realm` is present in `fetch_event_types`.
 			//
@@ -94821,7 +94974,19 @@ func ParseUnsubscribeResponse(rsp *http.Response) (*UnsubscribeResponse, error) 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			IgnoredParametersUnsupported interface{} `json:"ignored_parameters_unsupported,omitempty"`
-			Msg                          interface{} `json:"msg"`
+
+			// MessagesSentToRemovedSubscribers Only present if the parameter `send_messages_to_removed_subscribers`
+			// in the request was `true`.
+			//
+			// Whether Notification Bot DMs were in fact sent to the removed
+			// subscribers as requested by the
+			// `send_messages_to_removed_subscribers` parameter. Clients may
+			// find this value useful to communicate with users about the
+			// effect of this request.
+			//
+			// **Changes**: New in Zulip 13.0 (feature level 515).
+			MessagesSentToRemovedSubscribers *bool       `json:"messages_sent_to_removed_subscribers,omitempty"`
+			Msg                              interface{} `json:"msg"`
 
 			// NotRemoved A list of the names of channels that the user is already unsubscribed
 			// from, and hence doesn't need to be unsubscribed.

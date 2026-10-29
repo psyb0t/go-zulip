@@ -2,6 +2,15 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.0, 2026-10-29
+
+- Breaking: the `max_bulk_new_subscription_messages` field of the `RegisterQueueResponse.JSON200` struct was renamed. `MaxBulkNewSubscriptionMessages` is now `MaxBulkSubscriptionMessages`, with JSON name `max_bulk_subscription_messages`. It now also limits `send_messages_to_removed_subscribers` when unsubscribing. Code that reads the old field must change.
+- `RegisterQueueResponse.JSON200` and `RegisterQueueResponse.GetJSON200` return a different anonymous struct type, so code that declares the old type must change.
+- `UnsubscribeResponse.JSON200` and `UnsubscribeResponse.GetJSON200` also return a different anonymous struct type, because of the new `MessagesSentToRemovedSubscribers` field.
+- Added `SendMessagesToRemovedSubscribers` to `UnsubscribeFormdataBody` and `UnsubscribeFormdataRequestBody`. It asks the server to send a direct message to users removed from a channel (Zulip 13.0, feature level 515).
+- Added `MessagesSentToRemovedSubscribers` to the unsubscribe response, which reports whether those direct messages were sent.
+- Updated doc comments for the unsubscribe request types to describe the new notification behavior.
+
 ## v0.2.0, 2026-10-28
 
 - Breaking: the numbered union variants of the `GetEvents` response body (`GetEvents200JSONResponseBodyEvents11` and the other `GetEvents200JSONResponseBodyEvents<N>` types) were regenerated from the updated spec. Many were removed or reshaped, so code that names them must change. Examples: `GetEvents200JSONResponseBodyEvents12.Op` and `.Person`, `GetEvents200JSONResponseBodyEvents14.Presence`, `.Presences`, `.UserId` and `.Email`, and `GetEvents200JSONResponseBodyEvents15.Streams` no longer exist, along with their related `Op`, `Type` and `PresenceStatus` constants.
