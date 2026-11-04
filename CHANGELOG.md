@@ -2,6 +2,10 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.1, 2026-11-04
+
+- Updated doc comments on `GetEvents200JSONResponseBodyEvents67` and its `Bot` and `UserId` fields. They now describe the bot instead of a deactivated bot. No types or signatures changed.
+
 ## v0.3.0, 2026-10-29
 
 - Breaking: the `max_bulk_new_subscription_messages` field of the `RegisterQueueResponse.JSON200` struct was renamed. `MaxBulkNewSubscriptionMessages` is now `MaxBulkSubscriptionMessages`, with JSON name `max_bulk_subscription_messages`. It now also limits `send_messages_to_removed_subscribers` when unsubscribing. Code that reads the old field must change.

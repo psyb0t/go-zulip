@@ -10562,9 +10562,9 @@ type GetEvents200JSONResponseBodyEvents66Type string
 
 // GetEvents200JSONResponseBodyEvents67 defines parameters for GetEvents.
 type GetEvents200JSONResponseBodyEvents67 struct {
-	// Bot Object containing details about the deactivated bot.
+	// Bot Object containing details about the bot.
 	Bot *struct {
-		// UserId The user ID of the deactivated bot.
+		// UserId The user ID of the bot.
 		UserId *int `json:"user_id,omitempty"`
 	} `json:"bot,omitempty"`
 
