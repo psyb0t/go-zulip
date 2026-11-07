@@ -40404,6 +40404,14 @@ type ClientInterface interface {
 	// user](https://zulip.com/help/deactivate-or-reactivate-a-user)
 	// given their user ID.
 	//
+	// If the user is a bot whose owner is deactivated, the acting user
+	// becomes the bot's owner, and the bot's API key is regenerated.
+	//
+	// **Changes**: Starting with Zulip 13.0 (feature level 516),
+	// the bot's API key is regenerated when reactivating a bot changes
+	// its owner. This change was also backported to the Zulip 12.x
+	// series, at feature level 501.
+	//
 	// Corresponds with POST /users/{user_id}/reactivate (the `ReactivateUser` operationId).
 	ReactivateUser(ctx context.Context, userId UserId, reqEditors ...RequestEditorFn) (*http.Response, error)
 
@@ -47584,6 +47592,14 @@ func (c *Client) GetUserChannels(ctx context.Context, userId UserId, reqEditors 
 // [Reactivates a
 // user](https://zulip.com/help/deactivate-or-reactivate-a-user)
 // given their user ID.
+//
+// If the user is a bot whose owner is deactivated, the acting user
+// becomes the bot's owner, and the bot's API key is regenerated.
+//
+// **Changes**: Starting with Zulip 13.0 (feature level 516),
+// the bot's API key is regenerated when reactivating a bot changes
+// its owner. This change was also backported to the Zulip 12.x
+// series, at feature level 501.
 //
 // Corresponds with POST /users/{user_id}/reactivate (the `ReactivateUser` operationId).
 func (c *Client) ReactivateUser(ctx context.Context, userId UserId, reqEditors ...RequestEditorFn) (*http.Response, error) {
@@ -60082,6 +60098,14 @@ type ClientWithResponsesInterface interface {
 	// [Reactivates a
 	// user](https://zulip.com/help/deactivate-or-reactivate-a-user)
 	// given their user ID.
+	//
+	// If the user is a bot whose owner is deactivated, the acting user
+	// becomes the bot's owner, and the bot's API key is regenerated.
+	//
+	// **Changes**: Starting with Zulip 13.0 (feature level 516),
+	// the bot's API key is regenerated when reactivating a bot changes
+	// its owner. This change was also backported to the Zulip 12.x
+	// series, at feature level 501.
 	//
 	// Returns a wrapper object for the known response body format(s).
 	//
@@ -85130,6 +85154,14 @@ func (c *ClientWithResponses) GetUserChannelsWithResponse(ctx context.Context, u
 // [Reactivates a
 // user](https://zulip.com/help/deactivate-or-reactivate-a-user)
 // given their user ID.
+//
+// If the user is a bot whose owner is deactivated, the acting user
+// becomes the bot's owner, and the bot's API key is regenerated.
+//
+// **Changes**: Starting with Zulip 13.0 (feature level 516),
+// the bot's API key is regenerated when reactivating a bot changes
+// its owner. This change was also backported to the Zulip 12.x
+// series, at feature level 501.
 //
 // Returns a wrapper object for the known response body format(s).
 //

@@ -2,6 +2,10 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.2, 2026-11-07
+
+- Updated doc comments for `Client.ReactivateUser`, `ClientWithResponses.ReactivateUserWithResponse` and the matching `ClientInterface` and `ClientWithResponsesInterface` methods. They now say that reactivating a bot whose owner is deactivated makes the acting user the bot's owner and regenerates the bot's API key (Zulip 13.0, feature level 516, backported to 12.x at level 501). No types or signatures changed.
+
 ## v0.3.1, 2026-11-04
 
 - Updated doc comments on `GetEvents200JSONResponseBodyEvents67` and its `Bot` and `UserId` fields. They now describe the bot instead of a deactivated bot. No types or signatures changed.
