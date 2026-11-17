@@ -205,17 +205,39 @@ func (e ScheduledMessageBaseType) Valid() bool {
 	}
 }
 
+// Defines values for SubscriptionWebLeftSidebarTopicsOrder.
+const (
+	SubscriptionWebLeftSidebarTopicsOrderN0 SubscriptionWebLeftSidebarTopicsOrder = 0
+	SubscriptionWebLeftSidebarTopicsOrderN1 SubscriptionWebLeftSidebarTopicsOrder = 1
+	SubscriptionWebLeftSidebarTopicsOrderN2 SubscriptionWebLeftSidebarTopicsOrder = 2
+)
+
+// Valid indicates whether the value is a known member of the SubscriptionWebLeftSidebarTopicsOrder enum.
+func (e SubscriptionWebLeftSidebarTopicsOrder) Valid() bool {
+	switch e {
+	case SubscriptionWebLeftSidebarTopicsOrderN0:
+		return true
+	case SubscriptionWebLeftSidebarTopicsOrderN1:
+		return true
+	case SubscriptionWebLeftSidebarTopicsOrderN2:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for SubscriptionProperty.
 const (
-	SubscriptionPropertyAudibleNotifications   SubscriptionProperty = "audible_notifications"
-	SubscriptionPropertyColor                  SubscriptionProperty = "color"
-	SubscriptionPropertyDesktopNotifications   SubscriptionProperty = "desktop_notifications"
-	SubscriptionPropertyEmailNotifications     SubscriptionProperty = "email_notifications"
-	SubscriptionPropertyInHomeView             SubscriptionProperty = "in_home_view"
-	SubscriptionPropertyIsMuted                SubscriptionProperty = "is_muted"
-	SubscriptionPropertyPinToTop               SubscriptionProperty = "pin_to_top"
-	SubscriptionPropertyPushNotifications      SubscriptionProperty = "push_notifications"
-	SubscriptionPropertyWildcardMentionsNotify SubscriptionProperty = "wildcard_mentions_notify"
+	SubscriptionPropertyAudibleNotifications      SubscriptionProperty = "audible_notifications"
+	SubscriptionPropertyColor                     SubscriptionProperty = "color"
+	SubscriptionPropertyDesktopNotifications      SubscriptionProperty = "desktop_notifications"
+	SubscriptionPropertyEmailNotifications        SubscriptionProperty = "email_notifications"
+	SubscriptionPropertyInHomeView                SubscriptionProperty = "in_home_view"
+	SubscriptionPropertyIsMuted                   SubscriptionProperty = "is_muted"
+	SubscriptionPropertyPinToTop                  SubscriptionProperty = "pin_to_top"
+	SubscriptionPropertyPushNotifications         SubscriptionProperty = "push_notifications"
+	SubscriptionPropertyWebLeftSidebarTopicsOrder SubscriptionProperty = "web_left_sidebar_topics_order"
+	SubscriptionPropertyWildcardMentionsNotify    SubscriptionProperty = "wildcard_mentions_notify"
 )
 
 // Valid indicates whether the value is a known member of the SubscriptionProperty enum.
@@ -236,6 +258,8 @@ func (e SubscriptionProperty) Valid() bool {
 	case SubscriptionPropertyPinToTop:
 		return true
 	case SubscriptionPropertyPushNotifications:
+		return true
+	case SubscriptionPropertyWebLeftSidebarTopicsOrder:
 		return true
 	case SubscriptionPropertyWildcardMentionsNotify:
 		return true
@@ -3352,6 +3376,24 @@ func (e UpdateRealmUserSettingsDefaultsFormdataBodyWebChannelDefaultView) Valid(
 	}
 }
 
+// Defines values for UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder.
+const (
+	UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrderN1 UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder = 1
+	UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrderN2 UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder = 2
+)
+
+// Valid indicates whether the value is a known member of the UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder enum.
+func (e UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder) Valid() bool {
+	switch e {
+	case UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrderN1:
+		return true
+	case UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrderN2:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for UpdateRealmUserSettingsDefaultsFormdataBodyWebMarkReadOnScrollPolicy.
 const (
 	UpdateRealmUserSettingsDefaultsFormdataBodyWebMarkReadOnScrollPolicyN1 UpdateRealmUserSettingsDefaultsFormdataBodyWebMarkReadOnScrollPolicy = 1
@@ -3778,6 +3820,24 @@ func (e UpdateSettingsFormdataBodyWebChannelDefaultView) Valid() bool {
 	case UpdateSettingsFormdataBodyWebChannelDefaultViewN2:
 		return true
 	case UpdateSettingsFormdataBodyWebChannelDefaultViewN4:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder.
+const (
+	UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrderN1 UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder = 1
+	UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrderN2 UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder = 2
+)
+
+// Valid indicates whether the value is a known member of the UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder enum.
+func (e UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder) Valid() bool {
+	switch e {
+	case UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrderN1:
+		return true
+	case UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrderN2:
 		return true
 	default:
 		return false
@@ -6897,6 +6957,18 @@ type Subscription struct {
 	// Example: inherit
 	TopicsPolicy *TopicsPolicy `json:"topics_policy,omitempty"`
 
+	// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists the
+	// channel's resolved topics after its unresolved ones.
+	//
+	// - 0 - The value of this setting should be inherited from the
+	//   user-level default setting, `web_left_sidebar_topics_order`,
+	//   for this channel.
+	// - 1 - All topics in order of recent activity
+	// - 2 - Resolved topics after unresolved topics
+	//
+	// **Changes**: New in Zulip 14.0 (feature level 525).
+	WebLeftSidebarTopicsOrder *SubscriptionWebLeftSidebarTopicsOrder `json:"web_left_sidebar_topics_order,omitempty"`
+
 	// WildcardMentionsNotify A boolean specifying whether wildcard mentions
 	// trigger notifications as though they were personal
 	// mentions in this channel.
@@ -6907,6 +6979,18 @@ type Subscription struct {
 	// this channel.
 	WildcardMentionsNotify *bool `json:"wildcard_mentions_notify,omitempty"`
 }
+
+// SubscriptionWebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists the
+// channel's resolved topics after its unresolved ones.
+//
+//   - 0 - The value of this setting should be inherited from the
+//     user-level default setting, `web_left_sidebar_topics_order`,
+//     for this channel.
+//   - 1 - All topics in order of recent activity
+//   - 2 - Resolved topics after unresolved topics
+//
+// **Changes**: New in Zulip 14.0 (feature level 525).
+type SubscriptionWebLeftSidebarTopicsOrder int
 
 // SubscriptionProperty One of the channel properties described below:
 //
@@ -6941,6 +7025,14 @@ type Subscription struct {
 //   - `"wildcard_mentions_notify"`: Whether wildcard mentions trigger
 //     notifications as though they were personal mentions in this channel.
 //
+//   - `"web_left_sidebar_topics_order"`: Whether the web/desktop
+//     application's left sidebar lists the channel's resolved topics
+//     after its unresolved ones: 0 to follow the user's
+//     `web_left_sidebar_topics_order` setting, 1 for all topics in
+//     order of recent activity, 2 for resolved topics after unresolved
+//     topics.<br>
+//     **Changes**: New in Zulip 14.0 (feature level 525).
+//
 // Example: pin_to_top
 type SubscriptionProperty string
 
@@ -6948,8 +7040,11 @@ type SubscriptionProperty string
 //
 // If the property is `"color"`, then `value` is a string
 // representing the hex value of the user's display
-// color for the channel. For all other above properties,
-// `value` is a boolean.
+// color for the channel. If the property is
+// `"web_left_sidebar_topics_order"`, then `value` is an integer.
+// For all other above properties, `value` is a boolean.
+//
+// **Changes**: Integer values are new in Zulip 14.0 (feature level 525).
 //
 // Example: true
 type SubscriptionPropertyValue struct {
@@ -6959,8 +7054,11 @@ type SubscriptionPropertyValue struct {
 // SubscriptionPropertyValue0 The new boolean value for the specified property.
 type SubscriptionPropertyValue0 = bool
 
-// SubscriptionPropertyValue1 The hex value of the user's display color for the channel.
-type SubscriptionPropertyValue1 = string
+// SubscriptionPropertyValue1 The new integer value for the specified property.
+type SubscriptionPropertyValue1 = int
+
+// SubscriptionPropertyValue2 The hex value of the user's display color for the channel.
+type SubscriptionPropertyValue2 = string
 
 // TopicsPolicy Whether [named topics](/help/introduction-to-topics) and the empty
 // topic (i.e., ["general chat" topic](/help/general-chat-topic))
@@ -14813,6 +14911,20 @@ type UpdateRealmUserSettingsDefaultsFormdataBody struct {
 	// Example: true
 	WebLeftSidebarShowChannelFolders *bool `form:"web_left_sidebar_show_channel_folders,omitempty" json:"web_left_sidebar_show_channel_folders,omitempty"`
 
+	// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+	// channel's resolved topics after its unresolved ones.
+	// Subscriptions can override this per channel with the
+	// subscription property of the same name.
+	//
+	// - 1 - All topics in order of recent activity
+	// - 2 - Resolved topics after unresolved topics
+	//
+	// **Changes**: New in Zulip 14.0 (feature level 525).
+	//
+	//
+	// Example: 1
+	WebLeftSidebarTopicsOrder *UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder `form:"web_left_sidebar_topics_order,omitempty" json:"web_left_sidebar_topics_order,omitempty"`
+
 	// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 	// the unread message count summary.
 	//
@@ -14923,6 +15035,9 @@ type UpdateRealmUserSettingsDefaultsFormdataBodyWebAnimateImagePreviews string
 
 // UpdateRealmUserSettingsDefaultsFormdataBodyWebChannelDefaultView defines parameters for UpdateRealmUserSettingsDefaults.
 type UpdateRealmUserSettingsDefaultsFormdataBodyWebChannelDefaultView int
+
+// UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder defines parameters for UpdateRealmUserSettingsDefaults.
+type UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder int
 
 // UpdateRealmUserSettingsDefaultsFormdataBodyWebMarkReadOnScrollPolicy defines parameters for UpdateRealmUserSettingsDefaults.
 type UpdateRealmUserSettingsDefaultsFormdataBodyWebMarkReadOnScrollPolicy int
@@ -16872,6 +16987,20 @@ type UpdateSettingsFormdataBody struct {
 	// Example: true
 	WebLeftSidebarShowChannelFolders *bool `form:"web_left_sidebar_show_channel_folders,omitempty" json:"web_left_sidebar_show_channel_folders,omitempty"`
 
+	// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+	// channel's resolved topics after its unresolved ones.
+	// Subscriptions can override this per channel with the
+	// subscription property of the same name.
+	//
+	// - 1 - All topics in order of recent activity
+	// - 2 - Resolved topics after unresolved topics
+	//
+	// **Changes**: New in Zulip 14.0 (feature level 525).
+	//
+	//
+	// Example: 1
+	WebLeftSidebarTopicsOrder *UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder `form:"web_left_sidebar_topics_order,omitempty" json:"web_left_sidebar_topics_order,omitempty"`
+
 	// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 	// the unread message count summary.
 	//
@@ -16985,6 +17114,9 @@ type UpdateSettingsFormdataBodyWebAnimateImagePreviews string
 
 // UpdateSettingsFormdataBodyWebChannelDefaultView defines parameters for UpdateSettings.
 type UpdateSettingsFormdataBodyWebChannelDefaultView int
+
+// UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder defines parameters for UpdateSettings.
+type UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder int
 
 // UpdateSettingsFormdataBodyWebMarkReadOnScrollPolicy defines parameters for UpdateSettings.
 type UpdateSettingsFormdataBodyWebMarkReadOnScrollPolicy int
@@ -19572,6 +19704,14 @@ type UpdateSubscriptionSettingsFormdataBody struct {
 		// - `"wildcard_mentions_notify"`: Whether wildcard mentions trigger
 		//   notifications as though they were personal mentions in this channel.
 		//
+		// - `"web_left_sidebar_topics_order"`: Whether the web/desktop
+		//   application's left sidebar lists the channel's resolved topics
+		//   after its unresolved ones: 0 to follow the user's
+		//   `web_left_sidebar_topics_order` setting, 1 for all topics in
+		//   order of recent activity, 2 for resolved topics after unresolved
+		//   topics.<br>
+		//   **Changes**: New in Zulip 14.0 (feature level 525).
+		//
 		//
 		// Example: pin_to_top
 		Property SubscriptionProperty `json:"property"`
@@ -19583,8 +19723,11 @@ type UpdateSubscriptionSettingsFormdataBody struct {
 		//
 		// If the property is `"color"`, then `value` is a string
 		// representing the hex value of the user's display
-		// color for the channel. For all other above properties,
-		// `value` is a boolean.
+		// color for the channel. If the property is
+		// `"web_left_sidebar_topics_order"`, then `value` is an integer.
+		// For all other above properties, `value` is a boolean.
+		//
+		// **Changes**: Integer values are new in Zulip 14.0 (feature level 525).
 		//
 		//
 		// Example: true
@@ -19627,6 +19770,14 @@ type UpdateSubscriptionPropertyFormdataBody struct {
 	// - `"wildcard_mentions_notify"`: Whether wildcard mentions trigger
 	//   notifications as though they were personal mentions in this channel.
 	//
+	// - `"web_left_sidebar_topics_order"`: Whether the web/desktop
+	//   application's left sidebar lists the channel's resolved topics
+	//   after its unresolved ones: 0 to follow the user's
+	//   `web_left_sidebar_topics_order` setting, 1 for all topics in
+	//   order of recent activity, 2 for resolved topics after unresolved
+	//   topics.<br>
+	//   **Changes**: New in Zulip 14.0 (feature level 525).
+	//
 	//
 	// Example: pin_to_top
 	Property SubscriptionProperty `form:"property" json:"property"`
@@ -19635,8 +19786,11 @@ type UpdateSubscriptionPropertyFormdataBody struct {
 	//
 	// If the property is `"color"`, then `value` is a string
 	// representing the hex value of the user's display
-	// color for the channel. For all other above properties,
-	// `value` is a boolean.
+	// color for the channel. If the property is
+	// `"web_left_sidebar_topics_order"`, then `value` is an integer.
+	// For all other above properties, `value` is a boolean.
+	//
+	// **Changes**: Integer values are new in Zulip 14.0 (feature level 525).
 	//
 	//
 	// Example: true
@@ -21582,6 +21736,32 @@ func (t *SubscriptionPropertyValue) FromSubscriptionPropertyValue1(v Subscriptio
 
 // MergeSubscriptionPropertyValue1 performs a merge with any union data inside the SubscriptionPropertyValue, using the provided SubscriptionPropertyValue1
 func (t *SubscriptionPropertyValue) MergeSubscriptionPropertyValue1(v SubscriptionPropertyValue1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsSubscriptionPropertyValue2 returns the union data inside the SubscriptionPropertyValue as a SubscriptionPropertyValue2
+func (t SubscriptionPropertyValue) AsSubscriptionPropertyValue2() (SubscriptionPropertyValue2, error) {
+	var body SubscriptionPropertyValue2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromSubscriptionPropertyValue2 overwrites any union data inside the SubscriptionPropertyValue as the provided SubscriptionPropertyValue2
+func (t *SubscriptionPropertyValue) FromSubscriptionPropertyValue2(v SubscriptionPropertyValue2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergeSubscriptionPropertyValue2 performs a merge with any union data inside the SubscriptionPropertyValue, using the provided SubscriptionPropertyValue2
+func (t *SubscriptionPropertyValue) MergeSubscriptionPropertyValue2(v SubscriptionPropertyValue2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -51558,6 +51738,8 @@ func NewUpdateRealmUserSettingsDefaultsRequestWithFormdataBody(server string, bo
 
 		"web_left_sidebar_show_channel_folders": true,
 
+		"web_left_sidebar_topics_order": true,
+
 		"web_left_sidebar_unreads_count_summary": true,
 
 		"web_line_height_percent": true,
@@ -52343,6 +52525,8 @@ func NewUpdateSettingsRequestWithFormdataBody(server string, body UpdateSettings
 		"web_inbox_show_channel_folders": true,
 
 		"web_left_sidebar_show_channel_folders": true,
+
+		"web_left_sidebar_topics_order": true,
 
 		"web_left_sidebar_unreads_count_summary": true,
 
@@ -68208,6 +68392,17 @@ type RegisterQueueResponse struct {
 			// **Changes**: New in Zulip 11.0 (feature level 411).
 			WebLeftSidebarShowChannelFolders *bool `json:"web_left_sidebar_show_channel_folders,omitempty"`
 
+			// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+			// channel's resolved topics after its unresolved ones.
+			// Subscriptions can override this per channel with the
+			// subscription property of the same name.
+			//
+			// - 1 - All topics in order of recent activity
+			// - 2 - Resolved topics after unresolved topics
+			//
+			// **Changes**: New in Zulip 14.0 (feature level 525).
+			WebLeftSidebarTopicsOrder *int `json:"web_left_sidebar_topics_order,omitempty"`
+
 			// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 			// the unread message count summary.
 			//
@@ -69381,6 +69576,17 @@ type RegisterQueueResponse struct {
 			//
 			// **Changes**: New in Zulip 11.0 (feature level 411).
 			WebLeftSidebarShowChannelFolders *bool `json:"web_left_sidebar_show_channel_folders,omitempty"`
+
+			// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+			// channel's resolved topics after its unresolved ones.
+			// Subscriptions can override this per channel with the
+			// subscription property of the same name.
+			//
+			// - 1 - All topics in order of recent activity
+			// - 2 - Resolved topics after unresolved topics
+			//
+			// **Changes**: New in Zulip 14.0 (feature level 525).
+			WebLeftSidebarTopicsOrder *int `json:"web_left_sidebar_topics_order,omitempty"`
 
 			// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 			// the unread message count summary.
@@ -71710,6 +71916,17 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 		// **Changes**: New in Zulip 11.0 (feature level 411).
 		WebLeftSidebarShowChannelFolders *bool `json:"web_left_sidebar_show_channel_folders,omitempty"`
 
+		// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+		// channel's resolved topics after its unresolved ones.
+		// Subscriptions can override this per channel with the
+		// subscription property of the same name.
+		//
+		// - 1 - All topics in order of recent activity
+		// - 2 - Resolved topics after unresolved topics
+		//
+		// **Changes**: New in Zulip 14.0 (feature level 525).
+		WebLeftSidebarTopicsOrder *int `json:"web_left_sidebar_topics_order,omitempty"`
+
 		// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 		// the unread message count summary.
 		//
@@ -72883,6 +73100,17 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 		//
 		// **Changes**: New in Zulip 11.0 (feature level 411).
 		WebLeftSidebarShowChannelFolders *bool `json:"web_left_sidebar_show_channel_folders,omitempty"`
+
+		// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+		// channel's resolved topics after its unresolved ones.
+		// Subscriptions can override this per channel with the
+		// subscription property of the same name.
+		//
+		// - 1 - All topics in order of recent activity
+		// - 2 - Resolved topics after unresolved topics
+		//
+		// **Changes**: New in Zulip 14.0 (feature level 525).
+		WebLeftSidebarTopicsOrder *int `json:"web_left_sidebar_topics_order,omitempty"`
 
 		// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 		// the unread message count summary.
@@ -91020,6 +91248,17 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 				// **Changes**: New in Zulip 11.0 (feature level 411).
 				WebLeftSidebarShowChannelFolders *bool `json:"web_left_sidebar_show_channel_folders,omitempty"`
 
+				// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+				// channel's resolved topics after its unresolved ones.
+				// Subscriptions can override this per channel with the
+				// subscription property of the same name.
+				//
+				// - 1 - All topics in order of recent activity
+				// - 2 - Resolved topics after unresolved topics
+				//
+				// **Changes**: New in Zulip 14.0 (feature level 525).
+				WebLeftSidebarTopicsOrder *int `json:"web_left_sidebar_topics_order,omitempty"`
+
 				// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 				// the unread message count summary.
 				//
@@ -92193,6 +92432,17 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 				//
 				// **Changes**: New in Zulip 11.0 (feature level 411).
 				WebLeftSidebarShowChannelFolders *bool `json:"web_left_sidebar_show_channel_folders,omitempty"`
+
+				// WebLeftSidebarTopicsOrder Whether the web/desktop application's left sidebar lists a
+				// channel's resolved topics after its unresolved ones.
+				// Subscriptions can override this per channel with the
+				// subscription property of the same name.
+				//
+				// - 1 - All topics in order of recent activity
+				// - 2 - Resolved topics after unresolved topics
+				//
+				// **Changes**: New in Zulip 14.0 (feature level 525).
+				WebLeftSidebarTopicsOrder *int `json:"web_left_sidebar_topics_order,omitempty"`
 
 				// WebLeftSidebarUnreadsCountSummary Determines whether the web/desktop application's left sidebar displays
 				// the unread message count summary.

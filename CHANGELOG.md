@@ -2,6 +2,15 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.4.0, 2026-11-17
+
+- Breaking: `SubscriptionPropertyValue1` is now an alias for `int` instead of `string`. Its doc comment now says it is the new integer value for the property. `SubscriptionPropertyValue.AsSubscriptionPropertyValue1`, `FromSubscriptionPropertyValue1` and `MergeSubscriptionPropertyValue1` use the new type, so code that passes or reads a string through them must change.
+- `RegisterQueueResponse.JSON200` and `RegisterQueueResponse.GetJSON200` return a different anonymous struct type because of the new `WebLeftSidebarTopicsOrder` field, so code that declares the old type must change.
+- Added the web left sidebar topics order setting. New fields: `Subscription.WebLeftSidebarTopicsOrder`, `UpdateSettingsFormdataBody.WebLeftSidebarTopicsOrder`, `UpdateSettingsFormdataRequestBody.WebLeftSidebarTopicsOrder`, `UpdateRealmUserSettingsDefaultsFormdataBody.WebLeftSidebarTopicsOrder` and `UpdateRealmUserSettingsDefaultsFormdataRequestBody.WebLeftSidebarTopicsOrder`.
+- Added the types `SubscriptionWebLeftSidebarTopicsOrder`, `UpdateSettingsFormdataBodyWebLeftSidebarTopicsOrder` and `UpdateRealmUserSettingsDefaultsFormdataBodyWebLeftSidebarTopicsOrder`, with the constants `SubscriptionWebLeftSidebarTopicsOrderN0`, `N1` and `N2` and the matching `N1` and `N2` constants for the two request body types.
+- Added `SubscriptionPropertyWebLeftSidebarTopicsOrder`, `SubscriptionPropertyValue2`, `SubscriptionPropertyValue.AsSubscriptionPropertyValue2`, `FromSubscriptionPropertyValue2` and `MergeSubscriptionPropertyValue2`.
+- Raised the minimum Go version in `go.mod` from 1.26.10 to 1.26.11, which fixes the `net/http` vulnerability GO-2026-6859. The development image uses `golang:1.26.11-trixie`.
+
 ## v0.3.2, 2026-11-07
 
 - Updated doc comments for `Client.ReactivateUser`, `ClientWithResponses.ReactivateUserWithResponse` and the matching `ClientInterface` and `ClientWithResponsesInterface` methods. They now say that reactivating a bot whose owner is deactivated makes the acting user the bot's owner and regenerates the bot's API key (Zulip 13.0, feature level 516, backported to 12.x at level 501). No types or signatures changed.
