@@ -2,6 +2,11 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.5.0, 2026-11-19
+
+- Breaking: `RegisterQueueResponse.JSON200` and `RegisterQueueResponse.GetJSON200` return a different anonymous struct type because of the new `WebRightClickOpensMessageActionsMenu` field, so code that declares the old type must change.
+- Added the web right click setting, which controls whether right-clicking a message opens the message actions menu instead of the browser's context menu (Zulip 14.0, feature level 526). New fields: `UpdateSettingsFormdataBody.WebRightClickOpensMessageActionsMenu`, `UpdateSettingsFormdataRequestBody.WebRightClickOpensMessageActionsMenu`, `UpdateRealmUserSettingsDefaultsFormdataBody.WebRightClickOpensMessageActionsMenu` and `UpdateRealmUserSettingsDefaultsFormdataRequestBody.WebRightClickOpensMessageActionsMenu`.
+
 ## v0.4.0, 2026-11-17
 
 - Breaking: `SubscriptionPropertyValue1` is now an alias for `int` instead of `string`. Its doc comment now says it is the new integer value for the property. `SubscriptionPropertyValue.AsSubscriptionPropertyValue1`, `FromSubscriptionPropertyValue1` and `MergeSubscriptionPropertyValue1` use the new type, so code that passes or reads a string through them must change.

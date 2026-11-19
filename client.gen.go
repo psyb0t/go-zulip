@@ -14970,6 +14970,15 @@ type UpdateRealmUserSettingsDefaultsFormdataBody struct {
 	// Example: true
 	WebNavigateToSentMessage *bool `form:"web_navigate_to_sent_message,omitempty" json:"web_navigate_to_sent_message,omitempty"`
 
+	// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+	// opens the message actions menu instead of the browser's context menu.
+	//
+	// **Changes**: New in Zulip 14.0 (feature level 526).
+	//
+	//
+	// Example: false
+	WebRightClickOpensMessageActionsMenu *bool `form:"web_right_click_opens_message_actions_menu,omitempty" json:"web_right_click_opens_message_actions_menu,omitempty"`
+
 	// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 	// Channels that do not have an unread count will have a simple dot indicator for whether there are any
 	// unread messages.
@@ -17045,6 +17054,15 @@ type UpdateSettingsFormdataBody struct {
 	//
 	// Example: true
 	WebNavigateToSentMessage *bool `form:"web_navigate_to_sent_message,omitempty" json:"web_navigate_to_sent_message,omitempty"`
+
+	// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+	// opens the message actions menu instead of the browser's context menu.
+	//
+	// **Changes**: New in Zulip 14.0 (feature level 526).
+	//
+	//
+	// Example: false
+	WebRightClickOpensMessageActionsMenu *bool `form:"web_right_click_opens_message_actions_menu,omitempty" json:"web_right_click_opens_message_actions_menu,omitempty"`
 
 	// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 	// Channels that do not have an unread count will have a simple dot indicator for whether there are any
@@ -51748,6 +51766,8 @@ func NewUpdateRealmUserSettingsDefaultsRequestWithFormdataBody(server string, bo
 
 		"web_navigate_to_sent_message": true,
 
+		"web_right_click_opens_message_actions_menu": true,
+
 		"web_stream_unreads_count_display_policy": true,
 
 		"web_suggest_update_timezone": true,
@@ -52535,6 +52555,8 @@ func NewUpdateSettingsRequestWithFormdataBody(server string, body UpdateSettings
 		"web_mark_read_on_scroll_policy": true,
 
 		"web_navigate_to_sent_message": true,
+
+		"web_right_click_opens_message_actions_menu": true,
 
 		"web_stream_unreads_count_display_policy": true,
 
@@ -68439,6 +68461,12 @@ type RegisterQueueResponse struct {
 			// this behavior was not configurable.
 			WebNavigateToSentMessage *bool `json:"web_navigate_to_sent_message,omitempty"`
 
+			// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+			// opens the message actions menu instead of the browser's context menu.
+			//
+			// **Changes**: New in Zulip 14.0 (feature level 526).
+			WebRightClickOpensMessageActionsMenu *bool `json:"web_right_click_opens_message_actions_menu,omitempty"`
+
 			// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 			// Channels that do not have an unread count will have a simple dot indicator for whether there are any
 			// unread messages.
@@ -69623,6 +69651,12 @@ type RegisterQueueResponse struct {
 			// **Changes**: New in Zulip 9.0 (feature level 268). Previously,
 			// this behavior was not configurable.
 			WebNavigateToSentMessage *bool `json:"web_navigate_to_sent_message,omitempty"`
+
+			// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+			// opens the message actions menu instead of the browser's context menu.
+			//
+			// **Changes**: New in Zulip 14.0 (feature level 526).
+			WebRightClickOpensMessageActionsMenu *bool `json:"web_right_click_opens_message_actions_menu,omitempty"`
 
 			// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 			// Channels that do not have an unread count will have a simple dot indicator for whether there are any
@@ -71963,6 +71997,12 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 		// this behavior was not configurable.
 		WebNavigateToSentMessage *bool `json:"web_navigate_to_sent_message,omitempty"`
 
+		// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+		// opens the message actions menu instead of the browser's context menu.
+		//
+		// **Changes**: New in Zulip 14.0 (feature level 526).
+		WebRightClickOpensMessageActionsMenu *bool `json:"web_right_click_opens_message_actions_menu,omitempty"`
+
 		// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 		// Channels that do not have an unread count will have a simple dot indicator for whether there are any
 		// unread messages.
@@ -73147,6 +73187,12 @@ func (r RegisterQueueResponse) GetJSON200() *struct {
 		// **Changes**: New in Zulip 9.0 (feature level 268). Previously,
 		// this behavior was not configurable.
 		WebNavigateToSentMessage *bool `json:"web_navigate_to_sent_message,omitempty"`
+
+		// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+		// opens the message actions menu instead of the browser's context menu.
+		//
+		// **Changes**: New in Zulip 14.0 (feature level 526).
+		WebRightClickOpensMessageActionsMenu *bool `json:"web_right_click_opens_message_actions_menu,omitempty"`
 
 		// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 		// Channels that do not have an unread count will have a simple dot indicator for whether there are any
@@ -91295,6 +91341,12 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 				// this behavior was not configurable.
 				WebNavigateToSentMessage *bool `json:"web_navigate_to_sent_message,omitempty"`
 
+				// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+				// opens the message actions menu instead of the browser's context menu.
+				//
+				// **Changes**: New in Zulip 14.0 (feature level 526).
+				WebRightClickOpensMessageActionsMenu *bool `json:"web_right_click_opens_message_actions_menu,omitempty"`
+
 				// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 				// Channels that do not have an unread count will have a simple dot indicator for whether there are any
 				// unread messages.
@@ -92479,6 +92531,12 @@ func ParseRegisterQueueResponse(rsp *http.Response) (*RegisterQueueResponse, err
 				// **Changes**: New in Zulip 9.0 (feature level 268). Previously,
 				// this behavior was not configurable.
 				WebNavigateToSentMessage *bool `json:"web_navigate_to_sent_message,omitempty"`
+
+				// WebRightClickOpensMessageActionsMenu Web/desktop app setting for whether right-clicking on a message
+				// opens the message actions menu instead of the browser's context menu.
+				//
+				// **Changes**: New in Zulip 14.0 (feature level 526).
+				WebRightClickOpensMessageActionsMenu *bool `json:"web_right_click_opens_message_actions_menu,omitempty"`
 
 				// WebStreamUnreadsCountDisplayPolicy Configuration for which channels should be displayed with a numeric unread count in the left sidebar.
 				// Channels that do not have an unread count will have a simple dot indicator for whether there are any
